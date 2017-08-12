@@ -1,0 +1,56 @@
+header {
+  max-height: 90px;
+  width: 100%;
+  border-bottom: 1px #dddddd solid;
+}
+
+header .header .header_logo {
+  border-right: 1px #dddddd solid;
+}
+
+header .header .header_text {
+  font-size: 40px;
+  color: black;
+  padding-left: 20px;
+  padding-top: 7px;
+  display: inline-block;
+}
+
+.categories {
+  height: 220px;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px #dddddd solid;
+}
+
+.categories .category {
+  display: inline-block;
+  max-height: 220px;
+  padding: 45px;
+}
+
+.categories .category:hover {
+  border-bottom: 2px #cc0033 solid;
+}
+
+.categories .category:hover .category_text {
+  color: #cc0033;
+}
+
+.categories .category:hover .svg path {
+  fill: #cc0033;
+}
+
+.categories .category .category_img {
+  display: block;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  color: black;
+  width: 116px;
+  height: 116px;
+}
+
+.categories .category .category_text {
+  color: black;
+  font-size: 17px;
+}
