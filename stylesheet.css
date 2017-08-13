@@ -16,21 +16,68 @@ header .header .header_text {
   display: inline-block;
 }
 
+.container-fluid {
+  padding-right: 0px;
+}
+
+ul.tab-bar,
+ul.tab-bar > li {
+  position: relative;
+}
+
+ul.tab-bar.bar-style-1:before {
+  background-color: #cc0033;
+}
+
+ul.tab-bar:before {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  z-index: 1;
+  color: #cc0033;
+}
+
+ul.tab-bar > li {
+  list-style-type: none;
+  border-width: 0;
+}
+
+ul.tab-bar.bar-style-1 > li.active {
+  color: #cc0033 !important;
+  font-weight: 575;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  border-width: 0;
+  height: 40px;
+  background-color: transparent;
+  color: #cc0033;
+  text-align: center;
+  cursor: pointer;
+}
+
+li.active span {
+  color: #cc0033;
+}
+
 .categories {
   height: 220px;
   display: inline-block;
   width: 100%;
   border-bottom: 1px #dddddd solid;
+  background-color: #f7f7f7;
 }
 
 .categories .category {
   display: inline-block;
   max-height: 220px;
   padding: 45px;
-}
-
-.categories .category:hover {
-  border-bottom: 2px #cc0033 solid;
+  padding-top: 20px;
 }
 
 .categories .category:hover .category_text {
@@ -53,4 +100,5 @@ header .header .header_text {
 .categories .category .category_text {
   color: black;
   font-size: 17px;
+  padding-bottom: 50px;
 }
