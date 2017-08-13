@@ -1,5 +1,10 @@
 $redColor: #cc0033;
-
+li.category{
+  a{
+    text-decoration: none;
+    &:active {text-decoration: none;}
+  }
+}
 header{
   max-height: 90px;
   width: 100%;

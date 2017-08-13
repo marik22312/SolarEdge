@@ -1,3 +1,11 @@
+li.category a {
+  text-decoration: none;
+}
+
+li.category a:active {
+  text-decoration: none;
+}
+
 header {
   max-height: 90px;
   width: 100%;

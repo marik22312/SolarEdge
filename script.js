@@ -50,7 +50,7 @@ jQuery('img.svg').each(function(){
                               "right: " + ($ele.width() - $li.position().left - $li.outerWidth()) + "px; " +
                               "-webkit-transition: left " + (IsToLeft ? ".45s" : ".8s") + ", right " + (IsToLeft ? ".9s" : ".3s") + "; " +
                               "transition: left " + (IsToLeft ? ".45s" : ".8s") + ", right " + (IsToLeft ? ".9s" : ".3s") + "; " +
-                              "margin-left: 13.333%" /* slider position fix */+ 
+                              // "margin-left: 13.333%" /* slider position fix */+ 
                           "} "
                       );
                   }

@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Solar Edge</title>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/reset.css">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="css/stylesheet.min.css">
+    <!-- AngularJS -->
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="lib/angular-route.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script type="text/javascript" src="lib/angular-youtube-video.js"></script>
   </head>
-  <body ng-app="MyApp">
+  <body ng-app="solarEdge">
     <div class="container-fluid">
     <header>
       <div class="header row">
@@ -19,32 +25,37 @@
       </div>
     </header>
     <ul class="categories row slider tab-bar bar-style-1">
-      <li class="category col-lg-2 col-lg-offset-1">
+      <li class="category col-lg-2 col-lg-offset-1"><a href="#!improve">
         <img src="images/category1_icon.svg" alt="icon1" class="category_img svg">
         <span class="category_text">Improve your lead generation</span>
-      </li>
-      <li class="category col-lg-2">
+      </a></li>
+      <li class="category col-lg-2"><a href="#!increase">
         <img src="images/category2_icon.svg" alt="icon2" class="category_img svg">
         <span class="category_text">Increase value for your customers</span>
-      </li>
-      <li class="category col-lg-2">
+      </a></li>
+      <li class="category col-lg-2"><a href="#!speed">
         <img src="images/category3_icon.svg" alt="icon3" class="category_img svg">
         <span class="category_text">Speed up your installation</span>
-      </li>
-      <li class="category col-lg-2">
+      </a></li>
+      <li class="category col-lg-2"><a href="#!save">
         <img src="images/category4_icon.svg" alt="icon4" class="category_img svg">
         <span class="category_text">Save commissioning time and truck rolls</span>
-      </li>
-      <li class="category col-lg-2">
+      </a></li>
+      <li class="category col-lg-2"><a href="#!manage">
         <img src="images/category5_icon.svg" alt="icon5" class="category_img svg">
         <span class="category_text">effectively manage your fleet</span>
-      </li>
+      </a></li>
     </ul>
 </div>
+<div id="main-view" ng-view></div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="MyApp.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+        <!-- Main Cotroller -->
+        <script type="text/javascript" src="js/controllers/mainController.js"></script>
+        <script type="text/javascript" src="js/controllers/improveCtrl.js"></script>
   </body>
 </html>
