@@ -44,8 +44,11 @@ ul.tab-bar>li { position: relative; }
             text-align: center;
             cursor: pointer;
         }
-        li.active span{
-          color: $redColor;
+        li.category.active span.category_text{
+          color: $redColor!important;
+        }
+        li.category.active svg.category_img{
+            fill:$redColor !important;
         }
 .categories{
   height: 220px;
