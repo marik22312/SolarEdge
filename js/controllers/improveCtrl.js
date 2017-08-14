@@ -4,7 +4,7 @@ app.controller("improveCtrl", function ($scope) {
         videoID: "atyvdC15HFA", //moby - eveloving
         value: "1",
         name: "Moby - Everloving",
-        description: "",
+        description: "Description Goes Here",
       },
       {
         videoID: "13EifDb4GYs", // moby - porcelain
@@ -17,14 +17,14 @@ app.controller("improveCtrl", function ($scope) {
         videoID: "6A2V9Bu80J4", // moby - flower
         value: "3",
         name: "Moby - Flower",
-        description: "",
+        description: "Description Goes Here",
 
       },
       {
         videoID: "5wrwcEZ3Btw", // moby - in this world
         value: "4",
         name: "Moby - in this world",
-        description: "",
+        description: "Description Goes Here",
 
       },
     ];

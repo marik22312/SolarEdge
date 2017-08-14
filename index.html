@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Solar Edge</title>
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="lib/reset.css">
     <link rel="stylesheet" href="lib/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/stylesheet.min.css">
+
     <!-- AngularJS -->
     <script type="text/javascript" src="lib/angular.min.js"></script>
     <script type="text/javascript" src="lib/angular-route.min.js"></script>
@@ -24,8 +26,9 @@
         <span class="header_text">Monitoring Platform</span>
       </div>
     </header>
-    <ul class="categories row slider tab-bar bar-style-1">
-      <li class="category col-lg-2 col-lg-offset-1"><a href="#!improve">
+    <div id="menu-cont" class="categories">
+    <ul class="categories row slider tab-bar bar-style-1 col-lg-offset-1">
+      <li class="category col-lg-2"><a href="#!improve">
         <img src="images/category1_icon.svg" alt="icon1" class="category_img svg">
         <span class="category_text">Improve your lead generation</span>
       </a></li>
@@ -46,7 +49,7 @@
         <span class="category_text">effectively manage your fleet</span>
       </a></li>
     </ul>
-</div>
+    </div>
 <div id="main-view" ng-view></div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

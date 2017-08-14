@@ -6,8 +6,9 @@
     <div class="single-video" ng-repeat="video in videos" >
       <input ng-model="$parent.videoSwitch" type="radio" name="video" class="videoImg" value="{{video.videoID}}" ng-attr-id="{{video.videoID}}" >
     <label for="{{video.videoID}}">
-      <img ng-src="https://i.ytimg.com/vi/{{video.videoID}}/1.jpg" />
-      <span>{{video.name}}</span>
+      <img ng-src="https://i.ytimg.com/vi/{{video.videoID}}/1.jpg" title="{{video.name}}" />
+      <span class="video-name">{{video.name}}</span>
+      <span class="video-desc">{{video.description}}</span>
     </label>
     </div>
   </div>
