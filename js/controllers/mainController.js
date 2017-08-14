@@ -21,6 +21,10 @@ app.config(function($routeProvider) {
     })
     .when("/manage", {
         templateUrl : "./templates/manage.html"
-    });
+    })
+    .otherwise({
+      // default page
+      redirectTo: '/improve'
+  });
 
 });
