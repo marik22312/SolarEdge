@@ -1,19 +1,21 @@
 <div id="player-container">
-  <div class="videoPlayer">
-    <youtube-video video-id="selectedVideo.videoID"></youtube-video>
-    <videoName info=""></videoName>
-    <!-- TODO: added video name & Desc. -->
-  </div>
+
   <div id="video-chooser">
     <div class="single-video" ng-repeat="video in videos" >
-      <input ng-model="$parent.selectedVideo" type="radio" name="video" class="videoImg" value="{{video}}" ng-attr-id="{{video.videoID}}" >
+      <input ng-model="$parent.selectedVideo" type="radio" name="video" class="videoImg" ng-value="{{video}}" ng-attr-id="{{video.videoID}}" >
     <label for="{{video.videoID}}">
       <div class="label-cont">
       <img ng-src="https://i.ytimg.com/vi/{{video.videoID}}/1.jpg" title="{{video.name}}" />
-      <span class="video-name">{{video.name}}</span>
-      <span class="video-desc">{{video.description}}</span>
+        <span class="video-name">{{video.name}}</span>
+        <span class="video-desc">{{video.desc}}</span>
     </div>
     </label>
+    </div>
+    <div class="videoPlayer">
+      <youtube-video video-id="selectedVideo.videoID"></youtube-video>
+
+      <span class="selected-name">{{selectedVideo.name}}</span>
+      <span class="selected-desc">{{selectedVideo.desc}}</span>
     </div>
   </div>
 </div>
