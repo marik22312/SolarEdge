@@ -1,12 +1,12 @@
 <div id="player-container">
   <div class="videoPlayer">
-    <youtube-video video-id="videoSwitch"></youtube-video>
-    <videoName info="videoSwitch"></videoName>
+    <youtube-video video-id="selectedVideo.videoID"></youtube-video>
+    <videoName info=""></videoName>
     <!-- TODO: added video name & Desc. -->
   </div>
   <div id="video-chooser">
     <div class="single-video" ng-repeat="video in videos" >
-      <input ng-model="$parent.videoSwitch" type="radio" name="video" class="videoImg" value="{{video.videoID}}" ng-attr-id="{{video.videoID}}" >
+      <input ng-model="$parent.selectedVideo" type="radio" name="video" class="videoImg" value="{{video}}" ng-attr-id="{{video.videoID}}" >
     <label for="{{video.videoID}}">
       <div class="label-cont">
       <img ng-src="https://i.ytimg.com/vi/{{video.videoID}}/1.jpg" title="{{video.name}}" />
