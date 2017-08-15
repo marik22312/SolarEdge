@@ -1,7 +1,12 @@
 <div id="player-container">
   <div class="videoPlayer">
-    <youtube-video video-id="videoSwitch"></youtube-video>
+    <youtube-video video-id="selectedVideo.videoID"></youtube-video>
+    <div class="selec-video-info">
+      <span class="selected-name">{{selectedVideo.name}}</span>
+      <span class="selected-desc">{{selectedVideo.desc}}</span>
+    </div>
   </div>
+
   <div id="video-chooser">
     <div class="single-video" ng-repeat="video in videos" >
       <input ng-model="$parent.videoSwitch" type="radio" name="video" class="videoImg gone" value="{{video.videoID}}" ng-attr-id="{{video.videoID}}" >
@@ -15,5 +20,6 @@
     </div>
     </label>
     </div>
+
   </div>
 </div>
