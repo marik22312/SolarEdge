@@ -21,7 +21,13 @@
     <script type="text/javascript" src="lib/angular-youtube-video.js"></script>
   </head>
   <body ng-app="solarEdge">
-    <div class="container-fluid">
+    <!-- Loader -->
+    <div class="lds-css ng-scope" id="loader">
+      <div style="width:100%;height:100%" class="lds-eclipse">
+        <div></div>
+      </div>
+    </div>
+    <div class="container-fluid" id="mainCont" style="display:none;">
     <header>
       <div class="header row">
         <img src="images/logo.jpg" alt="solar_edge_logo" class="header_logo col-lg-offset-1 col-lg-2">
@@ -58,7 +64,7 @@
     <script src="lib/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="lib/bootstrap.min.js"></script>
-        <script type="text/javascript" src="script.js"></script>
+
         <!-- Cotrollers -->
         <script type="text/javascript" src="js/controllers/mainController.js"></script>
         <script type="text/javascript" src="js/controllers/improveCtrl.js"></script>
@@ -67,5 +73,6 @@
         <script type="text/javascript" src="js/controllers/saveCtrl.js"></script>
         <script type="text/javascript" src="js/controllers/speedCtrl.js"></script>
 
+        <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

@@ -60,3 +60,19 @@ jQuery('img.svg').each(function(){
           return $ele;
       }
       $(".slider").RegisterTabBar("slider1").find("li:first-child").click();
+
+      //loader
+
+var loader;
+$(document).ready(function() {
+  loader = setTimeout(showPage, 3000);
+
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("mainCont").style.display = "block";
+  }
+});
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("mainCont").style.display = "block";
+}
