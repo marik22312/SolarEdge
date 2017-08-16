@@ -1,6 +1,6 @@
 <!-- Loader -->
 
-<div id="player-container">
+<div id="player-container" ng-cloak>
   <div class="videoPlayer" ng-init="selectedVideo = videos[0]">
     <youtube-video video-id="selectedVideo.videoID"></youtube-video>
     <div class="selec-video-info">
@@ -11,7 +11,7 @@
 
   <div id="video-chooser">
     <div class="single-video" ng-repeat="video in videos" >
-      <input ng-model="$parent.selectedVideo" type="radio" name="video" class="videoImg" ng-value="{{video}}" ng-attr-id="{{video.videoID}}" >
+      <input ng-model="$parent.selectedVideo" type="radio" name="video" class="videoImg" ng-value="{{video}}" ng-attr-id="{{video.videoID}}" ng-data-isfirst="{{$first}}">
     <label for="{{video.videoID}}">
       <div class="label-cont">
       <img ng-src="https://i.ytimg.com/vi/{{video.videoID}}/1.jpg" title="{{video.name}}" />

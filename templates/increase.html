@@ -1,1 +1,27 @@
-<h1>Increase</h1>
+<div id="viewcontainer">
+  <div id="player-container" ng-cloak>
+    <div class="videoPlayer" ng-init="selectedVideo = videos[0]">
+      <youtube-video video-id="selectedVideo.videoID"></youtube-video>
+      <div class="selec-video-info">
+        <span class="selected-name">{{selectedVideo.name}}</span>
+        <span class="selected-desc">{{selectedVideo.desc}}</span>
+      </div>
+    </div>
+
+    <div id="video-chooser">
+      <div class="single-video" ng-repeat="video in videos" >
+        <input ng-model="$parent.selectedVideo" type="radio" name="video" class="videoImg" ng-value="{{video}}" ng-attr-id="{{video.videoID}}" ng-data-isfirst="{{$first}}">
+      <label for="{{video.videoID}}">
+        <div class="label-cont">
+        <img ng-src="https://i.ytimg.com/vi/{{video.videoID}}/1.jpg" title="{{video.name}}" />
+          <span class="video-name">{{video.name}}</span>
+          <span class="video-desc">{{video.desc}}</span>
+
+      </div>
+      </label>
+      </div>
+
+    </div>
+  </div>
+
+</div>

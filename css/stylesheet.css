@@ -151,7 +151,6 @@ li.category.active svg.category_img {
 }
 
 #video-chooser .video-name {
-  color: #cc0033;
   padding-left: 10px;
   padding-bottom: 10px;
   white-space: pre-line;
@@ -170,8 +169,8 @@ input[type="radio"] {
   display: none;
 }
 
-input[type="radio"]:checked + label {
-  background-color: #d8d8d8;
+input[type="radio"]:checked + label .label-cont .video-name {
+  color: #cc0033;
 }
 
 @keyframes lds-eclipse {

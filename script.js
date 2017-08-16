@@ -50,7 +50,7 @@ jQuery('img.svg').each(function(){
                               "right: " + ($ele.width() - $li.position().left - $li.outerWidth()) + "px; " +
                               "-webkit-transition: left " + (IsToLeft ? ".45s" : ".8s") + ", right " + (IsToLeft ? ".9s" : ".3s") + "; " +
                               "transition: left " + (IsToLeft ? ".45s" : ".8s") + ", right " + (IsToLeft ? ".9s" : ".3s") + "; " +
-                              // "margin-left: 13.333%" /* slider position fix */+ 
+                              // "margin-left: 13.333%" /* slider position fix */+
                           "} "
                       );
                   }
@@ -60,3 +60,19 @@ jQuery('img.svg').each(function(){
           return $ele;
       }
       $(".slider").RegisterTabBar("slider1").find("li:first-child").click();
+
+      //loader
+
+var loader;
+$(document).ready(function() {
+  loader = setTimeout(showPage, 3000);
+
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("mainCont").style.display = "block";
+  }
+});
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("mainCont").style.display = "block";
+}
