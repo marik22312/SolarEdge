@@ -131,7 +131,6 @@ li.category.active svg.category_img {
 #video-chooser .single-video {
   margin: 0 0 15px 5px;
   position: relative;
-  margin-bottom: 60px;
 }
 
 #video-chooser .video-text {
@@ -165,6 +164,14 @@ li.category.active svg.category_img {
 
 #video-chooser .gone {
   display: none;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #d8d8d8;
 }
 
 @keyframes lds-eclipse {

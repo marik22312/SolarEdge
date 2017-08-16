@@ -107,7 +107,6 @@ ul.tab-bar>li { position: relative; }
   .single-video{
     margin: 0 0 15px 5px;
     position: relative;
-    margin-bottom: 60px;
   }
   .video-text{
     width: 300px;
@@ -138,7 +137,13 @@ ul.tab-bar>li { position: relative; }
     display: none;
   }
 }
-
+// Video selector CSS
+input[type="radio"] {
+    display: none;
+    &:checked + label{
+      background-color: #d8d8d8;
+    }
+}
 // Loader
 @keyframes lds-eclipse {
   0% {
