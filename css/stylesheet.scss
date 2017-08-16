@@ -124,7 +124,6 @@ ul.tab-bar>li { position: relative; }
     overflow: hidden;
   }
     .video-name{
-      color: $redColor;
       padding-left: 10px;
       padding-bottom: 10px;
       white-space: pre-line;
@@ -141,7 +140,9 @@ ul.tab-bar>li { position: relative; }
 input[type="radio"] {
     display: none;
     &:checked + label{
-      background-color: #d8d8d8;
+      .label-cont {
+        .video-name{color: $redColor;}
+      }
     }
 }
 // Loader
