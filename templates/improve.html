@@ -1,5 +1,7 @@
+<!-- Loader -->
+
 <div id="player-container">
-  <div class="videoPlayer">
+  <div class="videoPlayer" ng-init="selectedVideo = videos[0]">
     <youtube-video video-id="selectedVideo.videoID"></youtube-video>
     <div class="selec-video-info">
       <span class="selected-name">{{selectedVideo.name}}</span>
@@ -9,14 +11,13 @@
 
   <div id="video-chooser">
     <div class="single-video" ng-repeat="video in videos" >
-      <input ng-model="$parent.videoSwitch" type="radio" name="video" class="videoImg gone" value="{{video.videoID}}" ng-attr-id="{{video.videoID}}" >
+      <input ng-model="$parent.selectedVideo" type="radio" name="video" class="videoImg" ng-value="{{video}}" ng-attr-id="{{video.videoID}}" >
     <label for="{{video.videoID}}">
       <div class="label-cont">
-      <img class="video-image" ng-src="https://i.ytimg.com/vi/{{video.videoID}}/1.jpg" title="{{video.name}}" />
-      <div class="video-text">
-      <span class="video-name">{{video.name}}</span><br />
-      <span class="video-desc">{{video.description}}lorem ipsum</span>
-      </div>
+      <img ng-src="https://i.ytimg.com/vi/{{video.videoID}}/1.jpg" title="{{video.name}}" />
+        <span class="video-name">{{video.name}}</span>
+        <span class="video-desc">{{video.desc}}</span>
+
     </div>
     </label>
     </div>
