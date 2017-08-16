@@ -1,5 +1,7 @@
+<!-- Loader -->
+
 <div id="player-container">
-  <div class="videoPlayer">
+  <div class="videoPlayer" ng-init="selectedVideo = videos[0]">
     <youtube-video video-id="selectedVideo.videoID"></youtube-video>
     <div class="selec-video-info">
       <span class="selected-name">{{selectedVideo.name}}</span>

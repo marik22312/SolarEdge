@@ -1,4 +1,4 @@
-app.controller("improveCtrl", function ($scope, $filter) {
+app.controller("improveCtrl", function ($scope) {
     $scope.videos = [
       {
         videoID: "atyvdC15HFA", //moby - eveloving
