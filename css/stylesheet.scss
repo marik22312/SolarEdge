@@ -1,4 +1,7 @@
 $redColor: #cc0033;
+#menu-cont > * {
+  // margin: auto;
+}
 li.category{
   a{
     text-decoration: none;
@@ -89,4 +92,12 @@ ul.tab-bar>li { position: relative; }
       padding-bottom: 50px;
     }
   }
+}
+
+/* content css */
+.videoPlayer {
+  display: inline-block;
+}
+#video-chooser{
+  display: inline-block;
 }

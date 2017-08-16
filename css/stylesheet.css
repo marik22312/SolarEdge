@@ -114,3 +114,12 @@ li.category.active svg.category_img {
   font-size: 17px;
   padding-bottom: 50px;
 }
+
+/* content css */
+.videoPlayer {
+  display: inline-block;
+}
+
+#video-chooser {
+  display: inline-block;
+}
