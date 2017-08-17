@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 li.category a {
   text-decoration: none;
 }
@@ -120,7 +124,7 @@ li.category.active svg.category_img {
 
 .categories .category .category_text {
   color: black;
-  font-size: 17px;
+  font-size: 14px;
   padding-bottom: 50px;
 }
 
