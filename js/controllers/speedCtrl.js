@@ -21,8 +21,8 @@ app.controller("speedCtrl", function ($scope) {
         desc: "Description Goes Here",
       },
       {
-        videoID: "The Beatles - Hey Jude",
-        name: "A_MjCqQoLLA",
+        videoID: "A_MjCqQoLLA",
+        name: "The Beatles - Hey Jude",
         desc: "Description Goes Here",
       },
       {
