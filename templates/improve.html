@@ -1,7 +1,10 @@
 <!-- Loader -->
 <div id="player-container" ng-cloak>
-  <div class="videoPlayer" ng-init="selectedVideo = videos[0]">
-    <youtube-video video-id="selectedVideo.videoID"></youtube-video>
+  <div class="videoPlayer" ng-init="selectedVideo = null">
+    <youtube-video ng-if="selectedVideo != null" video-id="selectedVideo.videoID"></youtube-video>
+    <div id="nullSelector" ng-if="selectedVideo == null">
+      Please select a video
+    </div>
     <div class="selec-video-info">
       <span class="selected-name">{{selectedVideo.name}}</span>
       <span class="selected-desc">{{selectedVideo.desc}}</span>
@@ -22,3 +25,15 @@
     </div>
   </div>
 </div>
+<script type="text/javascript">
+  $(document).ready(function() {
+    loader = setTimeout(showPage, 1000);
+    function showPage() {
+      $('#video-chooser .single-video:first').addClass('active');
+      $('.single-video').on('click', function() {
+        $('.single-video').removeClass('active');
+        $(this).addClass('active');
+      });
+    };
+  });
+</script>

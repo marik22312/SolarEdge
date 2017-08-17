@@ -1,30 +1,30 @@
-var app = angular.module("solarEdge", ["ngRoute","youtube-embed"]);
+var app = angular.module('solarEdge', ['ngRoute','youtube-embed']);
 // Router Config
 app.config(function($routeProvider) {
     $routeProvider
     .when("/", {
         templateUrl : "./templates/improve.html",
-        controller: "improveCtrl"
+        controller: "improveCtrl",
     })
     .when("/improve", {
         templateUrl : "./templates/improve.html",
-        controller: "improveCtrl"
+        controller: "improveCtrl",
     })
     .when("/increase", {
-        templateUrl : "./templates/increase.html",
-        controller: "increaseCtrl"
+        templateUrl : "./templates/improve.html",
+        controller: "increaseCtrl",
     })
     .when("/speed", {
-        templateUrl : "./templates/speed.html",
-        controller: "speedCtrl"
+        templateUrl : "./templates/improve.html",
+        controller: "speedCtrl",
     })
     .when("/save", {
-        templateUrl : "./templates/save.html",
-        controller: "saveCtrl"
+        templateUrl : "./templates/improve.html",
+        controller: "saveCtrl",
     })
     .when("/manage", {
-        templateUrl : "./templates/manage.html",
-        controller: "manageCtrl"
+        templateUrl : "./templates/improve.html",
+        controller: "manageCtrl",
     })
     .otherwise({
       // default page
