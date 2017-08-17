@@ -3,11 +3,11 @@ var app = angular.module('solarEdge', ['ngRoute','youtube-embed']);
 app.config(function($routeProvider) {
     $routeProvider
     .when("/", {
-        templateUrl : "./templates/improve.html",
+        templateUrl : "./templates/player.html",
         controller: "improveCtrl",
     })
     .when("/improve", {
-        templateUrl : "./templates/improve.html",
+        templateUrl : "./templates/player.html",
         controller: "improveCtrl",
     })
     .when("/increase", {
@@ -15,15 +15,15 @@ app.config(function($routeProvider) {
         controller: "increaseCtrl",
     })
     .when("/speed", {
-        templateUrl : "./templates/improve.html",
+        templateUrl : "./templates/player.html",
         controller: "speedCtrl",
     })
     .when("/save", {
-        templateUrl : "./templates/improve.html",
+        templateUrl : "./templates/player.html",
         controller: "saveCtrl",
     })
     .when("/manage", {
-        templateUrl : "./templates/improve.html",
+        templateUrl : "./templates/player.html",
         controller: "manageCtrl",
     })
     .otherwise({
