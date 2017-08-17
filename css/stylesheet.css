@@ -6,6 +6,12 @@ li.category a:active {
   text-decoration: none;
 }
 
+body {
+  overflow-x: hidden;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
 .row {
   width: 100%;
 }
@@ -82,7 +88,7 @@ li.category.active svg.category_img {
 }
 
 .categories {
-  height: 220px;
+  height: 170px;
   display: inline-block;
   width: 100%;
   border-bottom: 1px #dddddd solid;
@@ -92,8 +98,7 @@ li.category.active svg.category_img {
 .categories .category {
   display: inline-block;
   max-height: 220px;
-  padding: 45px;
-  padding-top: 20px;
+  padding: 50px;
 }
 
 .categories .category:active .category_text {
@@ -131,7 +136,7 @@ li.category.active svg.category_img {
   vertical-align: top;
   padding-left: 5%;
   max-width: 30%;
-  max-height: 80vh;
+  max-height: 65vh;
   overflow-y: scroll;
   direction: ltr;
 }
