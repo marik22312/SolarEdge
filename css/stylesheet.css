@@ -96,12 +96,12 @@ li.category.active svg.category_img {
   padding-top: 20px;
 }
 
-.categories .category:hover .category_text {
+.categories .category:active .category_text {
   color: #cc0033;
 }
 
-.categories .category:hover .svg path {
-  fill: #cc0033;
+.categories .category:active .category_img {
+  fill: currentColor;
 }
 
 .categories .category .category_img {
@@ -111,6 +111,7 @@ li.category.active svg.category_img {
   color: black;
   width: 116px;
   height: 116px;
+  fill: #cc0033;
 }
 
 .categories .category .category_text {
@@ -170,7 +171,6 @@ li.category.active svg.category_img {
 }
 
 #video-chooser .video-name {
-  text-align: top;
   display: block;
 }
 
@@ -197,6 +197,10 @@ li.category.active svg.category_img {
 .selec-video-info .selected-desc {
   color: black;
   font-size: 15px;
+}
+
+.active .video-name {
+  color: #cc0033;
 }
 
 input[type="radio"] {
@@ -237,7 +241,9 @@ input[type="radio"]:checked + label .label-cont .video-name {
   }
 }
 
-.lds-eclipse {
+.lds-css {
+  width: 100vw;
+  height: 100vh;
   position: relative;
 }
 
@@ -247,12 +253,12 @@ input[type="radio"]:checked + label .label-cont .video-name {
   animation: lds-eclipse 1s linear infinite;
   width: 160px;
   height: 160px;
-  top: 20px;
-  left: 20px;
   border-radius: 50%;
   box-shadow: 0 6px 0 0 #cc0033;
   -webkit-transform-origin: 80px 83px;
   transform-origin: 80px 83px;
+  top: 130%;
+  left: 340%;
 }
 
 .lds-eclipse {
