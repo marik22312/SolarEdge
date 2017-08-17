@@ -66,13 +66,20 @@ jQuery('img.svg').each(function(){
 var loader;
 $(document).ready(function() {
   loader = setTimeout(showPage, 3000);
-
+  $("#video-chooser").niceScroll({
+    cursorcolor:"#cc0033",
+    });
   function showPage() {
     document.getElementById("loader").style.display = "none";
     document.getElementById("mainCont").style.display = "block";
-  }
-});
 function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("mainCont").style.display = "block";
-}
+};
+};
+$('#video-chooser .single-video:first').addClass('active');
+$('.single-video').on('click', function(){
+    $('.single-video').removeClass('active');
+    $(this).addClass('active');
+});
+});
