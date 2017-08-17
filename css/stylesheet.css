@@ -6,6 +6,10 @@ li.category a:active {
   text-decoration: none;
 }
 
+.row {
+  width: 100%;
+}
+
 header {
   max-height: 90px;
   width: 100%;
@@ -159,11 +163,6 @@ li.category.active svg.category_img {
 
 #video-chooser .video-text {
   vertical-align: top;
-}
-
-#video-chooser .video-image {
-  height: 100px;
-  object-fit: cover;
 }
 
 #video-chooser .video-name {

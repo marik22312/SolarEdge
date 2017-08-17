@@ -8,6 +8,9 @@ li.category{
     &:active {text-decoration: none;}
   }
 }
+.row{
+  width: 100%;
+}
 header{
   max-height: 90px;
   width: 100%;
@@ -128,10 +131,6 @@ ul.tab-bar>li { position: relative; }
   }
   .video-text{
     vertical-align: top;
-  }
-  .video-image{
-    height: 100px;
-    object-fit: cover;
   }
     .video-name{
     display: block;
