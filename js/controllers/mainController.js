@@ -11,7 +11,7 @@ app.config(function($routeProvider) {
         controller: "improveCtrl",
     })
     .when("/increase", {
-        templateUrl : "./templates/improve.html",
+        templateUrl : "./templates/player.html",
         controller: "increaseCtrl",
     })
     .when("/speed", {
