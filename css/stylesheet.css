@@ -10,6 +10,16 @@ li.category a:active {
   text-decoration: none;
 }
 
+body {
+  overflow-x: hidden;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+.row {
+  width: 100%;
+}
+
 header {
   max-height: 90px;
   width: 100%;
@@ -82,7 +92,7 @@ li.category.active svg.category_img {
 }
 
 .categories {
-  height: 220px;
+  height: 170px;
   display: inline-block;
   width: 100%;
   border-bottom: 1px #dddddd solid;
@@ -92,25 +102,24 @@ li.category.active svg.category_img {
 .categories .category {
   display: inline-block;
   max-height: 220px;
-  padding: 45px;
-  padding-top: 20px;
+  padding: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-.categories .category:hover .category_text {
+.categories .category:active .category_text {
   color: #cc0033;
 }
 
-.categories .category:hover .svg path {
-  fill: #cc0033;
+.categories .category:active .category_img {
+  fill: currentColor;
 }
 
 .categories .category .category_img {
   display: block;
-  padding-bottom: 20px;
-  padding-left: 20px;
   color: black;
-  width: 116px;
-  height: 116px;
+  height: 88px;
+  fill: #cc0033;
 }
 
 .categories .category .category_text {
@@ -130,7 +139,7 @@ li.category.active svg.category_img {
   vertical-align: top;
   padding-left: 5%;
   max-width: 30%;
-  max-height: 80vh;
+  max-height: 60vh;
   overflow-y: scroll;
   direction: ltr;
 }
@@ -164,13 +173,7 @@ li.category.active svg.category_img {
   vertical-align: top;
 }
 
-#video-chooser .video-image {
-  height: 100px;
-  object-fit: cover;
-}
-
 #video-chooser .video-name {
-  text-align: top;
   display: block;
 }
 
@@ -197,6 +200,10 @@ li.category.active svg.category_img {
 .selec-video-info .selected-desc {
   color: black;
   font-size: 15px;
+}
+
+.active .video-name {
+  color: #cc0033;
 }
 
 input[type="radio"] {
@@ -237,7 +244,9 @@ input[type="radio"]:checked + label .label-cont .video-name {
   }
 }
 
-.lds-eclipse {
+.lds-css {
+  width: 100vw;
+  height: 100vh;
   position: relative;
 }
 
@@ -247,12 +256,12 @@ input[type="radio"]:checked + label .label-cont .video-name {
   animation: lds-eclipse 1s linear infinite;
   width: 160px;
   height: 160px;
-  top: 20px;
-  left: 20px;
   border-radius: 50%;
   box-shadow: 0 6px 0 0 #cc0033;
   -webkit-transform-origin: 80px 83px;
   transform-origin: 80px 83px;
+  top: 130%;
+  left: 340%;
 }
 
 .lds-eclipse {
