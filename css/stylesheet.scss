@@ -2,6 +2,10 @@ $redColor: #cc0033;
 #menu-cont > * {
   // margin: auto;
 }
+//patch
+body {
+  overflow-x:hidden;
+}
 li.category{
   a{
     text-decoration: none;
@@ -91,7 +95,7 @@ ul.tab-bar>li { position: relative; }
     }
     .category_text{
       color: black;
-      font-size: 17px;
+      font-size: 14px;
       padding-bottom: 50px;
     }
   }
