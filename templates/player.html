@@ -1,13 +1,16 @@
 <!-- Loader -->
-<div id="player-container" ng-cloak>
-  <div class="videoPlayer" ng-init="selectedVideo = videos[0]">
-    <youtube-video video-id="selectedVideo.videoID"></youtube-video>
+<div id="player-container" class="col-lg-10 col-lg-offset-1" ng-cloak>
+  <div class="videoPlayer col-lg-8" ng-init="selectedVideo = null">
+    <youtube-video ng-if="selectedVideo != null" video-id="selectedVideo.videoID"></youtube-video>
+    <div id="nullSelector" ng-if="selectedVideo == null">
+      Please select a video
+    </div>
     <div class="selec-video-info">
       <span class="selected-name">{{selectedVideo.name}}</span>
       <span class="selected-desc">{{selectedVideo.desc}}</span>
     </div>
   </div>
-  <div id="video-chooser">
+  <div id="video-chooser" class="col-lg-4">
     <div class="single-video" ng-repeat="video in videos" >
       <input ng-model="$parent.selectedVideo" type="radio" name="video" class="videoImg" ng-value="{{video}}" ng-attr-id="{{video.videoID}}" ng-data-isfirst="{{$first}}">
     <label for="{{video.videoID}}" class="row">
