@@ -99,6 +99,8 @@ li.category.active svg.category_img {
   display: inline-block;
   max-height: 220px;
   padding: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .categories .category:active .category_text {
@@ -111,11 +113,8 @@ li.category.active svg.category_img {
 
 .categories .category .category_img {
   display: block;
-  padding-bottom: 20px;
-  padding-left: 20px;
   color: black;
-  width: 116px;
-  height: 116px;
+  height: 88px;
   fill: #cc0033;
 }
 
@@ -136,7 +135,7 @@ li.category.active svg.category_img {
   vertical-align: top;
   padding-left: 5%;
   max-width: 30%;
-  max-height: 65vh;
+  max-height: 60vh;
   overflow-y: scroll;
   direction: ltr;
 }

@@ -76,6 +76,8 @@ ul.tab-bar>li { position: relative; }
     display: inline-block;
     max-height: 220px;
     padding: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
     &:active{
       .category_text{
         color: $redColor;
@@ -86,11 +88,8 @@ ul.tab-bar>li { position: relative; }
     }
     .category_img{
     display: block;
-    padding-bottom: 20px;
-    padding-left: 20px;
     color: black;
-    width: 116px;
-    height: 116px;
+    height: 88px;
     fill: $redColor;
     }
     .category_text{
@@ -110,7 +109,7 @@ ul.tab-bar>li { position: relative; }
   vertical-align: top;
   padding-left: 5%;
   max-width: 30%;
-  max-height: 65vh;
+  max-height: 60vh;
   overflow-y: scroll;
   direction:ltr;
   &::-webkit-scrollbar {
