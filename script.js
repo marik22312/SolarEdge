@@ -66,8 +66,6 @@ $.fn.RegisterTabBar = function(id) {
 }
 $(".slider").RegisterTabBar("slider1").find("li:first-child").click();
 
-//loader
-
 var loader;
 $(document).ready(function() {
   loader = setTimeout(showPage, 1000);
@@ -78,5 +76,5 @@ $(document).ready(function() {
     });
     document.getElementById("loader").style.display = "none";
     document.getElementById("mainCont").style.display = "block";
-  };
+};
 });
