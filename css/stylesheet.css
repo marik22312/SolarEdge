@@ -1,5 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 body {
   overflow-x: hidden;
+}
+
+body * {
+  font-family: 'Open Sans', sans-serif;
 }
 
 li.category a {
@@ -125,6 +130,8 @@ li.category.active svg.category_img {
 
 .categories .category .category_text {
   color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
   font-size: 14px;
   padding-bottom: 50px;
 }
@@ -272,4 +279,60 @@ input[type="radio"]:checked + label .label-cont .video-name {
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.arrow_box {
+  position: relative;
+  background: #d31316;
+  border: 2px solid #ffffff;
+  color: white;
+  font-weight: bold;
+  animation-name: arrow_box;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes arrow_box {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: 50px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+.arrow_box:after, .arrow_box:before {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.arrow_box:after {
+  border-color: rgba(211, 19, 22, 0);
+  border-left-color: #d31316;
+  border-width: 30px;
+  margin-top: -30px;
+}
+
+.arrow_box:before {
+  border-color: rgba(255, 255, 255, 0);
+  border-left-color: #ffffff;
+  border-width: 33px;
+  margin-top: -33px;
 }
