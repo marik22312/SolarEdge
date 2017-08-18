@@ -1,44 +1,51 @@
+/**
+* SolarEdge Video Selector
+* Version: 1.0
+* Developed By Marik Sh & Asaf Hadad
+* Controler For: Increase Category
+*/
+
 app.controller("increaseCtrl", function ($scope) {
     $scope.videos = [
       {
-        videoID: "ub747pprmJ8",
-        name: "Fatboyslim - Right here, right now",
-        desc: "Description Goes Here",
+        videoID: "ub747pprmJ8", //Youtube Video ID
+        name: "Fatboyslim - Right here, right now", //Video Name
+        desc: "Description Goes Here", //Video Description
       },
       {
-        videoID: "so9DBHCo64Q",
-        name: "Fatboyslim - Push the tempo",
-        desc: "Moby - Porcelain",
+        videoID: "so9DBHCo64Q", //Youtube Video ID
+        name: "Fatboyslim - Push the tempo", //Video Name
+        desc: "Moby - Porcelain", //Video Description
       },
       {
-        videoID: "SBClImpnfAg",
-        name: "Fatboyslim - Rockafeller Skank",
-        desc: "Description Goes Here",
+        videoID: "SBClImpnfAg", //Youtube Video ID
+        name: "Fatboyslim - Rockafeller Skank", //Video Name
+        desc: "Description Goes Here", //Video Description
       },
       {
-        videoID: "Ex1qzIggZnA",
-        name: "Fatboyslim - Praise You",
-        desc: "Description Goes Here",
+        videoID: "Ex1qzIggZnA", //Youtube Video ID
+        name: "Fatboyslim - Praise You", //Video Name
+        desc: "Description Goes Here", //Video Description
       },
       {
-        videoID: "wCDIYvFmgW8",
-        name: "Fatboy Slim - Weapon Of Choice",
-        desc: "Description Goes Here",
+        videoID: "wCDIYvFmgW8", //Youtube Video ID
+        name: "Fatboy Slim - Weapon Of Choice", //Video Name
+        desc: "Description Goes Here", //Video Description
       },
       {
-        videoID: "u5ZUshzhMtc",
-        name: "Fatboy Slim - Don't Let The Man Get You Down",
-        desc: "Description Goes Here",
+        videoID: "u5ZUshzhMtc", //Youtube Video ID
+        name: "Fatboy Slim - Don't Let The Man Get You Down", //Video Name
+        desc: "Description Goes Here", //Video Description
       },
       {
-        videoID: "wBoRkg5-Ieg",
-        name: "Fatboy Slim - Eat sleep rave repeat",
-        desc: "Description Goes Here",
+        videoID: "wBoRkg5-Ieg", //Youtube Video ID
+        name: "Fatboy Slim - Eat sleep rave repeat", //Video Name
+        desc: "Description Goes Here", //Video Description
       },
       {
-        videoID: "zKEWdRPRf3I",
-        name: "Fatboy Slim - Sunset",
-        desc: "Description Goes Here",
+        videoID: "zKEWdRPRf3I", //Youtube Video ID
+        name: "Fatboy Slim - Sunset", //Video Name
+        desc: "Description Goes Here", //Video Description
       }
     ];
 });

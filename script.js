@@ -70,10 +70,9 @@ var loader;
 $(document).ready(function() {
   loader = setTimeout(showPage, 1000);
   function showPage() {
-    $('#video-chooser .single-video:first').addClass('active');
-    $('.single-video').on('click', function(){
-        $('.single-video').removeClass('active');
-        $(this).addClass('active');
+    $('.single-video').on('click', function() {
+      $('.single-video').removeClass('active');
+      $(this).addClass('active');
     });
     document.getElementById("loader").style.display = "none";
     document.getElementById("mainCont").style.display = "block";

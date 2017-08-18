@@ -1,10 +1,14 @@
 $redColor: #cc0033;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 #menu-cont > * {
   // margin: auto;
 }
 //patch
 body {
   overflow-x:hidden;
+  * {
+    font-family: 'Open Sans', sans-serif;
+  }
 }
 li.category{
   a{
@@ -27,6 +31,7 @@ header{
   .header{
     .header_logo{
       border-right: 1px #dddddd solid;
+      padding-top: 15px;
     }
     .header_text{
       font-size: 40px;
@@ -39,6 +44,7 @@ header{
 }
 .container-fluid{
   padding-right: 0px;
+  padding-left: 0px;
 }
 ul.tab-bar,
 ul.tab-bar>li { position: relative; }
@@ -87,7 +93,7 @@ ul.tab-bar>li { position: relative; }
         color: $redColor;
       }
       .category_img {
-        fill: currentColor;
+        fill: $redColor;
       }
     }
     .category_img{
@@ -98,6 +104,8 @@ ul.tab-bar>li { position: relative; }
     }
     .category_text{
       color: black;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
       font-size: 14px;
       padding-bottom: 50px;
     }
@@ -106,12 +114,10 @@ ul.tab-bar>li { position: relative; }
 /* content css */
 .videoPlayer {
   display: inline-block;
-  padding-left: 10%;
 }
 #video-chooser{
   display: inline-block;
   vertical-align: top;
-  padding-left: 5%;
   max-width: 30%;
   max-height: 60vh;
   overflow-y: scroll;
@@ -233,4 +239,47 @@ input[type="radio"] {
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
     display: none !important;
+}
+
+//arrow box
+.right {float:right}
+.left {float:left}
+.arrow_box {
+	position: relative;
+	background: #d31316;
+	border: 2px solid #ffffff;
+  color: white;
+  font-weight: bold;
+  animation-name: arrow_box;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+}
+   @keyframes arrow_box {
+     0% {right: 0;}
+     50% {right: 50px;}
+     100% {right: 0;}
+
+   }
+.arrow_box:after, .arrow_box:before {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(211, 19, 22, 0);
+	border-left-color: #d31316;
+	border-width: 30px;
+	margin-top: -30px;
+}
+.arrow_box:before {
+	border-color: rgba(255, 255, 255, 0);
+	border-left-color: #ffffff;
+	border-width: 33px;
+	margin-top: -33px;
 }
