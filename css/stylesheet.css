@@ -179,6 +179,9 @@ li.category.active svg.category_img {
 
 #video-chooser .video-text {
   vertical-align: top;
+  max-width: 222px;
+  max-height: 60px;
+  overflow: hidden;
 }
 
 #video-chooser .video-name {
