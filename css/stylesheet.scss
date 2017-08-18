@@ -31,6 +31,7 @@ header{
   .header{
     .header_logo{
       border-right: 1px #dddddd solid;
+      padding-top: 15px;
     }
     .header_text{
       font-size: 40px;
@@ -92,7 +93,7 @@ ul.tab-bar>li { position: relative; }
         color: $redColor;
       }
       .category_img {
-        fill: currentColor;
+        fill: $redColor;
       }
     }
     .category_img{
@@ -104,7 +105,7 @@ ul.tab-bar>li { position: relative; }
     .category_text{
       color: black;
       font-family: 'Open Sans', sans-serif;
-      font-weight: bold;
+      font-weight: 600;
       font-size: 14px;
       padding-bottom: 50px;
     }
