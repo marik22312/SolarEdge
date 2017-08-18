@@ -114,12 +114,12 @@ li.category.active svg.category_img {
   padding-bottom: 0;
 }
 
-.categories .category:active .category_text {
-  color: #cc0033;
+.categories .category .bicon {
+  display: block !important;
 }
 
-.categories .category:active .category_img {
-  fill: #cc0033;
+.categories .category .ricon {
+  display: none !important;
 }
 
 .categories .category .category_img {
@@ -136,6 +136,22 @@ li.category.active svg.category_img {
   font-weight: 600;
   font-size: 14px;
   padding-bottom: 50px;
+}
+
+.categories .active .category_text {
+  color: #cc0033;
+}
+
+.categories .active .category_img {
+  fill: #cc0033;
+}
+
+.categories .active .bicon {
+  display: none !important;
+}
+
+.categories .active .ricon {
+  display: block !important;
 }
 
 /* content css */

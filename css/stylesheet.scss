@@ -88,13 +88,11 @@ ul.tab-bar>li { position: relative; }
     padding: 50px;
     padding-top: 0;
     padding-bottom: 0;
-    &:active{
-      .category_text{
-        color: $redColor;
-      }
-      .category_img {
-        fill: $redColor;
-      }
+    .bicon{
+      display: block !important;
+    }
+    .ricon{
+      display: none !important;
     }
     .category_img{
     display: block;
@@ -109,6 +107,20 @@ ul.tab-bar>li { position: relative; }
       font-weight: 600;
       font-size: 14px;
       padding-bottom: 50px;
+    }
+  }
+  .active{
+    .category_text{
+      color: $redColor;
+    }
+    .category_img {
+      fill: $redColor;
+    }
+    .bicon{
+      display: none !important;
+    }
+    .ricon{
+    display: block !important;
     }
   }
 }
