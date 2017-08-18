@@ -3,7 +3,10 @@
   <div class="videoPlayer col-lg-8" ng-init="selectedVideo = null">
     <youtube-video ng-if="selectedVideo != null" video-id="selectedVideo.videoID"></youtube-video>
     <div id="nullSelector" ng-if="selectedVideo == null">
-      Please select a video
+
+      <div class="arrow_box col-lg-4 right">
+        Please select a video From The List On
+      </div>
     </div>
     <div class="selec-video-info">
       <span class="selected-name">{{selectedVideo.name}}</span>
