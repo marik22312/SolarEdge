@@ -101,6 +101,7 @@ ul.tab-bar>li { position: relative; }
     color: black;
     height: 88px;
     fill: $redColor;
+    padding-left: 20px;
     }
     .category_text{
       color: black;
@@ -149,7 +150,8 @@ ul.tab-bar>li { position: relative; }
     display: block;
     }
     .video-desc{
-      text-align: justify;
+      color: #A9A9A9;
+      font-size: 12px;
     }
   .gone{
     display: none;
