@@ -33,6 +33,7 @@ header {
 
 header .header .header_logo {
   border-right: 1px #dddddd solid;
+  padding-top: 15px;
 }
 
 header .header .header_text {
@@ -118,7 +119,7 @@ li.category.active svg.category_img {
 }
 
 .categories .category:active .category_img {
-  fill: currentColor;
+  fill: #cc0033;
 }
 
 .categories .category .category_img {
@@ -131,7 +132,7 @@ li.category.active svg.category_img {
 .categories .category .category_text {
   color: black;
   font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 14px;
   padding-bottom: 50px;
 }
