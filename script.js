@@ -73,8 +73,10 @@ $(document).ready(function() {
     $('.single-video').on('click', function() {
       $('.single-video').removeClass('active');
       $(this).addClass('active');
+      console.log('Added Class Active');
     });
     document.getElementById("loader").style.display = "none";
     document.getElementById("mainCont").style.display = "block";
+    console.log('DEBUG: showPage() Initiated!');
 };
 });

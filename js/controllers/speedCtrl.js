@@ -6,6 +6,24 @@
 */
 
 app.controller("speedCtrl", function ($scope) {
+  $scope.playerVars = {
+    controls: 0,
+    autoplay: 1,
+    disablekb: 1
+};
+  $scope.$on('youtube.player.ended', function ($event, mainPlayer) {
+    // play it again
+    $('#nullSelector').fadeIn()
+    console.log('DEBUG: Video ended');
+  });
+  $scope.$on('youtube.player.playing', function ($event, mainPlayer) {
+    // play it again
+    $('#nullSelector').fadeOut();
+    console.log('DEBUG: Video Playing!');
+  });
+  $scope.hideNull = function(){
+    $('#nullSelector').fadeOut()
+  };
     $scope.videos = [
       {
         videoID: "VJDJs9dumZI", // Youtube Video ID
@@ -53,4 +71,10 @@ app.controller("speedCtrl", function ($scope) {
         desc: "Description Goes Here", // Video Description
       },
     ];
+    $scope.init = function(video){
+      $('.single-video').first().addClass('active');
+      $scope.selectedVideo = video;
+      console.log('DEBUG: Active Added');
+      console.log('DEBUG: Speed Loaded');
+    };
 });

@@ -303,6 +303,10 @@ input[type="radio"]:checked + label .label-cont .video-name {
   display: none !important;
 }
 
+#nullSelector {
+  display: none;
+}
+
 .right {
   float: right;
 }
