@@ -13,8 +13,7 @@ body {
 li.category{
   a{
     text-decoration: none;
-    &:active {text-decoration: none;}
-  }
+    }
 }
 body{
   overflow-x: hidden;
@@ -31,7 +30,10 @@ header{
   .header{
     .header_logo{
       border-right: 1px #dddddd solid;
-      padding-top: 15px;
+      padding: 15px;
+      height: 60px;
+      width: auto;
+      padding-right: 40px;
     }
     .header_text{
       font-size: 40px;
@@ -99,7 +101,11 @@ ul.tab-bar>li { position: relative; }
     color: black;
     height: 88px;
     fill: $redColor;
-    padding-left: 20px;
+    padding-left: 45px;
+    height: 60px;
+    width: auto;
+    margin-top: 25px;
+    padding-bottom: 10px;
     }
     .category_text{
       color: black;
@@ -128,6 +134,9 @@ ul.tab-bar>li { position: relative; }
 .videoPlayer {
   display: inline-block;
 }
+#videoPlayer{
+  width: 90%;
+}
 #video-chooser{
   display: inline-block;
   vertical-align: top;
@@ -155,6 +164,9 @@ ul.tab-bar>li { position: relative; }
   .single-video{
     margin: 0 0 15px 5px;
   }
+  .video-image{
+    padding: 0;
+  }
   .video-text{
     vertical-align: top;
     max-width: 222px;
@@ -178,12 +190,12 @@ ul.tab-bar>li { position: relative; }
   color: $redColor;
   display: block;
   font-size: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 4px;
   padding-top: 10px
   }
   .selected-desc{
-  color: black;
-  font-size: 15px;
+  color: #A9A9A9;
+  font-size: 12px;
   }
 }
 .active{
@@ -257,13 +269,19 @@ input[type="radio"] {
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
     display: none !important;
 }
-
+#player-container{
+  position: relative;
+}
 //arrow box
-#nullSelector{display: none;}
+#nullSelector{
+  display: none;
+  position: absolute;
+  width: 95%;
+  top: 15px;
+}
 .right {float:right}
 .left {float:left}
 .arrow_box {
-	position: relative;
 	background: #d31316;
 	border: 2px solid #ffffff;
   color: white;
