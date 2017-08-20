@@ -79,3 +79,5 @@ app.controller("improveCtrl", function ($scope) {
       console.log('DEBUG: Improve Loaded');
     };
 });
+
+// function(){$('.single-video').first().addClass('active');}

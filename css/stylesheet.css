@@ -36,7 +36,7 @@ header .header .header_logo {
 }
 
 header .header .header_text {
-  font-size: 40px;
+  font-size: 25px;
   color: black;
   padding-left: 20px;
   padding-top: 7px;
@@ -126,9 +126,9 @@ li.category.active svg.category_img {
   color: black;
   height: 88px;
   fill: #cc0033;
-  padding-left: 45px;
   height: 60px;
   width: auto;
+  margin: auto;
   margin-top: 25px;
   padding-bottom: 10px;
 }
@@ -137,7 +137,7 @@ li.category.active svg.category_img {
   color: black;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   padding-bottom: 50px;
 }
 
