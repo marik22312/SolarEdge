@@ -11,10 +11,6 @@ li.category a {
   text-decoration: none;
 }
 
-li.category a:active {
-  text-decoration: none;
-}
-
 body {
   overflow-x: hidden;
   max-height: 100vh;
@@ -33,7 +29,10 @@ header {
 
 header .header .header_logo {
   border-right: 1px #dddddd solid;
-  padding-top: 15px;
+  padding: 15px;
+  height: 60px;
+  width: auto;
+  padding-right: 40px;
 }
 
 header .header .header_text {
@@ -127,7 +126,11 @@ li.category.active svg.category_img {
   color: black;
   height: 88px;
   fill: #cc0033;
-  padding-left: 20px;
+  padding-left: 45px;
+  height: 60px;
+  width: auto;
+  margin-top: 25px;
+  padding-bottom: 10px;
 }
 
 .categories .category .category_text {
@@ -157,6 +160,10 @@ li.category.active svg.category_img {
 /* content css */
 .videoPlayer {
   display: inline-block;
+}
+
+#videoPlayer {
+  width: 90%;
 }
 
 #video-chooser {
@@ -193,6 +200,10 @@ li.category.active svg.category_img {
   margin: 0 0 15px 5px;
 }
 
+#video-chooser .video-image {
+  padding: 0;
+}
+
 #video-chooser .video-text {
   vertical-align: top;
   max-width: 222px;
@@ -221,13 +232,13 @@ li.category.active svg.category_img {
   color: #cc0033;
   display: block;
   font-size: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 4px;
   padding-top: 10px;
 }
 
 .selec-video-info .selected-desc {
-  color: black;
-  font-size: 15px;
+  color: #A9A9A9;
+  font-size: 12px;
 }
 
 .active .video-name {
@@ -303,8 +314,15 @@ input[type="radio"]:checked + label .label-cont .video-name {
   display: none !important;
 }
 
+#player-container {
+  position: relative;
+}
+
 #nullSelector {
   display: none;
+  position: absolute;
+  width: 95%;
+  top: 15px;
 }
 
 .right {
@@ -316,7 +334,6 @@ input[type="radio"]:checked + label .label-cont .video-name {
 }
 
 .arrow_box {
-  position: relative;
   background: #d31316;
   border: 2px solid #ffffff;
   color: white;
