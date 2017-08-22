@@ -64,7 +64,7 @@ $.fn.RegisterTabBar = function(id) {
   }
   return $ele;
 }
-$(".slider").RegisterTabBar("slider1").find("li:first-child").click();
+$(".slider").RegisterTabBar("slider1").find("li:first-child").ready();
 
 var loader;
 $(document).ready(function() {
