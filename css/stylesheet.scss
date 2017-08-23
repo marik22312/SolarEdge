@@ -168,7 +168,7 @@ ul.tab-bar>li { position: relative; }
   .video-info{
     vertical-align: top;
     max-width: 222px;
-    max-height: 60px;
+    max-height: 100px;
     overflow: hidden;
   }
     .video-name{
@@ -178,6 +178,7 @@ ul.tab-bar>li { position: relative; }
     margin-bottom: 20px;
     }
     .video-desc{
+      display: block;
       color: #333333;
       font-size: 14px;
     }
