@@ -18,15 +18,7 @@ li.category{
     text-decoration: none;
     }
 }
-@media screen and (max-width: 768px) {
-body{
-  max-height: none;
-  max-width: none;
-}
-.categories{
-  max-height: 80px;
-}
-}
+
 .row{
   width: 100%;
 }
@@ -328,4 +320,13 @@ input[type="radio"] {
 	border-left-color: #ffffff;
 	border-width: 33px;
 	margin-top: -33px;
+}
+@media screen and (max-width: 768px) {
+body{
+  max-height: none;
+  max-width: none;
+}
+.categories{
+  max-height: 80px;
+}
 }
