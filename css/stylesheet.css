@@ -18,13 +18,6 @@ li.category a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    max-height: none;
-    max-width: none;
-  }
-}
-
 .row {
   width: 100%;
 }
@@ -54,6 +47,10 @@ header .header_text {
 .container-fluid {
   padding-right: 0px;
   padding-left: 0px;
+}
+
+#menu-cont {
+  background-color: #f7f7f7;
 }
 
 ul.tab-bar,
@@ -110,7 +107,6 @@ li.category.active svg.category_img {
   display: inline-block;
   width: 100%;
   border-bottom: 1px #dddddd solid;
-  background-color: #f7f7f7;
 }
 
 .categories .category {
@@ -390,6 +386,16 @@ input[type="radio"]:checked + label .label-cont .video-name {
   margin-top: -33px;
 }
 
+
+@media screen and (max-width: 768px) {
+  body {
+    max-height: none;
+    max-width: none;
+  }
+  .categories {
+    max-height: 80px;
+  }
+}
 .player-container {
   position: relative;
   width: 100%;
@@ -403,4 +409,5 @@ input[type="radio"]:checked + label .label-cont .video-name {
   left: 0;
   width: 100%;
   height: 100%;
-}
+  }
+

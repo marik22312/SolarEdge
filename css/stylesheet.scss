@@ -18,12 +18,7 @@ li.category{
     text-decoration: none;
     }
 }
-@media screen and (max-width: 768px) {
-body{
-  max-height: none;
-  max-width: none;
-}
-}
+
 .row{
   width: 100%;
 }
@@ -49,6 +44,9 @@ header{
 .container-fluid{
   padding-right: 0px;
   padding-left: 0px;
+}
+#menu-cont{
+  background-color: #f7f7f7;
 }
 ul.tab-bar,
 ul.tab-bar>li { position: relative; }
@@ -85,7 +83,6 @@ ul.tab-bar>li { position: relative; }
   display: inline-block;
   width: 100%;
   border-bottom: 1px #dddddd solid;
-  background-color: #f7f7f7;
   .category{
     display: inline-block;
     max-height: 220px;
@@ -322,6 +319,16 @@ input[type="radio"] {
 	border-left-color: #ffffff;
 	border-width: 33px;
 	margin-top: -33px;
+}
+
+@media screen and (max-width: 768px) {
+body{
+  max-height: none;
+  max-width: none;
+}
+.categories{
+  max-height: 80px;
+}
 }
 
 //Embed Player Resbonsive
