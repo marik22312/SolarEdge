@@ -397,6 +397,12 @@ input[type="radio"]:checked + label .label-cont .video-name {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .categories {
+    max-height: 96px;
+  }
+}
+
 .player-container {
   position: relative;
   width: 100%;
