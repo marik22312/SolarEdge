@@ -7,6 +7,8 @@ $redColor: #cc0033;
 //patch
 body {
   overflow-x:hidden;
+  max-height: 100vh;
+  max-width: 100vw;
   * {
     font-family: 'Open Sans', sans-serif;
   }
@@ -16,10 +18,11 @@ li.category{
     text-decoration: none;
     }
 }
+@media screen and (max-width: 768px) {
 body{
-  overflow-x: hidden;
-  max-height: 100vh;
-  max-width: 100vw;
+  max-height: none;
+  max-width: none;
+}
 }
 .row{
   width: 100%;

@@ -6,6 +6,8 @@
 
 body {
   overflow-x: hidden;
+  max-height: 100vh;
+  max-width: 100vw;
 }
 
 body * {
@@ -16,10 +18,11 @@ li.category a {
   text-decoration: none;
 }
 
-body {
-  overflow-x: hidden;
-  max-height: 100vh;
-  max-width: 100vw;
+@media screen and (max-width: 768px) {
+  body {
+    max-height: none;
+    max-width: none;
+  }
 }
 
 .row {
