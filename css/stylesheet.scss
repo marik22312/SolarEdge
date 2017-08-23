@@ -136,7 +136,6 @@ ul.tab-bar>li { position: relative; }
 #video-chooser{
   display: inline-block;
   vertical-align: top;
-  max-width: 30%;
   max-height: 60vh;
   overflow-y: scroll;
   direction:ltr;
@@ -321,6 +320,7 @@ input[type="radio"] {
 	border-width: 33px;
 	margin-top: -33px;
 }
+
 @media screen and (max-width: 768px) {
 body{
   max-height: none;
@@ -329,4 +329,19 @@ body{
 .categories{
   max-height: 80px;
 }
+}
+
+//Embed Player Resbonsive
+.player-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+#videoPlayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
