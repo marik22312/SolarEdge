@@ -445,6 +445,7 @@ input[type="radio"]:checked + label .label-cont .video-name {
 footer {
   background-color: #333333;
   height: 80px;
+  max-height: 80px;
 }
 
 footer #footer-cont {
@@ -467,6 +468,22 @@ footer #footer-cont #footer-copyright {
   body {
     max-height: none;
     max-width: none;
+  }
+  .selected-name {
+    font-size: 28px;
+  }
+  .video-name {
+    font-size: 23px;
+  }
+  .video-desc {
+    font-size: 20px;
+  }
+  #footer-copyright {
+    font-size: 17px;
+    padding-right: 0px;
+  }
+  #footer-logo {
+    padding-left: 0px;
   }
 }
 
