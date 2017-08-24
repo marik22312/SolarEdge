@@ -33,6 +33,7 @@ app.controller("saveCtrl", function ($scope) {
         videoID: "cJpB_AEZf6U", //Youtube Video ID
         name: "Bob Dylan - Knockin' On Heaven's Door", // Video Title
         desc: "Description Goes Here", // Video Description
+        clas: "active",
       },
       {
         videoID: "L9EKqQWPjyo", //Youtube Video ID

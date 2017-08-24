@@ -33,6 +33,7 @@ app.controller("speedCtrl", function ($scope) {
         videoID: "VJDJs9dumZI", // Youtube Video ID
         name: "The Beatles - While My Guitar Gently Weeps", // Video Title
         desc: "Description Goes Here", // Video Description
+        clas: "active",
       },
       {
         videoID: "Qyclqo_AV2M", // Youtube Video ID

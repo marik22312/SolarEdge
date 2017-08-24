@@ -34,6 +34,7 @@ app.controller("improveCtrl", function ($scope) {
         videoID: "atyvdC15HFA", //Youtube Video ID
         name: "Moby - Everloving", // Video Name
         desc: "Description Goes Here", // Video Description
+        clas: "active",
       },
       {
         videoID: "13EifDb4GYs",// Youtube Video ID

@@ -33,6 +33,7 @@ app.controller("increaseCtrl", function ($scope) {
         videoID: "ub747pprmJ8", //Youtube Video ID
         name: "Fatboyslim - Right here, right now", //Video Name
         desc: "Description Goes Here", //Video Description
+        clas: "active",
       },
       {
         videoID: "so9DBHCo64Q", //Youtube Video ID

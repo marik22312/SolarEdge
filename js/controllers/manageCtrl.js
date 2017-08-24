@@ -33,6 +33,7 @@ app.controller("manageCtrl", function ($scope) {
         videoID: "NGorjBVag0I", //Youtube Video ID
         name: "Leonard Cohen - Dance Me to the End of Love", //Video Title
         desc: "Description Goes Here",  // Video Description
+        clas: "active",
       },
       {
         videoID: "6EA-MIYY1bg", //Youtube Video ID
