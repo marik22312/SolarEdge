@@ -57,7 +57,6 @@ app.controller("improveCtrl", function ($scope) {
       }
     ];
     $scope.init = function(video){
-      $('.single-video').first().addClass('active');
       $scope.selectedVideo = video;
       console.log('DEBUG: Active Added');
       console.log('DEBUG: Improve Loaded');
