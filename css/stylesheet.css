@@ -141,7 +141,7 @@ li.category.active svg.category_img {
 
 .categories .category {
   display: inline-block;
-  max-height: 220px;
+  max-height: 160px;
   max-width: 300px;
 }
 
