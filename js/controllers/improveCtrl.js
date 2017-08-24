@@ -50,27 +50,7 @@ app.controller("improveCtrl", function ($scope) {
         videoID: "z3YMxM1_S48",// Youtube Video ID
         name: "Moby - Natural Blues", // Video Title
         desc: "Description Goes Here", // Video Description
-      },
-      {
-        videoID: "ICjyAe9S54c",// Youtube Video ID
-        name: "Moby - Extreme Ways", // Video Title
-        desc: "Description Goes Here", // Video Description
-      },
-      {
-        videoID: "qT6XCvDUUsU",// Youtube Video ID
-        name: "Moby - Why Does My Heart Feel So Bad", // Video Title
-        desc: "Description Goes Here", // Video Description
-      },
-      {
-        videoID: "Dw17-BEFb3Y",// Youtube Video ID
-        name: "Moby - Lift me up", // Video Title
-        desc: "Description Goes Here", // Video Description
-      },
-      {
-        videoID: "z1nxWwkZ2mQ",// Youtube Video ID
-        name: "Moby - Go", // Video Title
-        desc: "Description Goes Here", // Video Description
-      },
+      }
     ];
     $scope.init = function(video){
       $('.single-video').first().addClass('active');
