@@ -268,7 +268,7 @@ li.category.active svg.category_img {
 
 .selec-video-info .selected-desc {
   color: #A9A9A9;
-  font-size: 12px;
+  font-size: 18px;
 }
 
 .active .video-name {
@@ -453,12 +453,14 @@ footer #footer-cont {
 
 footer #footer-cont #footer-logo {
   display: inline-block;
+  padding: 25px;
 }
 
 footer #footer-cont #footer-copyright {
   display: inline-block;
   color: white;
   font-size: 24px;
+  padding: 20px;
 }
 
 @media screen and (max-width: 768px) {

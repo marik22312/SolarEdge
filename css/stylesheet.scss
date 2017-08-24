@@ -278,7 +278,7 @@ li.category.active svg.category_img {
 
   .selected-desc {
     color: #A9A9A9;
-    font-size: 12px;
+    font-size: 18px;
   }
 }
 
@@ -471,12 +471,14 @@ footer {
 
     #footer-logo {
       display: inline-block;
+      padding: 25px;
     }
 
     #footer-copyright {
       display: inline-block;
       color: white;
       font-size: 24px;
+      padding: 20px;
     }
   }
 }
