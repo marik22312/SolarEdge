@@ -605,3 +605,36 @@ footer {
     padding-top: 0 !important;
   }
 }
+
+//Very Small Devices
+@media screen and (max-width: 600px) {
+  .mobile_headline {
+    h1{
+      font-size: 30px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+  }
+  .selected-name{
+    font-size: 30px;
+  }
+  .selected-desc{
+    font-size: 18px;
+  }
+  .video-info{
+    .video-name {
+      font-size: 25px;
+    }
+    .video-desc {
+      font-size: 20px;
+    }
+  }
+  footer{
+    #footer-cont{
+      #footer-copyright  {
+        font-size: 15px;
+        padding: 27px;
+      }
+    }
+  }
+}
