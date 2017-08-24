@@ -57,6 +57,36 @@ header {
 
 #menu-cont {
   background-color: #f7f7f7;
+  position: relative;
+  #top_arrow{
+    .arrow_box {
+      position: absolute;
+      background: #cc0033;
+      top: 41px;
+      left: 90%;
+      width: 150px;
+      height: 90px;
+      opacity: 0.8;
+      font-size: 20px;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    .arrow_box:after {
+    	right: 100%;
+    	top: 50%;
+    	border: solid transparent;
+    	content: " ";
+    	height: 0;
+    	width: 0;
+    	position: absolute;
+    	pointer-events: none;
+    	border-color: rgba(204, 0, 51, 0);
+    	border-right-color: #cc0033;
+    	border-width: 30px;
+    	margin-top: -30px;
+    }
+  }
 }
 
 ul.tab-bar,
@@ -344,13 +374,35 @@ input[type="radio"] {
   position: relative;
 }
 //arrow box
-.nullSelector{
-  display: none;
-  position: absolute;
-  width: 95%;
-  top: 15px;
+#video_arrow{
+  .arrow_box {
+  	position: absolute;
+  	background: #cc0033;
+    top: -130px;
+    left: 100%;
+    width: 150px;
+    height: 90px;
+    opacity: 0.8;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  .arrow_box:after {
+  	top: 100%;
+  	left: 50%;
+  	border: solid transparent;
+  	content: " ";
+  	height: 0;
+  	width: 0;
+  	position: absolute;
+  	pointer-events: none;
+  	border-color: rgba(204, 0, 51, 0);
+  	border-top-color: #cc0033;
+  	border-width: 30px;
+  	margin-left: -30px;
+  }
 }
-
 .right {
   float: right;
 }
@@ -382,31 +434,6 @@ input[type="radio"] {
   }
 }
 
-.arrow_box:after,
-.arrow_box:before {
-  left: 100%;
-  top: 50%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.arrow_box:after {
-  border-color: rgba(211, 19, 22, 0);
-  border-left-color: #d31316;
-  border-width: 30px;
-  margin-top: -30px;
-}
-
-.arrow_box:before {
-  border-color: rgba(255, 255, 255, 0);
-  border-left-color: #ffffff;
-  border-width: 33px;
-  margin-top: -33px;
-}
 //footer
 
 footer {

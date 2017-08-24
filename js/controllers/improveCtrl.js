@@ -7,7 +7,7 @@
 
 app.controller("improveCtrl", function ($scope) {
     $scope.playerVars = {
-      controls: 0,
+      controls: 1,
       autoplay: 1,
       disablekb: 1
   };
