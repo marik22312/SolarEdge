@@ -24,7 +24,7 @@ app.controller("increaseCtrl", function ($scope) {
   $scope.hideNull = function(){
     $('#nullSelector').fadeOut()
   };
-
+    $scope.catName="Increase value for your customers";
     $scope.videos = [
       {
         videoID: "ub747pprmJ8", //Youtube Video ID

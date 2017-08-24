@@ -24,6 +24,7 @@ app.controller("speedCtrl", function ($scope) {
   $scope.hideNull = function(){
     $('#nullSelector').fadeOut()
   };
+  $scope.catName="Speed up your installation";
     $scope.videos = [
       {
         videoID: "VJDJs9dumZI", // Youtube Video ID

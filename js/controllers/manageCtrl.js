@@ -24,6 +24,7 @@ app.controller("manageCtrl", function ($scope) {
   $scope.hideNull = function(){
     $('#nullSelector').fadeOut()
   };
+   $scope.catName="effectively manage your fleet";
     $scope.videos = [
       {
         videoID: "NGorjBVag0I", //Youtube Video ID

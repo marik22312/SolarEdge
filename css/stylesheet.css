@@ -158,6 +158,9 @@ li.category.active svg.category_img {
 
 .mobile_headline {
   text-align: center;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 600;
   color: #cc0033;
   width: 100%;
   border-bottom: 5px #cc0033 solid;

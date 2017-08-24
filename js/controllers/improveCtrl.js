@@ -25,6 +25,7 @@ app.controller("improveCtrl", function ($scope) {
       $('#nullSelector').fadeOut()
     };
 
+    $scope.catName="Improve your lead generation";
     $scope.videos = [
       {
         videoID: "atyvdC15HFA", //Youtube Video ID

@@ -24,6 +24,7 @@ app.controller("saveCtrl", function ($scope) {
   $scope.hideNull = function(){
     $('#nullSelector').fadeOut()
   };
+  $scope.catName="Save commissioning time and truck rolls";
     $scope.videos = [
       {
         videoID: "cJpB_AEZf6U", //Youtube Video ID
