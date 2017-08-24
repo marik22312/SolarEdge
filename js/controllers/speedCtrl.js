@@ -9,7 +9,8 @@ app.controller("speedCtrl", function ($scope) {
   $scope.playerVars = {
     controls: 0,
     autoplay: 1,
-    disablekb: 1
+    disablekb: 1,
+    iv_load_policy: 3,
 };
   $scope.$on('youtube.player.ended', function ($event, mainPlayer) {
     // play it again
