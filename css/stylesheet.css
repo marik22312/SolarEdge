@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .row {
-  margin-left: 0px !important;
-  margin-right: 0px !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 body {
@@ -45,8 +45,8 @@ header .header_text {
 }
 
 .container-fluid {
-  padding-right: 0px;
-  padding-left: 0px;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 #menu-cont {
@@ -127,8 +127,7 @@ li.category.active svg.category_img {
   display: block;
   color: black;
   fill: #cc0033;
-  margin: auto;
-  margin-top: 25px;
+  margin: 25px auto auto;
   padding-bottom: 10px;
 }
 
@@ -182,18 +181,17 @@ li.category.active svg.category_img {
 }
 
 #video-chooser {
-  display: inline-block;
-  vertical-align: top;
-  max-height: 60vh;
+  border-left: 1px solid #cccccc;
+  padding-left: 0;
 }
 
 #video-chooser .single-video {
-  margin: 0 0 15px 5px;
-  border-left: 4px solid #cccccc;
+  margin: 0 0 15px;
+  padding-left: 0;
 }
 
 #video-chooser .active {
-  border-left: 4px solid #cc0033;
+  border-left: 3px solid #cc0033;
 }
 
 #video-chooser .video-image {
@@ -312,7 +310,12 @@ input[type="radio"]:checked + label .label-cont .video-name {
   transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
 }
 
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+.ng-cloak,
+.x-ng-cloak,
+[data-ng-cloak],
+[ng-cloak],
+[ng\:cloak],
+[x-ng-cloak] {
   display: none !important;
 }
 
@@ -357,7 +360,8 @@ input[type="radio"]:checked + label .label-cont .video-name {
   }
 }
 
-.arrow_box:after, .arrow_box:before {
+.arrow_box:after,
+.arrow_box:before {
   left: 100%;
   top: 50%;
   border: solid transparent;
@@ -424,7 +428,10 @@ footer #footer-cont #footer-copyright {
 }
 
 @media screen and (max-width: 1023px) {
-  .videoPlayer, #videoPlayer, .player-container, #player-container {
+  #player-container,
+  #videoPlayer,
+  .player-container,
+  .videoPlayer {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
@@ -445,6 +452,7 @@ footer #footer-cont #footer-copyright {
     border-top: 1px solid #cccccc;
     padding-top: 60px;
     margin-top: 60px;
+    border-left: none;
   }
   #video-chooser .video-info {
     max-height: none;
@@ -460,6 +468,9 @@ footer #footer-cont #footer-copyright {
     padding-left: 15px;
     padding-right: 15px;
   }
+  #video-chooser .active {
+    border-left: none;
+  }
   .categories {
     height: auto;
     margin: 0;
@@ -472,6 +483,6 @@ footer #footer-cont #footer-copyright {
     width: 20%;
   }
   #main-view {
-    padding-top: 0px !important;
+    padding-top: 0 !important;
   }
 }
