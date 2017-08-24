@@ -13,16 +13,16 @@ app.controller("improveCtrl", function ($scope) {
   };
     $scope.$on('youtube.player.ended', function ($event, mainPlayer) {
       // play it again
-      $('#nullSelector').fadeIn()
+      $('.nullSelector').fadeIn()
       console.log('DEBUG: Video ended');
     });
     $scope.$on('youtube.player.playing', function ($event, mainPlayer) {
       // play it again
-      $('#nullSelector').fadeOut();
+      $('.nullSelector').fadeOut();
       console.log('DEBUG: Video Playing!');
     });
     $scope.hideNull = function(){
-      $('#nullSelector').fadeOut()
+      $('.nullSelector').fadeOut()
       $('.single-video').on('click', function() {
         $('.single-video').removeClass('active');
         $(this).addClass('active');});
