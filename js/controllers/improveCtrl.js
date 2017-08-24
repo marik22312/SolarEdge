@@ -63,10 +63,6 @@ app.controller("improveCtrl", function ($scope, $rootScope, $location) {
       console.log('DEBUG: Improve Loaded');
       $('#improve').addClass('active');
       };
-      $scope.location = $location.path();
-      $rootScope.$on('$routeChangeSuccess', function() {
-        $scope.location = $location.path();
-    });
 });
 
 // function(){$('.single-video').first().addClass('active');}
