@@ -146,14 +146,13 @@ ul.tab-bar>li { position: relative; }
   // height: auto;
 }
 #video-chooser{
-  display: inline-block;
-  vertical-align: top;
-  max-height: 60vh;
+  border-left: 1px solid $greyColor;
+  padding-left: 0px;
   .single-video{
-    margin: 0 0 15px 5px;
-    border-left: 4px solid $greyColor;}
-
-    .active {border-left: 4px solid $redColor;}
+    margin: 0 0 15px 0px;
+    padding-left: 0px;
+  }
+    .active {border-left: 3px solid $redColor;}
 
   .video-image{
     padding: 0;

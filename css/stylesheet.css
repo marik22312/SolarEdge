@@ -182,18 +182,17 @@ li.category.active svg.category_img {
 }
 
 #video-chooser {
-  display: inline-block;
-  vertical-align: top;
-  max-height: 60vh;
+  border-left: 1px solid #cccccc;
+  padding-left: 0px;
 }
 
 #video-chooser .single-video {
-  margin: 0 0 15px 5px;
-  border-left: 4px solid #cccccc;
+  margin: 0 0 15px 0px;
+  padding-left: 0px;
 }
 
 #video-chooser .active {
-  border-left: 4px solid #cc0033;
+  border-left: 3px solid #cc0033;
 }
 
 #video-chooser .video-image {
