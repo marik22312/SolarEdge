@@ -375,6 +375,7 @@ input[type="radio"] {
 }
 //arrow box
 #video_arrow{
+  display: none;
   .arrow_box {
   	position: absolute;
   	background: #cc0033;
@@ -411,26 +412,51 @@ input[type="radio"] {
   float: left;
 }
 
-.arrow_box {
-  background: #d31316;
+#video_arrow .arrow_box {
+  background: $redColor;
   border: 2px solid #ffffff;
   color: white;
   font-weight: bold;
   animation-name: arrow_box;
-  animation-duration: 3.5s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
 }
 @keyframes arrow_box {
   0% {
-    right: 0;
+    top: -140px;
   }
 
   50% {
-    right: 50px;
+    top: -120px;
   }
 
   100% {
-    right: 0;
+    top: -140px;
+  }
+}
+#top_arrow{
+  display: none;
+  .arrow_box {
+  background: $redColor;
+  border: 2px solid #ffffff;
+  color: white;
+  font-weight: bold;
+  animation-name: top_arrow_box;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+}
+@keyframes top_arrow_box {
+  0% {
+    left: 90%;
+  }
+
+  50% {
+    left: 87%;
+  }
+
+  100% {
+    left: 90%;
   }
 }
 
