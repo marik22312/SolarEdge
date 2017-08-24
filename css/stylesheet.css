@@ -117,6 +117,7 @@ ul.tab-bar > li {
 ul.tab-bar.bar-style-1 > li.active {
   color: #cc0033 !important;
   font-weight: 575;
+  border-bottom: #cc0033 3px solid;
 }
 
 li {
@@ -506,6 +507,9 @@ footer #footer-cont #footer-copyright {
 }
 
 @media screen and (max-width: 1023px) {
+  #menu-cont {
+    height: auto;
+  }
   #player-container,
   #videoPlayer,
   .player-container,
