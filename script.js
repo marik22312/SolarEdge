@@ -52,3 +52,7 @@ $(document).ready(function() {
     console.log('DEBUG: showPage() Initiated!');
 };
 });
+$('.category').click(function() {
+  $(this).parent().find('.category').css('border-bottom', 'none');
+  $(this).css('border-bottom', 'none');
+});
