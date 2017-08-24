@@ -364,6 +364,7 @@ footer {
 
 //Mobile View Query
 @media screen and (max-width: 1023px) {
+  .videoPlayer, #videoPlayer, .player-container, #player-container {padding-left: 0 !important; padding-right: 0 !important;}
   .selec-video-info{
     text-align: center;
     .selected-name{font-size: 36px;}
@@ -384,7 +385,7 @@ footer {
     }
     .video-image {padding-left:15px; padding-right: 15px;}
   }
-}
+
 .categories {
   height: auto;
   margin: 0;
@@ -395,4 +396,7 @@ footer {
     padding-bottom: 35px;
     width: 20%;
   }
+}
+
+
 }
