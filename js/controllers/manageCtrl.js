@@ -23,6 +23,9 @@ app.controller("manageCtrl", function ($scope) {
   });
   $scope.hideNull = function(){
     $('#nullSelector').fadeOut()
+    $('.single-video').on('click', function() {
+      $('.single-video').removeClass('active');
+      $(this).addClass('active');});
   };
    $scope.catName="effectively manage your fleet";
     $scope.videos = [
