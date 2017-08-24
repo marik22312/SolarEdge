@@ -413,12 +413,6 @@ footer #footer-cont #footer-copyright {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .categories {
-    max-height: 96px;
-  }
-}
-
 .player-container {
   position: relative;
   width: 100%;
