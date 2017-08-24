@@ -125,6 +125,14 @@ ul.tab-bar>li { position: relative; }
     }
   }
 }
+.mobile_headline{
+  text-align: center;
+  color: $redColor;
+  width: 100%;
+  border-bottom: 5px $redColor solid;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
 #main-view {padding-top:60px;}
 /* content css */
 .videoPlayer {
@@ -385,7 +393,6 @@ footer {
     }
     .video-image {padding-left:15px; padding-right: 15px;}
   }
-
 .categories {
   height: auto;
   margin: 0;
@@ -397,6 +404,7 @@ footer {
     width: 20%;
   }
 }
-
-
+#main-view{
+  padding-top: 0px !important;
+}
 }

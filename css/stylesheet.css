@@ -156,6 +156,15 @@ li.category.active svg.category_img {
   display: block !important;
 }
 
+.mobile_headline {
+  text-align: center;
+  color: #cc0033;
+  width: 100%;
+  border-bottom: 5px #cc0033 solid;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
 #main-view {
   padding-top: 60px;
 }
@@ -475,5 +484,8 @@ footer #footer-cont #footer-copyright {
     height: auto;
     padding-bottom: 35px;
     width: 20%;
+  }
+  #main-view {
+    padding-top: 0px !important;
   }
 }
