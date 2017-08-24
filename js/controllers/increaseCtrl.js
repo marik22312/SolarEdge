@@ -76,5 +76,6 @@ app.controller("increaseCtrl", function ($scope) {
       $scope.selectedVideo = video;
       console.log('DEBUG: Active Added');
       console.log('DEBUG: Increase Loaded');
+      $('#increase').addClass('active');
     };
 });

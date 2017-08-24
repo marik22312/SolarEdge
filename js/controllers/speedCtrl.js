@@ -81,5 +81,6 @@ app.controller("speedCtrl", function ($scope) {
       $scope.selectedVideo = video;
       console.log('DEBUG: Active Added');
       console.log('DEBUG: Speed Loaded');
+      $('#speed').addClass('active');
     };
 });

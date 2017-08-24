@@ -81,5 +81,6 @@ app.controller("manageCtrl", function ($scope) {
       $scope.selectedVideo = video;
       console.log('DEBUG: Active Added');
       console.log('DEBUG: Manage Loaded');
+      $('#manage').addClass('active');
     };
 });

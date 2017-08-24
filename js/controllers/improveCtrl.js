@@ -5,7 +5,7 @@
 * Controler For: Improve Category
 */
 
-app.controller("improveCtrl", function ($scope) {
+app.controller("improveCtrl", function ($scope, $rootScope, $location) {
     $scope.playerVars = {
       controls: 0,
       autoplay: 1,
@@ -61,7 +61,12 @@ app.controller("improveCtrl", function ($scope) {
       $scope.selectedVideo = video;
       console.log('DEBUG: Active Added');
       console.log('DEBUG: Improve Loaded');
-    };
+      $('#improve').addClass('active');
+      };
+      $scope.location = $location.path();
+      $rootScope.$on('$routeChangeSuccess', function() {
+        $scope.location = $location.path();
+    });
 });
 
 // function(){$('.single-video').first().addClass('active');}

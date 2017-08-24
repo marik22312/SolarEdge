@@ -81,5 +81,6 @@ app.controller("saveCtrl", function ($scope) {
       $scope.selectedVideo = video;
       console.log('DEBUG: Active Added');
       console.log('DEBUG: Save Loaded');
+      $('#save').addClass('active');
     };
 });
