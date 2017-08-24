@@ -320,7 +320,7 @@ input[type="radio"]:checked + label .label-cont .video-name {
   position: relative;
 }
 
-#nullSelector {
+.nullSelector {
   display: none;
   position: absolute;
   width: 95%;
