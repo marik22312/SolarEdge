@@ -21,12 +21,17 @@ app.controller("improveCtrl", function ($scope, $rootScope, $location) {
       // play it again
       $('.nullSelector').fadeOut();
       console.log('DEBUG: Video Playing!');
+      // window.scrollTop();
     });
     $scope.hideNull = function(){
       $('.nullSelector').fadeOut()
       $('.single-video').on('click', function() {
         $('.single-video').removeClass('active');
         $(this).addClass('active');});
+        //Scroll to top when choosing a video
+        $('body').animate({
+            scrollTop: 0
+        }, 800);
     };
 
     $scope.catName="Improve your lead generation";

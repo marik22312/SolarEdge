@@ -27,6 +27,10 @@ app.controller("increaseCtrl", function ($scope) {
     $('.single-video').on('click', function() {
       $('.single-video').removeClass('active');
       $(this).addClass('active');});
+      //Scroll to top when choosing a video
+      $('body').animate({
+          scrollTop: 0
+      }, 800);
   };
     $scope.catName="Increase value for your customers";
     $scope.videos = [
