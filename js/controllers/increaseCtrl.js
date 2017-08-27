@@ -28,9 +28,16 @@ app.controller("increaseCtrl", function ($scope) {
       $('.single-video').removeClass('active');
       $(this).addClass('active');});
       //Scroll to top when choosing a video
-      $('body').animate({
-          scrollTop: 0
-      }, 800);
+      if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+            window.scrollTo(200,100) // first value for left offset, second value for top offset
+}else{
+            $('html,body').animate({
+                scrollTop: 100,
+                scrollLeft: 200
+            }, 800, function(){
+                $('html,body').clearQueue();
+            });
+}
   };
     $scope.catName="Increase value for your customers";
     $scope.videos = [
