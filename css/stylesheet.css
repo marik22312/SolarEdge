@@ -171,6 +171,7 @@ li.category.active svg.category_img {
   font-weight: 600;
   font-size: 12px;
   padding-bottom: 50px;
+  text-transform: uppercase;
 }
 
 .categories .active .category_text {
