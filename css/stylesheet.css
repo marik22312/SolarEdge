@@ -26,6 +26,10 @@ header {
   width: 100%;
   border-bottom: 1px #dddddd solid;
   max-height: 100px;
+  position: fixed;
+  z-index: 1000;
+  height: 10vh;
+  background-color: white;
 }
 
 header .header_logo {
@@ -54,6 +58,7 @@ header .header_text {
   position: relative;
   border-bottom: 1px #dddddd solid;
   height: 160px;
+  margin-top: 10vh;
 }
 
 #menu-cont #top_arrow .arrow_box {
@@ -223,6 +228,10 @@ li.category.active svg.category_img {
 #video-chooser .single-video {
   margin: 0 0 15px;
   padding-left: 0;
+}
+
+#video-chooser .single-video:hover {
+  cursor: pointer;
 }
 
 #video-chooser .active {
@@ -510,6 +519,7 @@ footer #footer-cont #footer-copyright {
 @media screen and (max-width: 1023px) {
   #menu-cont {
     height: auto;
+    margin-top: 0px;
   }
   #player-container,
   #videoPlayer,
