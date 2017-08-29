@@ -534,6 +534,9 @@ footer #footer-cont #footer-copyright {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+  #player-container {
+    margin-top: 0;
+  }
   .selec-video-info {
     text-align: center;
   }
