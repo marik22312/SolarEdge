@@ -73,35 +73,38 @@ app.controller("improveCtrl", function ($scope, $rootScope, $location) {
       console.log('DEBUG: Active Added');
       console.log('DEBUG: Improve Loaded');
        $('#improve').addClass('active');
-      setTimeout(function() {
-      $('.video-desc').each(function() {
-          var content = $(this).html();
+       setTimeout(function() {
+       // Configure/customize these variables.
 
-          if(content.length > showChar) {
+       $('.video-desc').each(function() {
+           var content = $(this).html();
 
-              var c = content.substr(0, showChar);
-              var h = content.substr(showChar, content.length - showChar);
+           if(content.length > showChar) {
 
-              var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a class="morelink" style="z-index:9999;">' + moretext + '</a></span>';
+               var c = content.substr(0, showChar);
+               var h = content.substr(showChar, content.length - showChar);
 
-              $(this).html(html);
-              console.log('set show more');
-          }
+               var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
 
-          $(".morelink").click(function(){
-              if($(this).hasClass("less")) {
-                  $(this).removeClass("less");
-                  $(this).html(moretext);
-              } else {
-                  $(this).addClass("less");
-                  $(this).html(lesstext);
-              }
-              $(this).parent().prev().toggle();
-              $(this).prev().toggle();
-              return false;
-          });
+               $(this).html(html);
+           }
 
-      }); }, 10);
+       });
+
+       $(".morelink").click(function(){
+           if($(this).hasClass("less")) {
+               $(this).removeClass("less");
+               $(this).html(moretext);
+           } else {
+               $(this).addClass("less");
+               $(this).html(lesstext);
+           }
+           $(this).parent().prev().toggle();
+           $(this).prev().toggle();
+           return false;
+       });
+
+  }, 10);
       // $('#improve').addClass('active');
       // $('.video-desc').each(function() {
       //     var content = $(this).html();
