@@ -1,9 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+/* start of bootstrap overwriting */
 .row {
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
 
+label {
+  margin-bottom: 0;
+}
+
+/*end of bootstrap overwriting*/
 body {
   overflow-x: hidden;
   max-height: 100vh;
@@ -238,20 +244,18 @@ li.category.active svg.category_img {
   cursor: pointer;
 }
 
-#video-chooser .active {
+#video-chooser .active .video-image {
   border-left: 3px solid #cc0033;
 }
 
 #video-chooser .video-image {
   padding: 0;
   border-radius: 5px;
-  padding-left: 58px;
 }
 
 #video-chooser .video-info {
   vertical-align: top;
   max-width: 222px;
-  max-height: 100px;
   overflow: hidden;
 }
 
@@ -259,13 +263,25 @@ li.category.active svg.category_img {
   display: block;
   font-size: 16px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 #video-chooser .video-desc {
   display: block;
   color: #333333;
   font-size: 14px;
+  font-weight: 400;
+  margin-top: 10%;
+}
+
+#video-chooser .video-desc .morelink {
+  color: #cc0033;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+#video-chooser .video-desc .morelink:hover {
+  text-decoration: underline;
 }
 
 #video-chooser .gone {
@@ -295,6 +311,10 @@ li.category.active svg.category_img {
 
 input[type="radio"] {
   display: none;
+}
+
+input[type="radio"] .label-cont {
+  padding-left: 10px;
 }
 
 input[type="radio"]:checked + label .label-cont .video-name {

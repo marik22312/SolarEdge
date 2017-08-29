@@ -40,35 +40,31 @@ app.controller("improveCtrl", function ($scope, $rootScope, $location) {
       {
         videoID: "atyvdC15HFA", //Youtube Video ID
         name: "Moby - Everloving", // Video Name
-        desc: "Description Goes Here AND ITS OVERFLOWING!!!!", // Video Description
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
         clas: "active",
       },
       {
         videoID: "13EifDb4GYs",// Youtube Video ID
         name: "Moby - Porcelain", // Video Title
-        desc: "Moby - Porcelain", // Video Description
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
       },
       {
         videoID: "6A2V9Bu80J4",// Youtube Video ID
         name: "Moby - Flower", // Video Title
-        desc: "Description Goes Here", // Video Description
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
       },
       {
         videoID: "5wrwcEZ3Btw",// Youtube Video ID
         name: "Moby - in this world", // Video Title
-        desc: "Description Goes Here", // Video Description
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
       },
       {
         videoID: "z3YMxM1_S48",// Youtube Video ID
         name: "Moby - Natural Blues", // Video Title
-        desc: "Description Goes Here", // Video Description
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
       }
     ];
     $scope.init = function(video){
-      var showChar = 10;  // How many characters are shown by default
-      var ellipsestext = "...";
-      var moretext = "Show more >";
-      var lesstext = "Show less";
       $scope.selectedVideo = video;
       console.log('DEBUG: Active Added');
       console.log('DEBUG: Improve Loaded');

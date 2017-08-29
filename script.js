@@ -59,9 +59,7 @@ $('.category').click(function() {
 });
 
 /* READMORE */
-var showChar = 10;  // How many characters are shown by default
+var showChar = 55;  // How many characters are shown by default
 var ellipsestext = "...";
-var moretext = "Show more >";
+var moretext = "Show more";
 var lesstext = "Show less";
-
-  

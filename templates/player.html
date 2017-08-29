@@ -11,7 +11,7 @@
         Select any video to view
       </div>
     </div>
-    <div class="selec-video-info col-md-8 col-lg-8 col-sm-12 col-xs-12">
+    <div class="selec-video-info col-md-12 col-lg-12 col-sm-12 col-xs-12">
       <span class="selected-name">{{selectedVideo.name}}</span>
       <span class="selected-desc">{{selectedVideo.desc}}</span>
     </div>
@@ -20,9 +20,9 @@
     <div class="single-video {{video.clas}}" ng-repeat="video in videos" >
       <input ng-model="$parent.selectedVideo" type="radio" name="video" class="videoImg" ng-value="{{video}}" ng-attr-id="{{video.videoID}}" ng-data-isfirst="{{$first}}">
     <label for="{{video.videoID}}" class="row" ng-click="hideNull()">
-      <div class="label-cont">
-      <img ng-src="https://i.ytimg.com/vi/{{video.videoID}}/1.jpg" title="{{video.name}}" class="col-lg-4 col-md-4 col-sm-6 col-xs-6 video-image img-responsive" />
-      <div class="video-info col-lg-8 col-md-8 col-xs-6 col-sm-6">
+      <div class="label-cont row">
+      <img ng-src="https://i.ytimg.com/vi/{{video.videoID}}/1.jpg" title="{{video.name}}" class="col-lg-6 col-md-6 col-sm-6 col-xs-6 video-image" />
+      <div class="video-info col-lg-6 col-md-6 col-xs-6 col-sm-6">
         <p class="video-name">{{video.name}}<span class="video-desc">
       {{video.desc}}  </span></p>
         </div>
