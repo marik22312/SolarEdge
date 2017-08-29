@@ -32,6 +32,10 @@ header {
   width: 100%;
   border-bottom: 1px #dddddd solid;
   max-height: 100px;
+  position: fixed;
+  z-index: 1000;
+  height: 10vh;
+  background-color: white;
 
   .header_logo {
     border-right: 1px #dddddd solid;
@@ -60,6 +64,7 @@ header {
   position: relative;
   border-bottom: 1px #dddddd solid;
   height: 160px;
+  margin-top: 10vh;
   #top_arrow {
     .arrow_box {
       position: absolute;
@@ -229,6 +234,9 @@ li.category.active svg.category_img {
   .single-video {
     margin: 0 0 15px;
     padding-left: 0;
+    &:hover{
+      cursor: pointer;
+    }
   }
 
   .active {
@@ -535,7 +543,7 @@ footer {
 }
 //Mobile View Query
 @media screen and (max-width: 1023px) {
-  #menu-cont{height: auto;}
+  #menu-cont{height: auto; margin-top: 0px;}
   #player-container,
   #videoPlayer,
   .player-container,
