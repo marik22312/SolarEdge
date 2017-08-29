@@ -484,6 +484,14 @@ footer #footer-cont #footer-copyright {
   padding: 20px;
 }
 
+.morecontent span {
+  display: none;
+}
+
+.morelink {
+  display: block;
+}
+
 @media screen and (max-width: 768px) {
   body {
     max-height: none;

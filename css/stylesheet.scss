@@ -507,6 +507,12 @@ footer {
     }
   }
 }
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
 @media screen and (max-width: 768px) {
   body {
     max-height: none;

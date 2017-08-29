@@ -40,6 +40,7 @@ $(document).ready(function() {
     return $ele;
   }
   $(".slider").RegisterTabBar("slider1").find("li:first-child").ready();
+
   loader = setTimeout(showPage, 1000);
   function showPage() {
     $('.single-video').on('click', function() {
@@ -56,3 +57,11 @@ $('.category').click(function() {
   $(this).parent().find('.category').css('border-bottom', 'none');
   $(this).css('border-bottom', 'none');
 });
+
+/* READMORE */
+var showChar = 10;  // How many characters are shown by default
+var ellipsestext = "...";
+var moretext = "Show more >";
+var lesstext = "Show less";
+
+  
