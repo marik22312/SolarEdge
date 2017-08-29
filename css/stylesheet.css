@@ -580,9 +580,6 @@ footer #footer-cont #footer-copyright {
     height: auto;
     width: 20%;
   }
-  #main-view {
-    padding-top: 0 !important;
-  }
 }
 
 @media screen and (max-width: 600px) {
