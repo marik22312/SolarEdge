@@ -80,7 +80,7 @@ app.controller("improveCtrl", function ($scope, $rootScope, $location) {
                var c = content.substr(0, showChar);
                var h = content.substr(showChar, content.length - showChar);
 
-               var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+               var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span>'//'<span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
 
                $(this).html(html);
            }
@@ -99,7 +99,6 @@ app.controller("improveCtrl", function ($scope, $rootScope, $location) {
            $(this).prev().toggle();
            return false;
        });
-
   }, 10);
       // $('#improve').addClass('active');
       // $('.video-desc').each(function() {

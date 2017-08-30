@@ -52,14 +52,15 @@ $(document).ready(function() {
     document.getElementById("mainCont").style.display = "block";
     console.log('DEBUG: showPage() Initiated!');
 };
-});
+
+}); //end of document.ready
 $('.category').click(function() {
   $(this).parent().find('.category').css('border-bottom', 'none');
   $(this).css('border-bottom', 'none');
 });
 
 /* READMORE */
-var showChar = 55;  // How many characters are shown by default
+var showChar = 80;  // How many characters are shown by default
 var ellipsestext = "...";
 var moretext = "Show more";
 var lesstext = "Show less";
