@@ -600,10 +600,7 @@ footer #footer-cont #footer-copyright {
   #video-chooser .video-image {
     padding-left: 15px;
     padding-right: 15px;
-    border-left: none !important;
-  }
-  #video-chooser .active {
-    border-left: none;
+    border: none !important;
   }
   .categories {
     height: auto;
