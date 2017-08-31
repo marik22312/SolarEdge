@@ -687,14 +687,9 @@ footer #footer-cont #footer-copyright {
     margin-top: 45px;
     padding-bottom: 55px;
   }
-  .categories > *:first-child {
-    margin-left: 220px;
-  }
-  .categories > *:last-child {
-    margin-right: 220px;
-  }
   .categories {
-    margin-left: 0;
+    width: 1480px;
+    margin-left: 220px;
   }
   #menu-cont {
     height: 220px;
