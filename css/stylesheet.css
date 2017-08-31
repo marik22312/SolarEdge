@@ -683,9 +683,37 @@ footer #footer-cont #footer-copyright {
   #header .header_text {
     width: 260px;
     height: 30px;
-    font-size: 1em;
+    font-size: 25px;
     margin-top: 45px;
-    padding-bottom: 60px;
+    padding-bottom: 55px;
+  }
+  .categories > *:first-child {
+    margin-left: 220px;
+  }
+  .categories > *:last-child {
+    margin-right: 220px;
+  }
+  .categories {
+    margin-left: 0;
+  }
+  #menu-cont {
+    height: 220px;
+  }
+  .category {
+    width: 285px;
+    height: 220px;
+    max-height: 220px !important;
+  }
+  .category .category_img {
+    margin-top: 50px;
+    width: 85px;
+    height: 70px;
+    padding-bottom: 0 !important;
+  }
+  .category .category_text {
+    padding-top: 25px;
+    font-size: 20px;
+    padding-bottom: 50px;
   }
   #video-chooser {
     padding: 0;
