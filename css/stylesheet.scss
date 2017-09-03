@@ -426,6 +426,7 @@ input[type="radio"] {
     text-align: center;
     padding: 10px;
     z-index: 1550;
+    border-radius: 5px;
   }
 
   .arrow_box:after {
@@ -483,6 +484,7 @@ input[type="radio"] {
     border: 2px solid #ffffff;
     color: white;
     font-weight: bold;
+    border-radius: 5px;
     animation-name: top_arrow_box;
     animation-duration: 4s;
     animation-iteration-count: infinite;
