@@ -408,6 +408,7 @@ input[type="radio"]:checked + label .label-cont .video-name {
   text-align: center;
   padding: 10px;
   z-index: 1550;
+  border-radius: 5px;
 }
 
 #video_arrow .arrow_box:after {
@@ -464,6 +465,7 @@ input[type="radio"]:checked + label .label-cont .video-name {
   border: 2px solid #ffffff;
   color: white;
   font-weight: bold;
+  border-radius: 5px;
   animation-name: top_arrow_box;
   animation-duration: 4s;
   animation-iteration-count: infinite;
