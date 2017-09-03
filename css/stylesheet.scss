@@ -306,7 +306,7 @@ li.category.active svg.category_img {
   }
 
   .selected-desc {
-    color: #A9A9A9;
+    color: #333333;
     font-size: 18px;
   }
 }
@@ -715,18 +715,19 @@ footer {
   .header_logo{
     margin-right: 75px;
     width: 200px;
-    height: 45px;
-    margin-left: 200px;
+    height: 40px;
+    margin-left: 220px;
     padding: 0;
     margin-top: 30px;
     margin-bottom: 30px;
   }
   .header_text{
-    width: 260px;
-    height: 30px;
-    font-size: 25px;
-    margin-top: 45px;
+    height: 70px;
+    font-size: 27px;
+    margin-top: 32px;
     padding-bottom: 55px;
+    margin-left: 20px;
+    padding-top: 10px;
   }
   }
   .categories{
@@ -742,14 +743,21 @@ footer {
     max-height: 220px !important;
     .category_img{
     margin-top: 50px;
-    width: 85px;
-    height: 70px;
+    width: auto;
+    height: auto;
     padding-bottom: 0 !important;
     }
     .category_text{
-      padding-top: 25px;
-      font-size: 20px;
+      padding-top: 43px;
+      font-size: 16px !important;
       padding-bottom: 50px;
+      max-width: 200px;
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+      padding-left: 0;
+      padding-right: 0;
+
     }
   }
 
@@ -820,9 +828,10 @@ footer {
       margin: 0;
       font-size: 25px;
       font-weight: 600;
-      margin-bottom: 20px;
-      font-size: 20px;
+      margin-bottom: 14px;
+      font-size: 24px;
       font-weight: 600;
+      margin-top: -8px;
     }
   }
 
