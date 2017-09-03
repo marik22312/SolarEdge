@@ -7,10 +7,10 @@
 
 app.controller("improveCtrl", function ($scope, $rootScope, $location) {
     $scope.playerVars = {
-      controls: 0,
+      controls: 1,
       autoplay: 1,
       disablekb: 1,
-      iv_load_policy: 3,
+      // iv_load_policy: 3,
   };
     $scope.$on('youtube.player.ended', function ($event, mainPlayer) {
       // play it again
@@ -100,25 +100,6 @@ app.controller("improveCtrl", function ($scope, $rootScope, $location) {
            return false;
        });
   }, 10);
-      // $('#improve').addClass('active');
-      // $('.video-desc').each(function() {
-      //     var content = $(this).html();
-      //
-      //     if(content.length > showChar) {
-      //
-      //         var c = content.substr(0, showChar);
-      //         var h = content.substr(showChar, content.length - showChar);
-      //
-      //         var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
-      //
-      //         $(this).html(html);
-      //         console.log('set show more');
-      //     }
-      //
-      // });
-      ///////
 
       };
 });
-
-// function(){$('.single-video').first().addClass('active');}

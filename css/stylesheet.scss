@@ -259,6 +259,7 @@ li.category.active svg.category_img {
     // width: 180px;
     border-radius: 5px;
     // padding-left: 58px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0);
   }
 
   .video-info {
@@ -438,8 +439,8 @@ input[type="radio"] {
     pointer-events: none;
     border-color: rgba(204, 0, 51, 0);
     border-top-color: #cc0033;
-    border-width: 30px;
-    margin-left: -30px;
+    border-width: 20px;
+    margin-left: -18px;
   }
 }
 
@@ -767,6 +768,7 @@ footer {
     padding-left: 60px;
     margin-left: 60px;
     border-left: 2px solid $greyColor;
+    .video-info{padding:0}
     .label-cont{
       margin: 0;
       padding: 0;
@@ -782,10 +784,11 @@ footer {
       padding: 0;
       margin: 0;
       margin-right: 20px;
-      border-radius: 10px;
+      border-radius: 5px;
+      box-shadow: 1px 1px 5px 0px black;
     }
     .video-name {
-      font-size: 15px;
+      font-size: 16px;
       font-weight: bold;
       width: 270px;
       height: 100px;
@@ -794,9 +797,9 @@ footer {
       .video-desc{
         padding: 0;
         margin: 0;
-        font-size: 13px;
+        font-size: 14px;
         font-weight: normal;
-        margin-top: 18px;
+        margin-top: 8px;
 
       }
     }
