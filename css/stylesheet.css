@@ -403,7 +403,8 @@ input[type="radio"]:checked + label .label-cont .video-name {
   width: fit-content;
   height: auto;
   opacity: 0.8;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: normal;
   color: white;
   text-align: center;
   padding: 10px;
@@ -439,6 +440,7 @@ input[type="radio"]:checked + label .label-cont .video-name {
   border: 2px solid #ffffff;
   color: white;
   font-weight: bold;
+  font-size: 16px;
   animation-name: arrow_box;
   animation-duration: 4s;
   animation-iteration-count: infinite;
@@ -464,7 +466,7 @@ input[type="radio"]:checked + label .label-cont .video-name {
   background: #cc0033;
   border: 2px solid #ffffff;
   color: white;
-  font-weight: bold;
+  font-weight: normal;
   border-radius: 5px;
   animation-name: top_arrow_box;
   animation-duration: 4s;
