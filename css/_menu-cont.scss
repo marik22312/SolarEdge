@@ -1,4 +1,5 @@
 @import "./mixins";
+@import "./variables";
 
 #menu-cont {
     background-color: #f7f7f7;
@@ -16,12 +17,13 @@
         .arrow_box {
             position: absolute;
             background: #cc0033;
-            top: 41px;
+            top: 53px;
             left: 90%;
             width: 150px;
-            height: 90px;
+            height: 66px;
             opacity: 0.8;
-            font-size: 20px;
+            font-size: 16px;
+            line-height: 15px;
             color: white;
             text-align: center;
             padding: 15px;
@@ -37,8 +39,8 @@
                 pointer-events: none;
                 border-color: rgba(204, 0, 51, 0);
                 border-right-color: #cc0033;
-                border-width: 30px;
-                margin-top: -30px;
+                border-width: 7px;
+                margin-top: -8px;
             } /* &:after */
         } /* .arrow_box */
     } /* #top_arrow */
@@ -47,7 +49,7 @@
         display: inline-block;
         width: 100%;
         @include breakpoint(lg) {
-            width: 1480px;
+            width: $container-width-lg;
             margin-left: 220px;
         }
 
@@ -76,7 +78,7 @@
                 padding-bottom: 10px;
 
                 @include breakpoint(lg) {
-                    margin-top: 50px;
+                    margin-top: 46px;
                     width: auto;
                     height: auto;
                     padding-bottom: 0 !important;
@@ -92,7 +94,7 @@
                 text-transform: uppercase;
 
                 @include breakpoint(lg) {
-                    padding-top: 43px;
+                    padding-top: 21px;
                     font-size: 16px !important;
                     padding-bottom: 50px;
                     max-width: 200px;

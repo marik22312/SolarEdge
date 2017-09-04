@@ -3,6 +3,9 @@
 
 @import "./header";
 @import "./menu-cont";
+@import "./loading";
+@import "./player-container";
+@import "./video-chooser";
 
 @import url( 'https://fonts.googleapis.com/css?family=Open+Sans');
 /* start of bootstrap overwriting */
@@ -135,43 +138,6 @@ li.category.active svg.category_img {
 
   }
 
-  .video-image {
-    padding: 0;
-    // height: 100px;
-    // width: 180px;
-    border-radius: 5px;
-    // padding-left: 58px;
-    border-bottom: 3px solid rgba(255, 255, 255, 0);
-  }
-
-  .video-info {
-    vertical-align: top;
-    max-width: 222px;
-    // max-height: 100px;
-    overflow: hidden;
-  }
-
-  .video-name {
-    display: block;
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 0;
-  }
-
-  .video-desc {
-    display: block;
-    color: #333333;
-    font-size: 14px;
-    font-weight: 400;
-    margin-top: 10%;
-    .morelink {
-      color: $redColor;
-      font-weight: 400;
-      text-decoration: none;
-      &:hover {text-decoration: underline;}
-    }
-  }
-
   .gone {
     display: none;
   }
@@ -216,66 +182,6 @@ input[type="radio"] {
     }
   }
 }
-// Loader
-@keyframes lds-eclipse {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  50% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes lds-eclipse {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  50% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-.lds-css {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-}
-
-.lds-eclipse div {
-  position: absolute;
-  -webkit-animation: lds-eclipse 1s linear infinite;
-  animation: lds-eclipse 1s linear infinite;
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  box-shadow: 0 6px 0 0 #cc0033;
-  -webkit-transform-origin: 80px 83px;
-  transform-origin: 80px 83px;
-  top: 130%;
-  left: 340%;
-}
-
-.lds-eclipse {
-  width: 200px !important;
-  height: 200px !important;
-  -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
-  transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
-}
 
 .ng-cloak,
 .x-ng-cloak,
@@ -293,39 +199,34 @@ input[type="radio"] {
 //arrow box
 
 #video_arrow {
-  display: none;
-
-  .arrow_box {
-    position: absolute;
-    background: #cc0033;
-    // top: -50px;
-    left: 100%;
-    width: fit-content;
-    height: auto;
-    opacity: 0.8;
-    font-size: 16px;
-    font-weight: normal;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    z-index: 1550;
-    border-radius: 5px;
-  }
-
-  .arrow_box:after {
-    top: 100%;
-    left: 50%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: rgba(204, 0, 51, 0);
-    border-top-color: #cc0033;
-    border-width: 20px;
-    margin-left: -18px;
-  }
+    .arrow_box {
+        position: absolute;
+        background: #cc0033;
+        left: 99.3rem;
+        width: fit-content;
+        height: auto;
+        opacity: 0.8;
+        font-size: 16px;
+        font-weight: normal;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        z-index: 1550;
+        border-radius: 5px;
+        &:after {
+            top: 100%;
+            left: 47%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba(204, 0, 51, 0);
+            border-top-color: #cc0033;
+            border-width: 7px;
+        }
+    } /* .arrow_box */
 }
 
 .right {
@@ -340,7 +241,6 @@ input[type="radio"] {
   background: $redColor;
   border: 2px solid #ffffff;
   color: white;
-  font-weight: bold;
   font-size: 16px;
   animation-name: arrow_box;
   animation-duration: 4s;
@@ -361,7 +261,7 @@ input[type="radio"] {
 }
 
 #top_arrow {
-  display: none;
+  // display: none;
 
   .arrow_box {
     background: $redColor;

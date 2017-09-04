@@ -1,0 +1,35 @@
+@import "./mixins";
+@import "./variables";
+
+#video-chooser {
+    .video-image {
+        padding: 0;
+        border-radius: 5px;
+        border-bottom: 3px solid rgba(255, 255, 255, 0);
+    } /* .video-image */
+    .video-info {
+        vertical-align: top;
+        .video-name {
+            display: block;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 0;
+        } /* .video-name */
+        .video-desc {
+            display: block;
+            color: #333333;
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 10%;
+            line-height: 23px;
+            .morelink {
+                color: $redColor;
+                font-weight: 400;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            } /* .morelink */
+        } /* .video-desc */
+    } /* .video-info */
+} /* #video-chooser */
