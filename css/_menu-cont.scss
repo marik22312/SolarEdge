@@ -5,12 +5,12 @@
     background-color: #f7f7f7;
     position: relative;
     border-bottom: 1px #dddddd solid;
-    height: 160px;
+    height: 195px;
     z-index: 1111;
     position: fixed;
 
     @include breakpoint(lg) {
-        height: 220px;
+        height: 195px;
     }
 
     #top_arrow {
@@ -50,7 +50,7 @@
         width: 100%;
         @include breakpoint(lg) {
             width: $container-width-lg;
-            margin-left: 220px;
+            margin-left: 195px;
         }
 
         .category {
@@ -58,7 +58,7 @@
             max-height: 160px;
             @include breakpoint(lg) {
                 width: 285px;
-                height: 220px;
+                height: 195px;
                 max-height: 220px !important;
             }
 
@@ -78,7 +78,7 @@
                 padding-bottom: 10px;
 
                 @include breakpoint(lg) {
-                    margin-top: 46px;
+                    // margin-top: 46px;
                     width: auto;
                     height: auto;
                     padding-bottom: 0 !important;

@@ -63,7 +63,7 @@
   background-color: #f7f7f7;
   position: relative;
   border-bottom: 1px #dddddd solid;
-  height: 160px;
+  height: 195px;
   z-index: 1111;
   position: fixed;
   /* #top_arrow */
@@ -72,7 +72,7 @@
 
 @media (min-width: 1200px) {
   #menu-cont {
-    height: 220px;
+    height: 195px;
   }
 }
 
@@ -137,7 +137,7 @@
 @media (min-width: 1200px) {
   #menu-cont .categories .category {
     width: 285px;
-    height: 220px;
+    height: 195px;
     max-height: 220px !important;
   }
 }
@@ -160,7 +160,6 @@
 
 @media (min-width: 1200px) {
   #menu-cont .categories .category .category_img {
-    margin-top: 46px;
     width: auto;
     height: auto;
     padding-bottom: 0 !important;
@@ -418,7 +417,7 @@ li {
   list-style-type: none;
   display: inline-block;
   border-width: 0;
-  height: 220px;
+  height: 195px;
   background-color: transparent;
   color: #cc0033;
   text-align: center;
