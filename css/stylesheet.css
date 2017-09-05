@@ -527,6 +527,7 @@ input[type="radio"]:checked + label .label-cont .video-name {
 }
 
 #video_arrow {
+  display: none;
   /* .arrow_box */
 }
 
@@ -588,6 +589,10 @@ input[type="radio"]:checked + label .label-cont .video-name {
   100% {
     top: -100px;
   }
+}
+
+#top_arrow {
+  display: none;
 }
 
 #top_arrow .arrow_box {

@@ -15,14 +15,14 @@ app.controller("manageCtrl", function ($scope) {
     var showTooltips = function ($event, mainPlayer) {
     // play it again
         $('.nullSelector').fadeIn()
-        console.log('DEBUG: Video ended');
+        // console.log('DEBUG: Video ended');
     };
     $scope.$on('youtube.player.ended', showTooltips);
     $scope.$on('youtube.player.paused', showTooltips);
   $scope.$on('youtube.player.playing', function ($event, mainPlayer) {
     // play it again
     $('.nullSelector').fadeOut();
-    console.log('DEBUG: Video Playing!');
+    // console.log('DEBUG: Video Playing!');
   });
   $scope.hideNull = function(){
     $('.nullSelector').fadeOut()
@@ -86,8 +86,8 @@ app.controller("manageCtrl", function ($scope) {
     $scope.init = function(video){
       $('.single-video').first().addClass('active');
       $scope.selectedVideo = video;
-      console.log('DEBUG: Active Added');
-      console.log('DEBUG: Manage Loaded');
+      // console.log('DEBUG: Active Added');
+      // console.log('DEBUG: Manage Loaded');
       $('#manage').addClass('active');
 
       setTimeout(function() {

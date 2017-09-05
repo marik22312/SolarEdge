@@ -199,6 +199,7 @@ input[type="radio"] {
 //arrow box
 
 #video_arrow {
+  display: none;
     .arrow_box {
         position: absolute;
         background: #cc0033;
@@ -261,7 +262,7 @@ input[type="radio"] {
 }
 
 #top_arrow {
-  // display: none;
+  display: none;
 
   .arrow_box {
     background: $redColor;

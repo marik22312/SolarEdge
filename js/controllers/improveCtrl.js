@@ -7,22 +7,22 @@
 
 app.controller("improveCtrl", function ($scope, $rootScope, $location) {
     $scope.playerVars = {
-        controls: 1,
+        controls: 0,
         autoplay: 1,
         disablekb: 1,
-        // iv_load_policy: 3,
+        iv_load_policy: 3,
     };
     var showTooltips = function ($event, mainPlayer) {
     // play it again
         $('.nullSelector').fadeIn()
-        console.log('DEBUG: Video ended');
+        // console.log('DEBUG: Video ended');
     };
     $scope.$on('youtube.player.ended', showTooltips);
     $scope.$on('youtube.player.paused', showTooltips);
     $scope.$on('youtube.player.playing', function ($event, mainPlayer) {
       // play it again
       $('.nullSelector').fadeOut();
-      console.log('DEBUG: Video Playing!');
+      // console.log('DEBUG: Video Playing!');
       // window.scrollTop();
     });
     $scope.hideNull = function(){
@@ -68,8 +68,8 @@ app.controller("improveCtrl", function ($scope, $rootScope, $location) {
     ];
     $scope.init = function(video){
       $scope.selectedVideo = video;
-      console.log('DEBUG: Active Added');
-      console.log('DEBUG: Improve Loaded');
+      // console.log('DEBUG: Active Added');
+      // console.log('DEBUG: Improve Loaded');
        $('#improve').addClass('active');
        setTimeout(function() {
        // Configure/customize these variables.
