@@ -10,7 +10,7 @@
     position: fixed;
 
     @include breakpoint(lg) {
-        height: 195px;
+        height: 170px;;
     }
 
     #top_arrow {
@@ -50,7 +50,7 @@
         width: 100%;
         @include breakpoint(lg) {
             width: $container-width-lg;
-            margin-left: 170px;
+            margin-left: 220px;
         }
 
         .category {
