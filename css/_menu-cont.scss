@@ -5,7 +5,7 @@
     background-color: #f7f7f7;
     position: relative;
     border-bottom: 1px #dddddd solid;
-    height: 195px;
+    height: 170px;
     z-index: 1111;
     position: fixed;
 
@@ -50,7 +50,7 @@
         width: 100%;
         @include breakpoint(lg) {
             width: $container-width-lg;
-            margin-left: 195px;
+            margin-left: 170px;
         }
 
         .category {
@@ -58,7 +58,7 @@
             max-height: 160px;
             @include breakpoint(lg) {
                 width: 285px;
-                height: 195px;
+                height: 170px;
                 max-height: 220px !important;
             }
 
