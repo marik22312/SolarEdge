@@ -1,0 +1,37 @@
+@import "./mixins";
+@import "./variables";
+
+.lds-css {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .lds-eclipse {
+        width: 200px;
+        height: 200px;
+        transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+        @keyframes lds-eclipse {
+          0% {
+            transform: rotate(0deg);
+          }
+          50% {
+            transform: rotate(180deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+        div {
+            animation: lds-eclipse 1s linear infinite;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            box-shadow: 0 6px 0 0 #cc0033;
+            transform-origin: 80px 83px;
+            top: 130%;
+            left: 340%;
+        } /* div */
+    } /* .lds-eclipse */
+} /* .lds-css */

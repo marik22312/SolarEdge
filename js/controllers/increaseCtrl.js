@@ -12,11 +12,13 @@ app.controller("increaseCtrl", function ($scope) {
     disablekb: 1,
     iv_load_policy: 3,
 };
-  $scope.$on('youtube.player.ended', function ($event, mainPlayer) {
+    var showTooltips = function ($event, mainPlayer) {
     // play it again
-    $('.nullSelector').fadeIn();
-    console.log('DEBUG: Video ended');
-  });
+        $('.nullSelector').fadeIn()
+        console.log('DEBUG: Video ended');
+    };
+    $scope.$on('youtube.player.ended', showTooltips);
+    $scope.$on('youtube.player.paused', showTooltips);
   $scope.$on('youtube.player.playing', function ($event, mainPlayer) {
     // play it again
     $('.nullSelector').fadeOut();

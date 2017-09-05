@@ -1,0 +1,36 @@
+@import "./mixins";
+@import "./variables";
+
+#player-container {
+    margin-top: 265px;
+    .videoPlayer {
+        margin: 0;
+        padding: 0;
+        padding-left: 46px;
+        width: 880px;
+        .player-container {
+            margin: 0;
+            padding: 0;
+            padding-bottom: 56.6666666666%;
+            iframe#videoPlayer {
+                margin: 0;
+                padding: 0;
+            } /* iframe#videoPlayer */
+        } /* .player-container */
+        .selec-video-info {
+            padding: 0;
+            margin: 0;
+            margin-top: 30px;
+            .selected-name {
+                padding: 0;
+                margin: 0;
+                font-size: 25px;
+                font-weight: 600;
+                margin-bottom: 14px;
+                font-size: 24px;
+                font-weight: 600;
+                margin-top: -8px;
+            } /* .selected-name */
+        } /* .selec-video-info */
+    } /* .videoPlayer */
+} /* #player-container */

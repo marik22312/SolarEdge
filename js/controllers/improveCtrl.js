@@ -7,16 +7,18 @@
 
 app.controller("improveCtrl", function ($scope, $rootScope, $location) {
     $scope.playerVars = {
-      controls: 0,
-      autoplay: 1,
-      disablekb: 1,
-      // iv_load_policy: 3,
-  };
-    $scope.$on('youtube.player.ended', function ($event, mainPlayer) {
-      // play it again
-      $('.nullSelector').fadeIn()
-      console.log('DEBUG: Video ended');
-    });
+        controls: 0,
+        autoplay: 1,
+        disablekb: 1,
+        // iv_load_policy: 3,
+    };
+    var showTooltips = function ($event, mainPlayer) {
+    // play it again
+        $('.nullSelector').fadeIn()
+        console.log('DEBUG: Video ended');
+    };
+    $scope.$on('youtube.player.ended', showTooltips);
+    $scope.$on('youtube.player.paused', showTooltips);
     $scope.$on('youtube.player.playing', function ($event, mainPlayer) {
       // play it again
       $('.nullSelector').fadeOut();
