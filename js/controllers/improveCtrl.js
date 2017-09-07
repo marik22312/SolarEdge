@@ -6,25 +6,60 @@
 */
 
 app.controller("improveCtrl", function ($scope, $rootScope, $location) {
-    $scope.playerVars = {
-        controls: 0,
-        autoplay: 1,
-        disablekb: 1,
-        iv_load_policy: 3,
-    };
+  $scope.videos = [
+    {
+      vidLocation: "1", // Video ID
+      name: "Moby - Everloving", // Video Name
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
+      clas: "active", // IMPORTANT! DO NOT TOUCH!
+    },
+    {
+      vidLocation: "2",//  Video ID
+      name: "Moby - Porcelain", // Video Title
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
+    },
+    {
+      vidLocation: "3",//  Video ID
+      name: "Moby - Flower", // Video Title
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
+    },
+    {
+      vidLocation: "4",//  Video ID
+      name: "Moby - in this world", // Video Title
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
+    },
+    {
+      vidLocation: "5",//  Video ID
+      name: "Moby - Natural Blues", // Video Title
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
+    }
+  ];
+  /*
+  * Do Not Touch From This Point
+  * Unless you are 100% sure you know what you are doing.
+  */
+    $scope.category = "improve";
+    $scope.pauseOrPlay = function(){
+      var vid = document.getElementById('videoPlayer');
+        if (vid.ended || vid.paused == true) {
+          vid.play();
+        }
+        else {
+          vid.pause();
+        }
+    }
     var showTooltips = function ($event, mainPlayer) {
     // play it again
-        $('.nullSelector').fadeIn()
+        $('.nullSelector').fadeIn();
         // console.log('DEBUG: Video ended');
     };
-    $scope.$on('youtube.player.ended', showTooltips);
-    $scope.$on('youtube.player.paused', showTooltips);
-    $scope.$on('youtube.player.playing', function ($event, mainPlayer) {
-      // play it again
-      $('.nullSelector').fadeOut();
-      // console.log('DEBUG: Video Playing!');
-      // window.scrollTop();
-    });
+    var hideTooltips = function ($event, mainPlayer) {
+    // play it again
+        $('.nullSelector').fadeOut();
+        // console.log('DEBUG: Video ended');
+    };
+    var delayTooltips = $('.nullSelector').delay(3000).fadeIn();
+
     $scope.hideNull = function(){
       $('.nullSelector').fadeOut()
       $('.single-video').on('click', function() {
@@ -38,35 +73,11 @@ app.controller("improveCtrl", function ($scope, $rootScope, $location) {
     };
 
     $scope.catName="Improve your lead generation";
-    $scope.videos = [
-      {
-        videoID: "atyvdC15HFA", //Youtube Video ID
-        name: "Moby - Everloving", // Video Name
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
-        clas: "active",
-      },
-      {
-        videoID: "13EifDb4GYs",// Youtube Video ID
-        name: "Moby - Porcelain", // Video Title
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
-      },
-      {
-        videoID: "6A2V9Bu80J4",// Youtube Video ID
-        name: "Moby - Flower", // Video Title
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
-      },
-      {
-        videoID: "5wrwcEZ3Btw",// Youtube Video ID
-        name: "Moby - in this world", // Video Title
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
-      },
-      {
-        videoID: "z3YMxM1_S48",// Youtube Video ID
-        name: "Moby - Natural Blues", // Video Title
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
-      }
-    ];
     $scope.init = function(video){
+      var vid = document.getElementById('videoPlayer');
+      vid.onended = delayTooltips;
+      vid.onpause = showTooltips;
+      vid.onplay = hideTooltips;
       $scope.selectedVideo = video;
       // console.log('DEBUG: Active Added');
       // console.log('DEBUG: Improve Loaded');

@@ -196,39 +196,7 @@ input[type="radio"] {
   position: relative;
   margin-top: 200px;
 }
-//arrow box
 
-#video_arrow {
-  display: none;
-    .arrow_box {
-        position: absolute;
-        background: #cc0033;
-        left: 99.3rem;
-        width: fit-content;
-        height: auto;
-        opacity: 0.8;
-        font-size: 16px;
-        font-weight: normal;
-        color: white;
-        text-align: center;
-        padding: 10px;
-        z-index: 1550;
-        border-radius: 5px;
-        &:after {
-            top: 100%;
-            left: 47%;
-            border: solid transparent;
-            content: " ";
-            height: 0;
-            width: 0;
-            position: absolute;
-            pointer-events: none;
-            border-color: rgba(204, 0, 51, 0);
-            border-top-color: #cc0033;
-            border-width: 7px;
-        }
-    } /* .arrow_box */
-}
 
 .right {
   float: right;
@@ -238,54 +206,13 @@ input[type="radio"] {
   float: left;
 }
 
-#video_arrow .arrow_box {
-  background: $redColor;
-  border: 2px solid #ffffff;
-  color: white;
-  font-size: 16px;
-  animation-name: arrow_box;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-}
-@keyframes arrow_box {
-  0% {
-    top: -100px;
-  }
-
-  50% {
-    top: -80px;
-  }
-
-  100% {
-    top: -100px;
-  }
-}
-
 #top_arrow {
   display: none;
 
   .arrow_box {
-    background: $redColor;
-    border: 2px solid #ffffff;
     color: white;
     font-weight: normal;
     border-radius: 5px;
-    animation-name: top_arrow_box;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-  }
-}
-@keyframes top_arrow_box {
-  0% {
-    left: 84%;
-  }
-
-  50% {
-    left: 81%;
-  }
-
-  100% {
-    left: 84%;
   }
 }
 //footer
