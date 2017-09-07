@@ -14,23 +14,23 @@ app.config(function($routeProvider) {
         controller: "improveCtrl", //Category Controller
     })
     .when("/improve", {
-        templateUrl : "./templates/player.html",
+        templateUrl : "./templates/player1.html",
         controller: "improveCtrl", //Category Controller
     })
     .when("/increase", {
-        templateUrl : "./templates/player.html",
+        templateUrl : "./templates/player2.html",
         controller: "increaseCtrl", //Category Controller
     })
     .when("/speed", {
-        templateUrl : "./templates/player.html",
+        templateUrl : "./templates/player3.html",
         controller: "speedCtrl", //Category Controller
     })
     .when("/save", {
-        templateUrl : "./templates/player.html",
+        templateUrl : "./templates/player4.html",
         controller: "saveCtrl", //Category Controller
     })
     .when("/manage", {
-        templateUrl : "./templates/player.html",
+        templateUrl : "./templates/player5.html",
         controller: "manageCtrl", //Category Controller
     })
     .otherwise({
