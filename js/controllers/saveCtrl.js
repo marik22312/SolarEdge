@@ -37,9 +37,9 @@ app.controller("saveCtrl", function ($scope) {
   $scope.catName="Save commissioning time and truck rolls";
     $scope.videos = [
       {
-        videoID: "cJpB_AEZf6U", //Youtube Video ID
-        name: "Bob Dylan - Knockin' On Heaven's Door", // Video Title
-        desc: "Description Goes Here", // Video Description
+        videoID: "012QOeewim4", //Youtube Video ID
+        name: "Know before your go – module level analysis", // Video Title
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
         clas: "active",
       },
       {

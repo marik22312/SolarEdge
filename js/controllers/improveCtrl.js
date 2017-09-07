@@ -40,8 +40,8 @@ app.controller("improveCtrl", function ($scope, $rootScope, $location) {
     $scope.catName="Improve your lead generation";
     $scope.videos = [
       {
-        videoID: "atyvdC15HFA", //Youtube Video ID
-        name: "Moby - Everloving", // Video Name
+        videoID: "PwVV7Dp63lg", //Youtube Video ID
+        name: "Social Media", //Video Title
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
         clas: "active",
       },

@@ -37,9 +37,9 @@ app.controller("manageCtrl", function ($scope) {
    $scope.catName="effectively manage your fleet";
     $scope.videos = [
       {
-        videoID: "NGorjBVag0I", //Youtube Video ID
-        name: "Leonard Cohen - Dance Me to the End of Love", //Video Title
-        desc: "Description Goes Here",  // Video Description
+        videoID: "6CvtmG8_FLA", //Youtube Video ID
+        name: "Automatic Alerts", //Video Title
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.",  // Video Description
         clas: "active",
       },
       {
