@@ -5,12 +5,14 @@
 * Controler For: Improve Category
 */
 
+// TODO: added support for bullets
+
 app.controller("improveCtrl", function ($scope, $rootScope, $location, $window) {
   $scope.videos = [
     {
       vidLocation: "1", // Video ID
       name: "Moby - Everloving", // Video Name
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
+      desc: "Use the remote monitoring capabilities to improve service times and reduce service costs Conveniently perform multiple service tasks from the comfort of your office instead of onsiteReduce expensive truck rolls and save labor costsRemote capabilities include turning system on after PTO, viewing production status, and pairing power optimizers", // Video Description
       clas: "active", // IMPORTANT! DO NOT TOUCH!
     },
     {
