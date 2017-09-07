@@ -64,7 +64,7 @@ app.controller("improveCtrl", function ($scope, $rootScope, $location) {
         videoID: "z3YMxM1_S48",// Youtube Video ID
         name: "Moby - Natural Blues", // Video Title
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
-      }
+      },
     ];
     $scope.init = function(video){
       $scope.selectedVideo = video;
