@@ -101,28 +101,28 @@ app.controller("improveCtrl", function ($scope, $rootScope, $location, $window) 
                 console.debug('Video ended');
                 showTooltips();
 
-                var nextVideoIndex = $scope.videos.indexOf($scope.selectedVideo) + 1;
-                var videosAmount = $scope.videos.length;
-
-                // Still watching videos in playlist
-                /** @bug: Manually selecting a video (clicking on a video from the list) doesn't affect [[$scope.selectedVideo]], thus next video that played is the first */
-                if (nextVideoIndex < videosAmount) {
-                    console.debug('Moving to next video in this list...');
-                    var nextVideo = $scope.videos[ nextVideoIndex ];
-
-                    console.debug(nextVideoIndex, nextVideo);
-                    $scope.selectedVideo = nextVideo;
-                    $(this).attr('src', './videos/'+$scope.category+'/'+nextVideo.vidLocation+'.mp4');
-                }
-
-                // Time to move on to the next category
-                /** @todo: validate there is a next category, or stop here at last controller (manage) */
-                else {
-                    console.debug('List ended, moving to next category...');
-                    $scope.$apply(function() {
-                        $location.path("/increase");
-                    });
-                }
+                // var nextVideoIndex = $scope.videos.indexOf($scope.selectedVideo) + 1;
+                // var videosAmount = $scope.videos.length;
+                //
+                // // Still watching videos in playlist
+                // /** @bug: Manually selecting a video (clicking on a video from the list) doesn't affect [[$scope.selectedVideo]], thus next video that played is the first */
+                // if (nextVideoIndex < videosAmount) {
+                //     console.debug('Moving to next video in this list...');
+                //     var nextVideo = $scope.videos[ nextVideoIndex ];
+                //
+                //     console.debug(nextVideoIndex, nextVideo);
+                //     $scope.selectedVideo = nextVideo;
+                //     $(this).attr('src', './videos/'+$scope.category+'/'+nextVideo.vidLocation+'.mp4');
+                // }
+                //
+                // // Time to move on to the next category
+                // /** @todo: validate there is a next category, or stop here at last controller (manage) */
+                // else {
+                //     console.debug('List ended, moving to next category...');
+                //     $scope.$apply(function() {
+                //         $location.path("/increase");
+                //     });
+                // }
             });
 
 
