@@ -8,17 +8,17 @@
 app.controller("increaseCtrl", function ($scope, $rootScope, $location, $window) {
   $scope.videos = [
     {
-      vidLocation: "", // Video ID
-      name: "", // Video Name
-      shortDesc: "", // Video Description
-      longDesc: "", // Video Description
+      vidLocation: "consumption_monitoring", // Video ID
+      name: "Consumption Monitoring ", // Video Name
+      shortDesc: "Optimizing solar usage to increase self-consumption ", // Video Description
+      longDesc: "Optimize solar usage with consumption monitoring <ul><li>Easily track system production, site consumption, and self-consumption </li><li>Better understand customer consumption patterns to increase their self-consumption</li></ul>", // Video Description
       clas: "active", // IMPORTANT! DO NOT TOUCH!
     },
     {
-      vidLocation: "", // Video ID
-      name: "", // Video Name
-      shortDesc: "", // Video Description
-      longDesc: "", // Video Description
+      vidLocation: "automatic_srec", // Video ID
+      name: "Automatic SREC Reporting ", // Video Name
+      shortDesc: "Improving system owners’ SREC reporting experience", // Video Description
+      longDesc: "Enable your customers to automatically report their energy production for SREC credits <ul><li>Simplified process for reporting energy production to the PTS</li><li>Automatic identification of relevant PTS based on site location</li><li>Report status and summary available directly from the dashboard </li></ul>", // Video Description
     },
   ];
   /*

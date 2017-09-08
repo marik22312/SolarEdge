@@ -8,17 +8,11 @@
 app.controller("speedCtrl", function ($scope, $rootScope, $location, $window) {
   $scope.videos = [
     {
-      vidLocation: "", // Video ID
-      name: "", // Video Name
-      shortDesc: "", // Video Description
-      longDesc: "", // Video Description
+      vidLocation: "autocad", // Video ID
+      name: "AutoCAD File Import ", // Video Name
+      shortDesc: "Importing AutoCAD design files to instantly create physical layouts", // Video Description
+      longDesc: "Import AutoCAD design files to instantly create site layouts <ul><li>Faster, easier and more accurate than manual site mapping </li><li>Especially valuable for large commercial deployments</li><li>Modify the layout as needed in the physical layout editor</li></ul>", // Video Description
       clas: "active", // IMPORTANT! DO NOT TOUCH!
-    },
-    {
-      vidLocation: "", // Video ID
-      name: "", // Video Name
-      shortDesc: "", // Video Description
-      longDesc: "", // Video Description
     },
   ];
   /*

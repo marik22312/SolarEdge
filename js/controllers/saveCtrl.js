@@ -8,17 +8,35 @@
 app.controller("saveCtrl", function ($scope, $rootScope, $location, $window) {
   $scope.videos = [
     {
-      vidLocation: "", // Video ID
-      name: "", // Video Name
-      shortDesc: "", // Video Description
-      longDesc: "", // Video Description
+      vidLocation: "remote_lcd", // Video ID
+      name: "Remote LCD View ", // Video Name
+      shortDesc: "Viewing the inverter LCD screen in real-time remotely from your office ", // Video Description
+      longDesc: "View inverter LCD screen in real-time remotely from your office  <ul> <li>Helps your support staff provide fast, off-site system troubleshooting </li><li>Eliminates the need for costly and unnecessary truck rolls </li></ul>", // Video Description
       clas: "active", // IMPORTANT! DO NOT TOUCH!
     },
     {
-      vidLocation: "", // Video ID
-      name: "", // Video Name
-      shortDesc: "", // Video Description
-      longDesc: "", // Video Description
+      vidLocation: "remote_monitoring", // Video ID
+      name: "Remote Monitoring", // Video Name
+      shortDesc: "Using remote monitoring capabilities to save time and money", // Video Description
+      longDesc: "Use the remote monitoring capabilities to improve service times ands reduce service cost <ul><li>Conveniently perform multiple service tasks from the comfort of your office instead of onsite</li><li>Reduce expensive truck rolls and save labor costs</li><li>emote capabilities include turning system on after PTO, viewing production status, and pairing power optimizers </li></ul>", // Video Description
+    },
+    {
+      vidLocation: "remote_pairing", // Video ID
+      name: "Remote Pairing", // Video Name
+      shortDesc: "Remotely pair power optimizers from the comfort of your office ", // Video Description
+      longDesc: "Avoid unnecessary site visits by remotely pairing power optimizers <ul><li>Easily continue pairing process from the office, if shading or darkness prevents onsite pairing completion </li><li>Improve service flexibility and save costs</li></ul>", // Video Description
+    },
+    {
+      vidLocation: "remote_system", // Video ID
+      name: "Remote System Turn-On ", // Video Name
+      shortDesc: "Saving commissioning time by turning on systems remotely after PTO is given", // Video Description
+      longDesc: "Save hundreds of dollars per installation by remotely turning on your customers’ systems <ul><li>Once system is installed, place in Standby mode until PTO is given</li><li>Avoid returning to customer site just to turn the system on</li><li>Prevent unnecessary truck rolls, freeing up service crews for other jobs</li></ul>", // Video Description
+    },
+    {
+      vidLocation: "module_level", // Video ID
+      name: "Module-Level Analysis ", // Video Name
+      shortDesc: "Using module-level performance analysis to know before you go", // Video Description
+      longDesc: "Enable faster and cost-effective site maintenance with module-level analysis<ul><li>Remotely identify and troubleshoot issues at the module, string and system level</li><li>Quickly pinpoint underperforming modules to their physical location, prior to sending a technician onsite</li><li>Use advanced diagnostics to verify module faults such as PID or a failed bypass diode, in just a few clicks </li></ul>", // Video Description
     },
   ];
   /*

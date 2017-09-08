@@ -17,10 +17,16 @@ app.controller("improveCtrl", function ($scope, $rootScope, $location, $window) 
       clas: "active", // IMPORTANT! DO NOT TOUCH!
     },
     {
-      vidLocation: "", // Video ID
-      name: "", // Video Name
-      shortDesc: "", // Video Description
-      longDesc: "", // Video Description
+      vidLocation: "public_sites", // Video ID
+      name: "Public Site Display", // Video Name
+      shortDesc: "Gaining free exposure by making your sites publicly viewed", // Video Description
+      longDesc: "Gain free exposure by making your sites publicly viewed <ul><li>Easily share your sites using a public web address – no need to login to the monitoring platform </li><li>Gain high visibility for your company logo to enhance lead generation</li><li>Display the site's power and energy production, and environmental benefits</li></ul>", // Video Description
+    },
+    {
+      vidLocation: "social_media", // Video ID
+      name: "Social Media Branding", // Video Name
+      shortDesc: "Enjoying wide brand exposure each time your customers share their site production", // Video Description
+      longDesc: "Enjoy wide brand exposure each time your customers share their site production <ul><li>Site production is easily shared across social media directly from the monitoring app</li><li>Customer’s friends and family are exposed to your company logo, generating more referrals </li></ul>", // Video Description
     },
   ];
   /*

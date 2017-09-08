@@ -8,17 +8,17 @@
 app.controller("manageCtrl", function ($scope, $rootScope, $location, $window) {
   $scope.videos = [
     {
-      vidLocation: "", // Video ID
-      name: "", // Video Name
-      shortDesc: "", // Video Description
-      longDesc: "", // Video Description
+      vidLocation: "automatic_alerts", // Video ID
+      name: "Automatic Alerts ", // Video Name
+      shortDesc: "Staying aware of site performance issues to maximize system uptime ", // Video Description
+      longDesc: "Improve site performance and maximize energy output using the alerts mechanism<ul><li>Notify the right people instantly via email about key performance issues, letting them respond rapidly to events </li><li>See predefined alerts and add custom alerts with the powerful Alert Rules Generator</li><li>Use the Alert Log and Alert Reports to regularly analyze performance over time or across sites</li></ul>", // Video Description
       clas: "active", // IMPORTANT! DO NOT TOUCH!
     },
     {
-      vidLocation: "", // Video ID
-      name: "", // Video Name
-      shortDesc: "", // Video Description
-      longDesc: "", // Video Description
+      vidLocation: "mismatch_reports", // Video ID
+      name: "Mismatch Reports ", // Video Name
+      shortDesc: "Allowing higher lifetime production by analyzing module mismatch ", // Video Description
+      longDesc: "Maximize system revenue by using in-depth diagnostics <ul><li>Analyze module performance to identify mismatch losses and Improve overall site performance </li><li>Stay on top of problematic external conditions such as shading or underperforming modules to increase energy output and ROI  </li><li>Prevent energy loss by early detection of mismatch issues </li></ul>", // Video Description
     },
   ];
   /*
