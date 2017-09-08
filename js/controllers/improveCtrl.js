@@ -10,31 +10,18 @@
 app.controller("improveCtrl", function ($scope, $rootScope, $location, $window) {
   $scope.videos = [
     {
-      vidLocation: "1", // Video ID
-      name: "Moby - Everloving", // Video Name
-      desc: "Use the remote monitoring capabilities to improve service times and reduce service costs Conveniently perform multiple service tasks from the comfort of your office instead of onsiteReduce expensive truck rolls and save labor costsRemote capabilities include turning system on after PTO, viewing production status, and pairing power optimizers", // Video Description
+      vidLocation: "kiosk_feature", // Video ID
+      name: "Kiosk View", // Video Name
+      shortDesc: "Showcasing real-time PV site performance on a public display ", // Video Description
+      longDesc: "Showcase real-time PV site performance on a public display e.g. building lobby<ul><li>Increase your brand exposure by displaying your logo in public </li><li>Help your customers promote their commitment to renewable energy and support solar education </li></ul>", // Video Description
       clas: "active", // IMPORTANT! DO NOT TOUCH!
     },
     {
-      vidLocation: "2",//  Video ID
-      name: "Moby - Porcelain", // Video Title
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
+      vidLocation: "", // Video ID
+      name: "", // Video Name
+      shortDesc: "", // Video Description
+      longDesc: "", // Video Description
     },
-    {
-      vidLocation: "3",//  Video ID
-      name: "Moby - Flower", // Video Title
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
-    },
-    {
-      vidLocation: "4",//  Video ID
-      name: "Moby - in this world", // Video Title
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
-    },
-    {
-      vidLocation: "5",//  Video ID
-      name: "Moby - Natural Blues", // Video Title
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
-    }
   ];
   /*
   * Do Not Touch From This Point

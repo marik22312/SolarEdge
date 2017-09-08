@@ -5,7 +5,7 @@
   * Main Controller
   */
 
-var app = angular.module('solarEdge', ['ngRoute','youtube-embed']);
+var app = angular.module('solarEdge', ['ngRoute','youtube-embed','ngSanitize']);
 // Router Config
 app.config(function($routeProvider) {
     $routeProvider
