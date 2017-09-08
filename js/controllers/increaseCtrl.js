@@ -37,46 +37,35 @@ app.controller("increaseCtrl", function ($scope) {
     $scope.catName="Increase value for your customers";
     $scope.videos = [
       {
-        videoID: "ub747pprmJ8", //Youtube Video ID
-        name: "Fatboyslim - Right here, right now", //Video Name
-        desc: "Description Goes Here", //Video Description
-        clas: "active",
+        videoID: "83wPJm2XMHU",// Youtube Video ID
+        name: "Consumption Monitoring", // Video Title
+        shortDesc: "Optimizing solar usage to increase self-consumption ",
+        desc: "Optimizing solar usage to increase self-consumption <ul><li>Easily track system production, site consumption, and self-consumption </li><li>Better understand customer consumption patterns to increase their self-consumption</li></ul>", // Video Description
       },
       {
-        videoID: "so9DBHCo64Q", //Youtube Video ID
-        name: "Fatboyslim - Push the tempo", //Video Name
-        desc: "Moby - Porcelain", //Video Description
+        videoID: "--insert_video_ID",// Youtube Video ID
+        name: "Automatic SREC Reporting", // Video Title
+        shortDesc: "Improving system owner's SREC reporting experience",
+        desc: "Enable your customers to automatically report their energy production for SREC credits<ul><li>Simplified process for reporting energy production to the PTS</li><li>Automatic identification of relevant PTS based on site location</li><li>Report status and summary available directly from the dashboard </li></ul>", // Video Description
       },
-      {
-        videoID: "SBClImpnfAg", //Youtube Video ID
-        name: "Fatboyslim - Rockafeller Skank", //Video Name
-        desc: "Description Goes Here", //Video Description
-      },
-      {
-        videoID: "Ex1qzIggZnA", //Youtube Video ID
-        name: "Fatboyslim - Praise You", //Video Name
-        desc: "Description Goes Here", //Video Description
-      },
-      {
-        videoID: "wCDIYvFmgW8", //Youtube Video ID
-        name: "Fatboy Slim - Weapon Of Choice", //Video Name
-        desc: "Description Goes Here", //Video Description
-      },
-      {
-        videoID: "u5ZUshzhMtc", //Youtube Video ID
-        name: "Fatboy Slim - Don't Let The Man Get You Down", //Video Name
-        desc: "Description Goes Here", //Video Description
-      },
-      {
-        videoID: "wBoRkg5-Ieg", //Youtube Video ID
-        name: "Fatboy Slim - Eat sleep rave repeat", //Video Name
-        desc: "Description Goes Here", //Video Description
-      },
-      {
-        videoID: "zKEWdRPRf3I", //Youtube Video ID
-        name: "Fatboy Slim - Sunset", //Video Name
-        desc: "Description Goes Here", //Video Description
-      }
+      // {
+      //   videoID: "",// Youtube Video ID
+      //   name: "", // Video Title
+      //   shortDesc: "",
+      //   desc: "", // Video Description
+      // },
+      // {
+      //   videoID: "",// Youtube Video ID
+      //   name: "", // Video Title
+      //   shortDesc: "",
+      //   desc: "", // Video Description
+      // },
+      // {
+      //   videoID: "",// Youtube Video ID
+      //   name: "", // Video Title
+      //   shortDesc: "",
+      //   desc: "", // Video Description
+      // },
     ];
     $scope.init = function(video){
       $('.single-video').first().addClass('active');

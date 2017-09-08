@@ -37,51 +37,60 @@ app.controller("speedCtrl", function ($scope) {
   $scope.catName="Speed up your installation";
     $scope.videos = [
       {
-        videoID: "VJDJs9dumZI", // Youtube Video ID
-        name: "The Beatles - While My Guitar Gently Weeps", // Video Title
-        desc: "Description Goes Here", // Video Description
+        videoID: "surbejL_Mgg",// Youtube Video ID
+        name: "AutoCAD File Import", // Video Title
+        shortDesc: "Importing AutoCAD design files to instantly create physical layouts",
+        desc: "Import AutoCAD design files to instantly create site layouts<ul><li>Faster, easier and more accurate than manual site mapping</li><li>Especially valuable for large commercial deployments</li><li>Modify the layout as needed in the physical layout editor</li></ul>", // Video Description
         clas: "active",
       },
-      {
-        videoID: "Qyclqo_AV2M", // Youtube Video ID
-        name: "The Beatles - We Can Work it Out", // Video Title
-        desc: "Description Goes Here", // Video Description
-      },
-      {
-        videoID: "S-rB0pHI9fU", // Youtube Video ID
-        name: "The Beatles - Penny Lane", // Video Title
-        desc: "Description Goes Here", // Video Description
-      },
-      {
-        videoID: "U_O1QKQCsGs", // Youtube Video ID
-        name: "The Beatles-Here comes the Sun", // Video Title
-        desc: "Description Goes Here", // Video Description
-      },
-      {
-        videoID: "A_MjCqQoLLA", // Youtube Video ID
-        name: "The Beatles - Hey Jude", // Video Title
-        desc: "Description Goes Here", // Video Description
-      },
-      {
-        videoID: "RMdD8MwUQpw", // Youtube Video ID
-        name: "The Beatles - Come Together ", // Video Title
-        desc: "Description Goes Here", // Video Description
-      },
-      {
-        videoID: "guiNy0jSKkI", // Youtube Video ID
-        name: "The Beatles - Sgt. Pepper's Lonely Hearts Club Band", // Video Title
-        desc: "Description Goes Here", // Video Description
-      },
-      {
-        videoID: "Dw17-BEFb3Y", // Youtube Video ID
-        name: "Moby - Lift me up", // Video Title
-        desc: "Description Goes Here", // Video Description
-      },
-      {
-        videoID: "z1nxWwkZ2mQ", // Youtube Video ID
-        name: "Moby - Go", // Video Title
-        desc: "Description Goes Here", // Video Description
-      },
+      // {
+      //   videoID: "",// Youtube Video ID
+      //   name: "", // Video Title
+      //   shortDesc: "",
+      //   desc: "", // Video Description
+      // },
+      // {
+      //   videoID: "",// Youtube Video ID
+      //   name: "", // Video Title
+      //   shortDesc: "",
+      //   desc: "", // Video Description
+      // },
+      // {
+      //   videoID: "",// Youtube Video ID
+      //   name: "", // Video Title
+      //   shortDesc: "",
+      //   desc: "", // Video Description
+      // },
+      // {
+      //   videoID: "",// Youtube Video ID
+      //   name: "", // Video Title
+      //   shortDesc: "",
+      //   desc: "", // Video Description
+      // },
+      // {
+      //   videoID: "",// Youtube Video ID
+      //   name: "", // Video Title
+      //   shortDesc: "",
+      //   desc: "", // Video Description
+      // },
+      // {
+      //   videoID: "",// Youtube Video ID
+      //   name: "", // Video Title
+      //   shortDesc: "",
+      //   desc: "", // Video Description
+      // },
+      // {
+      //   videoID: "",// Youtube Video ID
+      //   name: "", // Video Title
+      //   shortDesc: "",
+      //   desc: "", // Video Description
+      // },
+      // {
+      //   videoID: "",// Youtube Video ID
+      //   name: "", // Video Title
+      //   shortDesc: "",
+      //   desc: "", // Video Description
+      // },
     ];
     $scope.init = function(video){
       $('.single-video').first().addClass('active');

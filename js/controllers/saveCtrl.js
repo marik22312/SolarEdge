@@ -37,51 +37,60 @@ app.controller("saveCtrl", function ($scope) {
   $scope.catName="Save commissioning time and truck rolls";
     $scope.videos = [
       {
-        videoID: "012QOeewim4", //Youtube Video ID
-        name: "Know before your go – module level analysis", // Video Title
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
+        videoID: "UrRlB1bZugw",// Youtube Video ID
+        name: "Remote LCD View ", // Video Title
+        shortDesc: "Viewing the inverter LCD screen in real-time remotely from your office",
+        desc: "View inverter LCD screen in real-time remotely from your office <ul><li>Helps your support staff provide fast, off-site system troubleshooting </li><li>Eliminates the need for costly and unnecessary truck rolls </li></ul>", // Video Description
         clas: "active",
       },
       {
-        videoID: "L9EKqQWPjyo", //Youtube Video ID
-        name: "Bob Dylan - Things Have Changed", // Video Title
-        desc: "Moby - Porcelain", // Video Description
+        videoID: "-insert video ID",// Youtube Video ID
+        name: "Remote Monitoring", // Video Title
+        shortDesc: "Using remote monitoring capabilities to save time and money",
+        desc: "Use the remote monitoring capabilities to improve service times ands reduce service cost<ul><li>Conveniently perform multiple service tasks from the comfort of your office instead of onsite</li><li>Reduce expensive truck rolls and save labor costs</li><li>Remote capabilities include turning system on after PTO, viewing production status, and pairing power optimizers </li></ul>", // Video Description
       },
       {
-        videoID: "YwSZvHqf9qM", //Youtube Video ID
-        name: "Bob Dylan - Tangled Up In Blue", // Video Title
-        desc: "Description Goes Here", // Video Description
+        videoID: "--insert video ID",// Youtube Video ID
+        name: "Remote Pairing", // Video Title
+        shortDesc: "Remotely pair power optimizers from the comfort of your office",
+        desc: "Avoid unnecessary site visits by remotely pairing power optimizers <ul><li>Easily continue pairing process from the office, if shading or darkness prevents onsite pairing completion </li><li>Improve service flexibility and save costs</li></ul>", // Video Description
       },
       {
-        videoID: "Go2jbER0wk0", //Youtube Video ID
-        name: "Bob Dylan - Lay Lady Lay", // Video Title
-        desc: "Description Goes Here", // Video Description
+        videoID: "---insert video ID",// Youtube Video ID
+        name: "Remote System Turn-On ", // Video Title
+        shortDesc: "Saving commissioning time by turning on systems remotely after PTO is given",
+        desc: "Save hundreds of dollars per installation by remotely turning on your customers’ systems <ul><li>Once system is installed, place in Standby mode until PTO is given</li><li>Avoid returning to customer site just to turn the system on</li><li>Prevent unnecessary truck rolls, freeing up service crews for other jobs</li></ul>", // Video Description
       },
       {
-        videoID: "yZPh3hpxLKs", //Youtube Video ID
-        name: "Bob Dylan - Don't Think Twice It's Alright", // Video Title
-        desc: "Description Goes Here", // Video Description
+        videoID: "----insert video ID",// Youtube Video ID
+        name: "Module-Level Analysis ", // Video Title
+        shortDesc: "Using module-level performance analysis to know before you go",
+        desc: "Enable faster and cost-effective site maintenance with module-level analysis<ul><li>Remotely identify and troubleshoot issues at the module, string and system level</li><li>Quickly pinpoint underperforming modules to their physical location, prior to sending a technician onsite</li><li>Use advanced diagnostics to verify module faults such as PID or a failed bypass diode, in just a few clicks </li></ul>", // Video Description
       },
-      {
-        videoID: "BzanOzyqgas", //Youtube Video ID
-        name: "Bob Dylan - All Along the Watchtower", // Video Title
-        desc: "Description Goes Here", // Video Description
-      },
-      {
-        videoID: "nBgkw06JhFA", //Youtube Video ID
-        name: "Bob Dylan - I Shall Be Released", // Video Title
-        desc: "Description Goes Here", // Video Description
-      },
-      {
-        videoID: "3l4nVByCL44", //Youtube Video ID
-        name: "Blowin in The Wind - Bob Dylan", // Video Title
-        desc: "Description Goes Here", // Video Description
-      },
-      {
-        videoID: "T5al0HmR4to", //Youtube Video ID
-        name: "A Hard Rain's A-Gonna Fall", // Video Title
-        desc: "Description Goes Here", // Video Description
-      },
+      // {
+      //   videoID: "",// Youtube Video ID
+      //   name: "", // Video Title
+      //   shortDesc: "",
+      //   desc: "", // Video Description
+      // },
+      // {
+      //   videoID: "",// Youtube Video ID
+      //   name: "", // Video Title
+      //   shortDesc: "",
+      //   desc: "", // Video Description
+      // },
+      // {
+      //   videoID: "",// Youtube Video ID
+      //   name: "", // Video Title
+      //   shortDesc: "",
+      //   desc: "", // Video Description
+      // },
+      // {
+      //   videoID: "",// Youtube Video ID
+      //   name: "", // Video Title
+      //   shortDesc: "",
+      //   desc: "", // Video Description
+      // },
     ];
     $scope.init = function(video){
       $('.single-video').first().addClass('active');

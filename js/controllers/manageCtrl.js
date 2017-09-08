@@ -36,52 +36,24 @@ app.controller("manageCtrl", function ($scope) {
   };
    $scope.catName="effectively manage your fleet";
     $scope.videos = [
-      {
-        videoID: "6CvtmG8_FLA", //Youtube Video ID
-        name: "Automatic Alerts", //Video Title
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.",  // Video Description
-        clas: "active",
-      },
-      {
-        videoID: "6EA-MIYY1bg", //Youtube Video ID
-        name: "Hooverphonic - Mad About You", //Video Title
-        desc: "Moby - Porcelain", // Video Description
-      },
-      {
-        videoID: "M_kTSBqQkME", //Youtube Video ID
-        name: "Kovacs - My Love", //Video Title
-        desc: "Description Goes Here",  // Video Description
-      },
-      {
-        videoID: "JTTC_fD598A", //Youtube Video ID
-        name: "Leonard Cohen - First We Take Manhattan", //Video Title
-        desc: "Description Goes Here",  // Video Description
-      },
-      {
-        videoID: "NW7oNpzBSGc", //Youtube Video ID
-        name: "Leonard Cohen - In My Secret Life", //Video Title
-        desc: "Description Goes Here",  // Video Description
-      },
-      {
-        videoID: "v0nmHymgM7Y", //Youtube Video ID
-        name: "Leonard Cohen - You Want It Darker ", //Video Title
-        desc: "Description Goes Here",  // Video Description
-      },
-      {
-        videoID: "QYEC4TZsy-Y", //Youtube Video ID
-        name: "Lou Reed - Perfect Day", //Video Title
-        desc: "Description Goes Here",  // Video Description
-      },
-      {
-        videoID: "hMr3KtYUCcI", //Youtube Video ID
-        name: "PINK FLOYD HAVE A CIGAR", //Video Title
-        desc: "Description Goes Here",  // Video Description
-      },
-      {
-        videoID: "YrLk4vdY28Q", //Youtube Video ID
-        name: "Leonard Cohen - Hallelujah", //Video Title
-        desc: "Description Goes Here",  // Video Description
-      },
+        {
+          videoID: "TBD",// Youtube Video ID
+          name: "Automatic Alerts ", // Video Title
+          shortDesc: "Staying aware of site performance issues to maximize system uptime ",
+          desc: "Improve site performance and maximize energy output using the alerts mechanism <ul><li>Notify the right people instantly via email about key performance issues, letting them respond rapidly to events </li><li>See predefined alerts and add custom alerts with the powerful Alert Rules Generator</li><li>Use the Alert Log and Alert Reports to regularly analyze performance over time or across sites</li></ul>", // Video Description
+        },
+        {
+          videoID: "XRjUtY13yIE",// Youtube Video ID
+          name: "Mismatch Reports", // Video Title
+          shortDesc: "Allowing higher lifetime production by analyzing module mismatch",
+          desc: "Maximize system revenue by using in-depth diagnostics <ul><li>Analyze module performance to identify mismatch losses and Improve overall site performance </li><li>Stay on top of problematic external conditions such as shading or underperforming modules to increase energy output and ROI  </li><li>Prevent energy loss by early detection of mismatch issues </li></ul>", // Video Description
+        },
+        // {
+        //   videoID: "",// Youtube Video ID
+        //   name: "", // Video Title
+        //   shortDesc: "",
+        //   desc: "", // Video Description
+        // },
     ];
     $scope.init = function(video){
       $('.single-video').first().addClass('active');

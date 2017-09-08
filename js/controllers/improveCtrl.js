@@ -40,31 +40,39 @@ app.controller("improveCtrl", function ($scope, $rootScope, $location) {
     $scope.catName="Improve your lead generation";
     $scope.videos = [
       {
-        videoID: "PwVV7Dp63lg", //Youtube Video ID
-        name: "Social Media", //Video Title
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
+        videoID: "TWms_cJrp40", //Youtube Video ID
+        name: "Kiosk View ", //Video Title
+        desc: "Showcase real-time PV site performance on a public display e.g. building lobby<ul><li>Increase your brand exposure by displaying your logo in public</li><li>Help your customers promote their commitment to renewable energy and support solar education </li></ul>", // Video Description
+        shortDesc: "Showcasing real-time PV site performance on a public display ",
         clas: "active",
       },
       {
-        videoID: "13EifDb4GYs",// Youtube Video ID
-        name: "Moby - Porcelain", // Video Title
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
+        videoID: "lH3msleTYeA",// Youtube Video ID
+        name: "Public Site Display", // Video Title
+        shortDesc: "Gaining free exposure by making your sites publicly viewed",
+        desc: "Gain free exposure by making your sites publicly viewed<ul><li>Easily share your sites using a public web address – no need to login to the monitoring platform </li><li>Gain high visibility for your company logo to enhance lead generation</li><li>Display the site's power and energy production, and environmental benefits</li></ul>", // Video Description
       },
       {
-        videoID: "6A2V9Bu80J4",// Youtube Video ID
-        name: "Moby - Flower", // Video Title
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
+        videoID: "--insert_video_ID",// Youtube Video ID
+        name: "Social Media Branding", // Video Title
+        shortDesc: "Enjoying wide brand exposure each time your customers share their site production",
+        desc: "Enjoying wide brand exposure each time your customers share their site production<ul><li>Site production is easily shared across social media directly from the monitoring app</li><li>Customer’s friends and family are exposed to your company logo, generating more referrals </li></ul>", // Video Description
       },
-      {
-        videoID: "5wrwcEZ3Btw",// Youtube Video ID
-        name: "Moby - in this world", // Video Title
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
-      },
-      {
-        videoID: "z3YMxM1_S48",// Youtube Video ID
-        name: "Moby - Natural Blues", // Video Title
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget justo consequat, sodales velit a, ullamcorper diam. Proin suscipit ligula orci, in volutpat nisl lobortis a. Proin et mi pulvinar, scelerisque nunc sit amet, semper tellus. Aenean molestie mi vitae sodales malesuada. Sed sed justo vehicula, fringilla tellus quis, pulvinar orci. Fusce sed mollis dui. Mauris aliquam gravida posuere. Cras scelerisque nunc eget augue blandit, congue volutpat elit tempor. Proin sit amet risus ex.", // Video Description
-      },
+      // BLANKS, JUST REMOVE THE DOUBLE SLASH TO USE
+
+
+      // {
+      //   videoID: "5wrwcEZ3Btw",// Youtube Video ID
+      //   name: "Moby - in this world", // Video Title
+      //   shortDesc: "",
+      //   desc: "", // Video Description
+      // },
+      // {
+      //   videoID: "z3YMxM1_S48",// Youtube Video ID
+      //   name: "Moby - Natural Blues", // Video Title
+      //   shortDesc: "",
+      //   desc: "", // Video Description
+      // },
     ];
     $scope.init = function(video){
       $scope.selectedVideo = video;

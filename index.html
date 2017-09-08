@@ -17,6 +17,7 @@
     <!-- AngularJS -->
     <script type="text/javascript" src="lib/angular.min.js"></script>
     <script type="text/javascript" src="lib/angular-route.min.js"></script>
+    <script type="text/javascript" src="lib/angular-sanitize.min"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
     <script type="text/javascript" src="lib/angular-youtube-video.js"></script>
   </head>
@@ -103,14 +104,9 @@
               <div class="player-container col-lg-8 col-md-8 col-sm-12 col-xs-12">
                   <youtube-video id="videoPlayer" video-id="selectedVideo.videoID" player-vars="playerVars" player="mainPlayer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></youtube-video>
               </div>
-              <div class="nullSelector" id="video_arrow">
-                <div class="arrow_box col-lg-4 col-md-8 right hidden-xs hidden-sm">
-                  Touch any video to view
-                </div>
-              </div>
               <div class="selec-video-info col-md-12 col-lg-12 col-sm-12 col-xs-12">
                 <span class="selected-name">{{selectedVideo.name}}</span>
-                <span class="selected-desc">{{selectedVideo.desc}}</span>
+                <span class="selected-desc" ng-bind-html="selectedVideo.desc"></span>
               </div>
             </div>
             <div id="video-chooser" class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
@@ -121,7 +117,7 @@
                 <img ng-src="https://i.ytimg.com/vi/{{video.videoID}}/1.jpg" title="{{video.name}}" class="col-lg-6 col-md-6 col-sm-6 col-xs-6 video-image" />
                 <div class="video-info col-lg-6 col-md-6 col-xs-6 col-sm-6">
                   <p class="video-name">{{video.name}}<span class="video-desc">
-                {{video.desc}}  </span></p>
+                {{video.shortDesc}}  </span></p>
                   </div>
               </div>
               </label>
