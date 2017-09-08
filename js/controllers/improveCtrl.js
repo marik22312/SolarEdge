@@ -11,6 +11,7 @@ app.controller("improveCtrl", function ($scope, $rootScope, $location) {
         autoplay: 1,
         disablekb: 1,
         iv_load_policy: 3,
+        rel: 0,
     };
     var showTooltips = function ($event, mainPlayer) {
     // play it again
