@@ -69,7 +69,7 @@ app.controller("improveCtrl", function ($scope, $rootScope, $location) {
         videoID: "-------",// Youtube Video ID
         name: "Monitoring API", // Video Title
         shortDesc: "Integrating SolarEdge monitoring data for easier and customizable sharing",
-        desc: "Integrate data from your monitored sites into your own applications<ul><li>Access the SolarEdge monitoring system database for data analysis purposes, fleet management, displaying system data in other applications, etc. </li><li>Integrate data from customers’ sites, such as energy production, into your own home page or blog</li><li>Push sales by using real-world examples to highlight benefits of solar e.g. CO2 emissions saved </li></ul>", // Video Description
+        desc: "Integrate data from your monitored sites into your own applications<ul><li>Access the SolarEdge monitoring system database for data analysis purposes, fleet management, displaying system data in other applications, etc. </li><li>Integrate data from customers’ sites, such as energy production, into your own home page or blog</li><li>Push sales by using real-world examples to highlight benefits of solar e.g. CO<sub>2</sub> emissions saved </li></ul>", // Video Description
       },
 
       // BLANKS, JUST REMOVE THE DOUBLE SLASH TO USE

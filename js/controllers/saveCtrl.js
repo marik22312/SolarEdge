@@ -47,7 +47,7 @@ app.controller("saveCtrl", function ($scope) {
       {
         videoID: "FzDs9-B5iNs",// Youtube Video ID
         name: "Remote Monitoring", // Video Title
-        shortDesc: "Using remote monitoring capabilities to save time and money",
+        shortDesc: "Pairing power optimizers remotely from the comfort of your office",
         desc: "Use the remote monitoring capabilities to improve service times ands reduce service cost<ul><li>Conveniently perform multiple service tasks from the comfort of your office instead of onsite</li><li>Reduce expensive truck rolls and save labor costs</li><li>Remote capabilities include turning system on after PTO, viewing production status, and pairing power optimizers </li></ul>", // Video Description
       },
       {
