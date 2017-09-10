@@ -59,9 +59,20 @@ app.controller("improveCtrl", function ($scope, $rootScope, $location) {
         shortDesc: "Enjoying wide brand exposure each time your customers share their site production",
         desc: "Enjoying wide brand exposure each time your customers share their site production<ul><li>Site production is easily shared across social media directly from the monitoring app</li><li>Customer’s friends and family are exposed to your company logo, generating more referrals </li></ul>", // Video Description
       },
+      {
+        videoID: "0TUBDeCxpGk",// Youtube Video ID
+        name: "Adding Logo to Site Image", // Video Title
+        shortDesc: "Driving your lead generation through personalizing site images",
+        desc: "Generate more referrals by adding your logo to customer sites<ul><li>Display your logo and phone number in your customers’ monitoring dashboard</li><li>Increase your brand exposure whenever your customer share their system performance</li></ul>", // Video Description
+      },
+      {
+        videoID: "-------",// Youtube Video ID
+        name: "Monitoring API", // Video Title
+        shortDesc: "Integrating SolarEdge monitoring data for easier and customizable sharing",
+        desc: "Integrate data from your monitored sites into your own applications<ul><li>Access the SolarEdge monitoring system database for data analysis purposes, fleet management, displaying system data in other applications, etc. </li><li>Integrate data from customers’ sites, such as energy production, into your own home page or blog</li><li>Push sales by using real-world examples to highlight benefits of solar e.g. CO2 emissions saved </li></ul>", // Video Description
+      },
+
       // BLANKS, JUST REMOVE THE DOUBLE SLASH TO USE
-
-
       // {
       //   videoID: "5wrwcEZ3Btw",// Youtube Video ID
       //   name: "Moby - in this world", // Video Title

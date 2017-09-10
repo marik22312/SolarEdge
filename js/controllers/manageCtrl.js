@@ -49,6 +49,36 @@ app.controller("manageCtrl", function ($scope) {
           shortDesc: "Allowing higher lifetime production by analyzing module mismatch",
           desc: "Maximize system revenue by using in-depth diagnostics <ul><li>Analyze module performance to identify mismatch losses and Improve overall site performance </li><li>Stay on top of problematic external conditions such as shading or underperforming modules to increase energy output and ROI  </li><li>Prevent energy loss by early detection of mismatch issues </li></ul>", // Video Description
         },
+        {
+          videoID: "---------",// Youtube Video ID
+          name: "Account Level Reports", // Video Title
+          shortDesc: "Allowing comparison and performance analysis of multiple sites in your account",
+          desc: "Streamline data analysis of all sites in your account <ul><li>Single-click generation of reports analyzing multiple sites within your account </li><li>Generate performance summary reports at daily, monthly or custom range levels</li></ul>", // Video Description
+        },
+        {
+          videoID: "syX4NolWRCs",// Youtube Video ID
+          name: "Setting Access Levels", // Video Title
+          shortDesc: "Managing control of your users’ monitoring access",
+          desc: "Maintain full control over what information your users can see:<ul><li>Provide local installers access to monitor site performance, edit site layout, generate reports and perform remote servicing </li><li>Access for third parties is also possible e.g. monitoring service providers, on-field service sub-contractors, etc.</li><li>Grant user roles such as Full Access, Dashboard & Layout, Dashboard Only </li></ul>", // Video Description
+        },
+        // {
+        //   videoID: "",// Youtube Video ID
+        //   name: "", // Video Title
+        //   shortDesc: "",
+        //   desc: "", // Video Description
+        // },
+        // {
+        //   videoID: "",// Youtube Video ID
+        //   name: "", // Video Title
+        //   shortDesc: "",
+        //   desc: "", // Video Description
+        // },
+        // {
+        //   videoID: "",// Youtube Video ID
+        //   name: "", // Video Title
+        //   shortDesc: "",
+        //   desc: "", // Video Description
+        // },
         // {
         //   videoID: "",// Youtube Video ID
         //   name: "", // Video Title

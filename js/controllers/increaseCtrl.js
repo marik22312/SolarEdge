@@ -49,12 +49,12 @@ app.controller("increaseCtrl", function ($scope) {
         shortDesc: "Improving system owner's SREC reporting experience",
         desc: "Enable your customers to automatically report their energy production for SREC credits<ul><li>Simplified process for reporting energy production to the PTS</li><li>Automatic identification of relevant PTS based on site location</li><li>Report status and summary available directly from the dashboard </li></ul>", // Video Description
       },
-      // {
-      //   videoID: "",// Youtube Video ID
-      //   name: "", // Video Title
-      //   shortDesc: "",
-      //   desc: "", // Video Description
-      // },
+      {
+        videoID: "Ztj8CarzR9U",// Youtube Video ID
+        name: "Satellite-Based Performance Ratio", // Video Title
+        shortDesc: "Generating reliable, cost-saving performance ratio data to verify system performance ",
+        desc: "Run performance ratio analysis based on satellite data<ul><li>Eliminates sensor purchasing, installation, maintenance, cleaning and replacement costs</li><li>Seamlessly integrated into the monitoring platform</li><li>Supports multiple tilts and orientations, no need to install multiple sensors on-site</li></ul>", // Video Description
+      },
       // {
       //   videoID: "",// Youtube Video ID
       //   name: "", // Video Title

@@ -68,12 +68,12 @@ app.controller("saveCtrl", function ($scope) {
         shortDesc: "Saving commissioning time by turning on systems remotely after PTO is given",
         desc: "Save hundreds of dollars per installation by remotely turning on your customers’ systems <ul><li>Once system is installed, place in Standby mode until PTO is given</li><li>Avoid returning to customer site just to turn the system on</li><li>Prevent unnecessary truck rolls, freeing up service crews for other jobs</li></ul>", // Video Description
       },
-      // {
-      //   videoID: "",// Youtube Video ID
-      //   name: "", // Video Title
-      //   shortDesc: "",
-      //   desc: "", // Video Description
-      // },
+      {
+        videoID: "-------",// Youtube Video ID
+        name: "Commissioning Report", // Video Title
+        shortDesc: "Shortening commissioning times using an automated installation checklist",
+        desc: "Shorten commissioning times by using an automated checklist to identify installation issues <ul><li>Especially useful for large commercial systems, due to the large number of components installed</li><li>Export as a PDF or Excel file and submit to inspectors approving the PV system</li></ul>", // Video Description
+      },
       // {
       //   videoID: "",// Youtube Video ID
       //   name: "", // Video Title
