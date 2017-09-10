@@ -44,7 +44,7 @@ app.controller("increaseCtrl", function ($scope) {
         desc: "Optimizing solar usage to increase self-consumption <ul><li>Easily track system production, site consumption, and self-consumption </li><li>Better understand customer consumption patterns to increase their self-consumption</li></ul>", // Video Description
       },
       {
-        videoID: "--insert_video_ID",// Youtube Video ID
+        videoID: "rVVjlCKamhA",// Youtube Video ID
         name: "Automatic SREC Reporting", // Video Title
         shortDesc: "Improving system owner's SREC reporting experience",
         desc: "Enable your customers to automatically report their energy production for SREC credits<ul><li>Simplified process for reporting energy production to the PTS</li><li>Automatic identification of relevant PTS based on site location</li><li>Report status and summary available directly from the dashboard </li></ul>", // Video Description

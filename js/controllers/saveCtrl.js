@@ -45,19 +45,19 @@ app.controller("saveCtrl", function ($scope) {
         clas: "active",
       },
       {
-        videoID: "-insert video ID",// Youtube Video ID
+        videoID: "FzDs9-B5iNs",// Youtube Video ID
         name: "Remote Monitoring", // Video Title
         shortDesc: "Using remote monitoring capabilities to save time and money",
         desc: "Use the remote monitoring capabilities to improve service times ands reduce service cost<ul><li>Conveniently perform multiple service tasks from the comfort of your office instead of onsite</li><li>Reduce expensive truck rolls and save labor costs</li><li>Remote capabilities include turning system on after PTO, viewing production status, and pairing power optimizers </li></ul>", // Video Description
       },
       {
-        videoID: "--insert video ID",// Youtube Video ID
+        videoID: "KCyYSoHMhjw",// Youtube Video ID
         name: "Remote Pairing", // Video Title
         shortDesc: "Remotely pair power optimizers from the comfort of your office",
         desc: "Avoid unnecessary site visits by remotely pairing power optimizers <ul><li>Easily continue pairing process from the office, if shading or darkness prevents onsite pairing completion </li><li>Improve service flexibility and save costs</li></ul>", // Video Description
       },
       {
-        videoID: "---insert video ID",// Youtube Video ID
+        videoID: "h5e1H-EELGg",// Youtube Video ID
         name: "Remote System Turn-On ", // Video Title
         shortDesc: "Saving commissioning time by turning on systems remotely after PTO is given",
         desc: "Save hundreds of dollars per installation by remotely turning on your customers’ systems <ul><li>Once system is installed, place in Standby mode until PTO is given</li><li>Avoid returning to customer site just to turn the system on</li><li>Prevent unnecessary truck rolls, freeing up service crews for other jobs</li></ul>", // Video Description
