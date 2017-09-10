@@ -38,7 +38,7 @@ app.controller("manageCtrl", function ($scope) {
    $scope.catName="effectively manage your fleet";
     $scope.videos = [
         {
-          videoID: "TBD",// Youtube Video ID
+          videoID: "sRelFFW79Uo",// Youtube Video ID
           name: "Automatic Alerts ", // Video Title
           shortDesc: "Staying aware of site performance issues to maximize system uptime ",
           desc: "Improve site performance and maximize energy output using the alerts mechanism <ul><li>Notify the right people instantly via email about key performance issues, letting them respond rapidly to events </li><li>See predefined alerts and add custom alerts with the powerful Alert Rules Generator</li><li>Use the Alert Log and Alert Reports to regularly analyze performance over time or across sites</li></ul>", // Video Description
