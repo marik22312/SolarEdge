@@ -126,7 +126,7 @@ li.category.active svg.category_img {
 
 #video-chooser {
   border-left: 1px solid $greyColor;
-
+  min-height: 700px;
   .single-video {
     margin: 0 0 15px;
     padding-left: 0;

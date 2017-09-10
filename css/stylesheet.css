@@ -101,6 +101,10 @@
   }
 }
 
+#menu-cont .categories .active {
+  border-bottom: 2px solid #cc0033;
+}
+
 #menu-cont .categories .category {
   display: inline-block;
   max-height: 160px;
@@ -232,7 +236,6 @@
 /* .lds-css */
 #player-container {
   margin-top: 215px;
-  /* .videoPlayer */
 }
 
 #player-container .videoPlayer {
@@ -241,7 +244,7 @@
   padding-left: 46px;
   width: 880px;
   /* .player-container */
-  /* .selec-video-info */
+  /* #player-container */
 }
 
 #player-container .videoPlayer .player-container {
@@ -261,6 +264,7 @@
   margin: 0;
   margin-top: 30px;
   /* .selected-name */
+  /* .videoPlayer */
 }
 
 #player-container .videoPlayer .selec-video-info .selected-name {
@@ -274,6 +278,10 @@
   margin-top: -8px;
 }
 
+#player-container .videoPlayer .selec-video-info .selected-desc {
+  /* .selec-video-info */
+}
+
 #player-container .videoPlayer .selec-video-info .selected-desc ul {
   display: block;
   list-style-type: disc;
@@ -284,7 +292,6 @@
   -webkit-padding-start: 40px;
 }
 
-/* #player-container */
 #video-chooser {
   /* .video-image */
   /* .video-info */
@@ -445,6 +452,7 @@ li.category.active svg.category_img {
 
 #video-chooser {
   border-left: 1px solid #cccccc;
+  min-height: 700px;
 }
 
 #video-chooser .single-video {

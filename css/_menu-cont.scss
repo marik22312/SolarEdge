@@ -29,7 +29,9 @@
             width: $container-width-lg;
             margin-left: 220px;
         }
-
+        .active{
+          border-bottom: 2px solid $redColor;
+        }
         .category {
             display: inline-block;
             max-height: 160px;
@@ -38,7 +40,6 @@
                 height: 170px;
                 max-height: 220px !important;
             }
-
             .bicon {
                 display: block !important;
             } /* .bicon */
