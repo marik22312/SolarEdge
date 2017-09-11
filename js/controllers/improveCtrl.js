@@ -32,13 +32,7 @@ app.controller("improveCtrl", function ($scope, $rootScope, $location, $window) 
       vidLocation: "-insertVideoName", // Video ID
       name: "Adding Logo to Site Image", // Video Title
       shortDesc: "Driving your lead generation through personalizing site images",
-      longDesc: "Generate more referrals by adding your logo to customer sites<ul><li>Display your logo and phone number in your customers’ monitoring dashboard</li><li>Increase your brand exposure whenever your customer share their system performance</li></ul>", // Video Description
-    },
-    {
-      vidLocation: "insert-video-name", // Video ID
-      name: "Monitoring API", // Video Title
-      shortDesc: "Integrating SolarEdge monitoring data for easier and customizable sharing",
-      longDesc: "Integrate data from your monitored sites into your own applications<ul><li>Access the SolarEdge monitoring system database for data analysis purposes, fleet management, displaying system data in other applications, etc. </li><li>Integrate data from customers’ sites, such as energy production, into your own home page or blog</li><li>Push sales by using real-world examples to highlight benefits of solar e.g. CO<sub>2</sub> emissions saved </li></ul>", // Video Description
+      longDesc: "Generate more referrals by adding your company business card to customer sites<ul><li>Display your logo and phone number in your customers’ monitoring dashboard</li><li>Get brand exposure every time a system owner shares system performance in social media</li></ul>", // Video Description
     },
   ];
   /*
