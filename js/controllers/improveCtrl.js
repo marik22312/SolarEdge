@@ -60,10 +60,10 @@ app.controller("improveCtrl", function ($scope, $rootScope, $location) {
         desc: "Enjoying wide brand exposure each time your customers share their site production<ul><li>Site production is easily shared across social media directly from the monitoring app</li><li>Customer’s friends and family are exposed to your company logo, generating more referrals </li></ul>", // Video Description
       },
       {
-        videoID: "0TUBDeCxpGk",// Youtube Video ID
+        videoID: "gKCOHMjmx1g",// Youtube Video ID
         name: "Adding Logo to Site Image", // Video Title
         shortDesc: "Driving your lead generation through personalizing site images",
-        desc: "Generate more referrals by adding your company business card to customer sites<ul><li>Display your logo and phone number in your customers’ monitoring dashboard</li><li>Get brand exposure every time a system owner shares system performance in social media</li></ul>", // Video Description
+        desc: "Generate more referrals by adding your company business card to customer sites<ul><li>Grow brand exposure every time a system owner shares system performance across their social networks</li><li>Easily update the site image with your logo and phone number, from the monitoring platform</li></ul>", // Video Description
       },
 
 

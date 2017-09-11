@@ -50,16 +50,16 @@ app.controller("manageCtrl", function ($scope) {
           desc: "Maximize system revenue by using in-depth diagnostics <ul><li>Analyze module performance to identify mismatch losses and Improve overall site performance </li><li>Stay on top of problematic external conditions such as shading or underperforming modules to increase energy output and ROI  </li><li>Prevent energy loss by early detection of mismatch issues </li></ul>", // Video Description
         },
         {
-          videoID: "---------",// Youtube Video ID
+          videoID: "tpVyN5B-r0o",// Youtube Video ID
           name: "Account Level Reports", // Video Title
           shortDesc: "Allowing comparison and performance analysis of multiple sites in your account",
           desc: "Streamline data analysis of all sites in your account <ul><li> Generate reports analyzing performance of multiple sites in your account in just a few clicks</li><li>Compare performance of multiple sites at daily, monthly or custom date-range levels</li></ul>", // Video Description
         },
         {
-          videoID: "syX4NolWRCs",// Youtube Video ID
+          videoID: "XfjDCjXH1zY",// Youtube Video ID
           name: "Setting Access Levels", // Video Title
-          shortDesc: "Controlling the level of data access according to user type. ",
-          desc: "Maintain full control over what information your users can see:<ul><li>Provide local installers access to monitor site performance, edit site layout, generate reports and perform remote servicing </li><li>Access for third parties is also possible e.g. monitoring service providers, on-field service sub-contractors, etc.</li><li>Grant user roles such as Full Access, Dashboard & Layout, Dashboard Only </li></ul>", // Video Description
+          shortDesc: "Controlling the level of data access according to user type.",
+          desc: "Maintain full control over what information your users can see:<ul><li>Provide technicians and service staff access to monitor site performance, edit site layout, generate reports and perform remote servicing</li><li>Grant third-parties such as financiers, O&M providers and on-field service sub-contractors different permission levels to review site performance data</li><li> User roles include Full Access, Dashboard & Layout, and Dashboard Only</li></ul>", // Video Description
         },
         // {
         //   videoID: "",// Youtube Video ID

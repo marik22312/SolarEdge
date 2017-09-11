@@ -47,7 +47,7 @@ app.controller("saveCtrl", function ($scope) {
       {
         videoID: "FzDs9-B5iNs",// Youtube Video ID
         name: "Remote Monitoring", // Video Title
-        shortDesc: "Pairing power optimizers remotely from the comfort of your office",
+        shortDesc: "Using remote monitoring capabilities to save time and money",
         desc: "Use the remote monitoring capabilities to improve service times ands reduce service cost<ul><li>Conveniently perform multiple service tasks from the comfort of your office instead of onsite</li><li>Reduce expensive truck rolls and save labor costs</li><li>Remote capabilities include turning system on after PTO, viewing production status, and pairing power optimizers </li></ul>", // Video Description
       },
       {
@@ -59,7 +59,7 @@ app.controller("saveCtrl", function ($scope) {
       {
         videoID: "KCyYSoHMhjw",// Youtube Video ID
         name: "Remote Pairing", // Video Title
-        shortDesc: "Remotely pair power optimizers from the comfort of your office",
+        shortDesc: "Pairing power optimizers remotely, from the comfort of your office",
         desc: "Avoid unnecessary site visits by remotely pairing power optimizers <ul><li>Easily continue pairing process from the office, if shading or darkness prevents onsite pairing completion </li><li>Improve service flexibility and save costs</li></ul>", // Video Description
       },
       {
