@@ -24,7 +24,7 @@ app.controller("increaseCtrl", function ($scope, $rootScope, $location, $window)
       vidLocation: "--insert video", // Video ID
       name: "Satellite-Based Performance Ratio", // Video Title
       shortDesc: "Generating reliable, cost-saving performance ratio data to verify system performance ",
-      desc: "Run performance ratio analysis based on satellite data<ul><li>Eliminates sensor purchasing, installation, maintenance, cleaning and replacement costs</li><li>Seamlessly integrated into the monitoring platform</li><li>Supports multiple tilts and orientations, no need to install multiple sensors on-site</li></ul>", // Video Description
+      longDesc: "Run performance ratio analysis based on satellite data<ul><li>Eliminates sensor purchasing, installation, maintenance, cleaning and replacement costs</li><li>Seamlessly integrated into the monitoring platform</li><li>Supports multiple tilts and orientations, no need to install multiple sensors on-site</li></ul>", // Video Description
     },
   ];
   /*

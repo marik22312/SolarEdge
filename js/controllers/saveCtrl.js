@@ -17,7 +17,7 @@ app.controller("saveCtrl", function ($scope, $rootScope, $location, $window) {
     {
       vidLocation: "remote_monitoring", // Video ID
       name: "Remote Monitoring", // Video Name
-      shortDesc: "Using remote monitoring capabilities to save time and money", // Video Description
+      shortDesc: "Pairing power optimizers remotely from the comfort of your office", // Video Description
       longDesc: "Use the remote monitoring capabilities to improve service times ands reduce service cost <ul><li>Conveniently perform multiple service tasks from the comfort of your office instead of onsite</li><li>Reduce expensive truck rolls and save labor costs</li><li>emote capabilities include turning system on after PTO, viewing production status, and pairing power optimizers </li></ul>", // Video Description
     },
     {
@@ -42,7 +42,7 @@ app.controller("saveCtrl", function ($scope, $rootScope, $location, $window) {
       vidLocation: "-insert-vid-file-name-", // Video ID
       name: "Commissioning Report", // Video Title
       shortDesc: "Shortening commissioning times using an automated installation checklist",
-      desc: "Shorten commissioning times by using an automated checklist to identify installation issues <ul><li>Especially useful for large commercial systems, due to the large number of components installed</li><li>Export as a PDF or Excel file and submit to inspectors approving the PV system</li></ul>", // Video Description
+      longDesc: "Shorten commissioning times by using an automated checklist to identify installation issues <ul><li>Especially useful for large commercial systems, due to the large number of components installed</li><li>Export as a PDF or Excel file and submit to inspectors approving the PV system</li></ul>", // Video Description
     },
   ];
   /*
