@@ -53,7 +53,7 @@ app.controller("manageCtrl", function ($scope) {
           videoID: "---------",// Youtube Video ID
           name: "Account Level Reports", // Video Title
           shortDesc: "Allowing comparison and performance analysis of multiple sites in your account",
-          desc: "Streamline data analysis of all sites in your account <ul><li> Generate reports analyzing performance of multiple sites in your account in just a few clicks</li><li>Compare performance of multiple sites at daily, monthly or custom-date range levels</li></ul>", // Video Description
+          desc: "Streamline data analysis of all sites in your account <ul><li> Generate reports analyzing performance of multiple sites in your account in just a few clicks</li><li>Compare performance of multiple sites at daily, monthly or custom date-range levels</li></ul>", // Video Description
         },
         {
           videoID: "syX4NolWRCs",// Youtube Video ID
