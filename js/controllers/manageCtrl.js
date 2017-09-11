@@ -30,7 +30,7 @@ app.controller("manageCtrl", function ($scope, $rootScope, $location, $window) {
       vidLocation: "-insert-file-name", // Video ID
       name: "Setting Access Levels", // Video Title
       shortDesc: "Controlling the level of data access according to user type.",
-      longDesc: "Maintain full control over what information your users can see:<ul><li>Provide local installers access to monitor site performance, edit site layout, generate reports and perform remote servicing </li><li>Access for third parties is also possible e.g. monitoring service providers, on-field service sub-contractors, etc.</li><li>Grant user roles such as Full Access, Dashboard & Layout, Dashboard Only </li></ul>", // Video Description
+      longDesc: "Maintain full control over what information your users can see:<ul><li>Provide technicians and service staff access to monitor site performance, edit site layout, generate reports and perform remote servicing</li><li>Grant third-parties such as financiers, O&M providers and on-field service sub-contractors different permission levels to review site performance data</li><li> User roles include Full Access, Dashboard & Layout, and Dashboard Only</li></ul>", // Video Description
     },
   ];
   /*

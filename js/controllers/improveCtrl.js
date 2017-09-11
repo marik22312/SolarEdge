@@ -32,7 +32,7 @@ app.controller("improveCtrl", function ($scope, $rootScope, $location, $window) 
       vidLocation: "-insertVideoName", // Video ID
       name: "Adding Logo to Site Image", // Video Title
       shortDesc: "Driving your lead generation through personalizing site images",
-      longDesc: "Generate more referrals by adding your company business card to customer sites<ul><li>Display your logo and phone number in your customers’ monitoring dashboard</li><li>Get brand exposure every time a system owner shares system performance in social media</li></ul>", // Video Description
+      longDesc: "Generate more referrals by adding your company business card to customer sites<ul><li>Grow brand exposure every time a system owner shares system performance across their social networks</li><li>Easily update the site image with your logo and phone number, from the monitoring platform</li></ul>", // Video Description
     },
   ];
   /*
