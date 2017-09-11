@@ -52,7 +52,7 @@ app.controller("increaseCtrl", function ($scope) {
       {
         videoID: "Ztj8CarzR9U",// Youtube Video ID
         name: "Satellite-Based Performance Ratio", // Video Title
-        shortDesc: "Generating reliable, cost-saving performance ratio data to verify system performance ",
+        shortDesc: "Analyzing system performance more reliably, at lower cost",
         desc: "Run performance ratio analysis based on satellite data<ul><li>Eliminates sensor purchasing, installation, maintenance, cleaning and replacement costs</li><li>Seamlessly integrated into the monitoring platform</li><li>Supports multiple tilts and orientations, no need to install multiple sensors on-site</li></ul>", // Video Description
       },
       // {

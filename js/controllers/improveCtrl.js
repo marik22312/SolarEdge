@@ -54,7 +54,7 @@ app.controller("improveCtrl", function ($scope, $rootScope, $location) {
         desc: "Gain free exposure by making your sites publicly viewed<ul><li>Easily share your sites using a public web address – no need to login to the monitoring platform </li><li>Gain high visibility for your company logo to enhance lead generation</li><li>Display the site's power and energy production, and environmental benefits</li></ul>", // Video Description
       },
       {
-        videoID: "--insert_video_ID",// Youtube Video ID
+        videoID: "Zm9R0svl9Zs",// Youtube Video ID
         name: "Social Media Branding", // Video Title
         shortDesc: "Enjoying wide brand exposure each time your customers share their site production",
         desc: "Enjoying wide brand exposure each time your customers share their site production<ul><li>Site production is easily shared across social media directly from the monitoring app</li><li>Customer’s friends and family are exposed to your company logo, generating more referrals </li></ul>", // Video Description
@@ -63,14 +63,9 @@ app.controller("improveCtrl", function ($scope, $rootScope, $location) {
         videoID: "0TUBDeCxpGk",// Youtube Video ID
         name: "Adding Logo to Site Image", // Video Title
         shortDesc: "Driving your lead generation through personalizing site images",
-        desc: "Generate more referrals by adding your logo to customer sites<ul><li>Display your logo and phone number in your customers’ monitoring dashboard</li><li>Increase your brand exposure whenever your customer share their system performance</li></ul>", // Video Description
+        desc: "Generate more referrals by adding your company business card to customer sites<ul><li>Display your logo and phone number in your customers’ monitoring dashboard</li><li>Get brand exposure every time a system owner shares system performance in social media</li></ul>", // Video Description
       },
-      {
-        videoID: "-------",// Youtube Video ID
-        name: "Monitoring API", // Video Title
-        shortDesc: "Integrating SolarEdge monitoring data for easier and customizable sharing",
-        desc: "Integrate data from your monitored sites into your own applications<ul><li>Access the SolarEdge monitoring system database for data analysis purposes, fleet management, displaying system data in other applications, etc. </li><li>Integrate data from customers’ sites, such as energy production, into your own home page or blog</li><li>Push sales by using real-world examples to highlight benefits of solar e.g. CO<sub>2</sub> emissions saved </li></ul>", // Video Description
-      },
+
 
       // BLANKS, JUST REMOVE THE DOUBLE SLASH TO USE
       // {
