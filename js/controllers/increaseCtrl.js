@@ -13,12 +13,18 @@ app.controller("increaseCtrl", function ($scope) {
     iv_load_policy: 3,
     rel: 0,
 };
-    var showTooltips = function ($event, mainPlayer) {
-    // play it again
-        $('.nullSelector').fadeIn()
-        // console.log('DEBUG: Video ended');
-    };
-    $scope.$on('youtube.player.ended', showTooltips);
+var showTooltipsPlay = function ($event, mainPlayer) {
+// play it again
+    $('.nullSelector').fadeIn();
+    mainPlayer.playVideo();
+    // console.log('DEBUG: Video ended');
+};
+var showTooltips = function ($event, mainPlayer) {
+// play it again
+    $('.nullSelector').fadeIn();
+    // console.log('DEBUG: Video ended');
+};
+$scope.$on('youtube.player.ended', showTooltipsPlay);
     $scope.$on('youtube.player.paused', showTooltips);
   $scope.$on('youtube.player.playing', function ($event, mainPlayer) {
     // play it again
