@@ -3,11 +3,9 @@
 
 #menu-cont {
     background-color: #f7f7f7;
-    position: relative;
     border-bottom: 1px #dddddd solid;
-    height: 170px;
+    // height: 170px;
     z-index: 1111;
-    position: fixed;
 
     @include breakpoint(lg) {
         height: 170px;;
@@ -37,7 +35,7 @@
             max-height: 160px;
             @include breakpoint(lg) {
                 width: 285px;
-                height: 170px;
+                // height: 170px;
                 max-height: 220px !important;
             }
             .bicon {
@@ -52,7 +50,9 @@
                 display: block;
                 color: black;
                 fill: $redColor;
-                margin: 25px auto auto;
+                width: 60%;
+                height: auto;
+                margin: 3% auto auto;
                 padding-bottom: 10px;
 
                 @include breakpoint(lg) {
