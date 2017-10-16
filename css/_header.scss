@@ -3,24 +3,24 @@
 
 #header {
     width: 100%;
-    border-bottom: 1px #dddddd solid;
     // max-height: 100px;
     // position: fixed;
     z-index: 1000;
     // height: 20%;
     background-color: white;
-    border-bottom: 1px solid $greyColor;
 
     @include breakpoint(lg) {
         // height: 100px;
         padding: 0;
     }
-
+.top_header{
+  width: 100%;
+  border-bottom: 1px solid $greyColor;
+}
     .header_logo {
-        padding: 15px;
-        width: 30%;
-        padding-right: 40px;
-        height: auto;
+        padding: 5px 30px 30px 30px;
+        margin-top: 25px;
+        border-right: 1px #cccccc solid;
 
         @include breakpoint(lg) {
             margin-right: 75px;
@@ -38,9 +38,7 @@
         color: black;
         font-weight: 600;
         padding-left: 20px;
-        display: inline-block;
         // height: 55px;
-        border-left: 1px $greyColor solid;
         @include breakpoint(lg) {
             height: 68px;
             font-size: 27px;

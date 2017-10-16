@@ -6,6 +6,7 @@
     border-bottom: 1px #dddddd solid;
     // height: 170px;
     z-index: 1111;
+    height: 150px;
 
     @include breakpoint(lg) {
         height: 170px;;
@@ -33,6 +34,8 @@
         .category {
             display: inline-block;
             max-height: 160px;
+            padding-top: 30px;
+            padding-bottom: 30px;
             @include breakpoint(lg) {
                 width: 285px;
                 // height: 170px;

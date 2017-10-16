@@ -1,10 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 #header {
   width: 100%;
-  border-bottom: 1px #dddddd solid;
   z-index: 1000;
   background-color: white;
-  border-bottom: 1px solid #cccccc;
   /* .header_logo */
   /* .header_text */
 }
@@ -15,11 +13,15 @@
   }
 }
 
+#header .top_header {
+  width: 100%;
+  border-bottom: 1px solid #cccccc;
+}
+
 #header .header_logo {
-  padding: 15px;
-  width: 30%;
-  padding-right: 40px;
-  height: auto;
+  padding: 5px 30px 30px 30px;
+  margin-top: 25px;
+  border-right: 1px #cccccc solid;
 }
 
 @media (min-width: 1200px) {
@@ -39,8 +41,6 @@
   color: black;
   font-weight: 600;
   padding-left: 20px;
-  display: inline-block;
-  border-left: 1px #cccccc solid;
 }
 
 @media (min-width: 1200px) {
@@ -58,6 +58,7 @@
   background-color: #f7f7f7;
   border-bottom: 1px #dddddd solid;
   z-index: 1111;
+  height: 150px;
   /* #top_arrow */
   /* .categories */
 }
@@ -100,6 +101,8 @@
 #menu-cont .categories .category {
   display: inline-block;
   max-height: 160px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   /* .bicon */
   /* .ricon */
   /* .category_img */
@@ -592,7 +595,6 @@ footer #footer-cont #footer-copyright {
     padding: 0;
   }
   #main-view {
-    margin-top: 108px;
     padding: 0;
   }
   #menu-cont {
