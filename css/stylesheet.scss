@@ -283,7 +283,7 @@ footer {
   height: 100%;
 }
 //Mobile View Query
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1280px) {
   header{padding: 0}
   #main-view {padding: 0;}
   #menu-cont{height: auto; margin-top: 0px;}
@@ -342,25 +342,22 @@ footer {
     margin: 0;
     padding-left: 0;
     padding-right: 0;
-
-    li {
-      height: auto;
-      width: 20%;
-    }
   }
 }
 //Very Small Devices
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 1280px) and (min-width: 980px)  {
   .mobile_headline {
-    h1{
-      font-size: 30px;
+    span{
+      font-size: 38px !important;
       margin-top: 10px;
       margin-bottom: 5px;
+      font-weight: bolder;
     }
   }
   .selec-video-info{
     .selected-name{
-      font-size: 30px;
+      font-size: 38px;
+      font-weight: bolder;
     }
     .selected-desc{
       font-size: 18px;
@@ -368,9 +365,9 @@ footer {
   }
   #video-chooser{
     .video-name {
-      font-size: 25px;
+      font-size: 35px !important;
       .video-desc {
-        font-size: 20px;
+        font-size: 25px !important;
       }
     }
   }
@@ -419,82 +416,82 @@ footer {
   }
 }
 
-@media screen and (min-width: 1920px) {
-
-  #video-chooser {
-    padding: 0;
-    margin: 0;
-    padding-left: 60px;
-    margin-left: 60px;
-    border-left: 2px solid $greyColor;
-    .video-info{padding:0}
-    .label-cont{
-      margin: 0;
-      padding: 0;
-    }
-    .single-video {
-      margin: 0;
-      padding: 0;
-      margin-bottom: 25px;
-    }
-    .video-image {
-      width: 180px;
-      height: 100px;
-      padding: 0;
-      margin: 0;
-      margin-right: 20px;
-      border-radius: 5px;
-    }
-    .video-name {
-      font-size: 16px;
-      font-weight: bold;
-      width: 270px;
-      height: 100px;
-      padding: 0;
-      margin: 0;
-      .video-desc{
-        padding: 0;
-        margin: 0;
-        font-size: 14px;
-        font-weight: normal;
-        margin-top: 8px;
-
-      }
-    }
-  }
-
-  .videoPlayer {
-    margin: 0;
-    padding: 0;
-    width: 880px;
-    .player-container {
-      margin: 0;
-      padding: 0;
-      padding-bottom: 56.6666666666%;
-      #videoPlayer {
-        margin: 0;
-        padding: 0;
-      }
-    }
-  }
-  #player-container{
-    margin-top: 215px;
-  }
-  .selec-video-info {
-    padding: 0;
-    margin: 0;
-    margin-top: 30px;
-    .selected-name {
-      padding: 0;
-      margin: 0;
-      font-size: 25px;
-      font-weight: 600;
-      margin-bottom: 14px;
-      font-size: 24px;
-      font-weight: 600;
-      margin-top: -8px;
-    }
-  }
-
-  #main-view{padding-top: 120px;}
-}
+// @media screen and (min-width: 1280px) {
+//
+//   #video-chooser {
+//     padding: 0;
+//     margin: 0;
+//     padding-left: 60px;
+//     margin-left: 60px;
+//     border-left: 2px solid $greyColor;
+//     .video-info{padding:0}
+//     .label-cont{
+//       margin: 0;
+//       padding: 0;
+//     }
+//     .single-video {
+//       margin: 0;
+//       padding: 0;
+//       margin-bottom: 25px;
+//     }
+//     .video-image {
+//       width: 180px;
+//       height: 100px;
+//       padding: 0;
+//       margin: 0;
+//       margin-right: 20px;
+//       border-radius: 5px;
+//     }
+//     .video-name {
+//       font-size: 16px;
+//       font-weight: bold;
+//       width: 270px;
+//       height: 100px;
+//       padding: 0;
+//       margin: 0;
+//       .video-desc{
+//         padding: 0;
+//         margin: 0;
+//         font-size: 14px;
+//         font-weight: normal;
+//         margin-top: 8px;
+//
+//       }
+//     }
+//   }
+//
+//   .videoPlayer {
+//     margin: 0;
+//     padding: 0;
+//     width: 880px;
+//     .player-container {
+//       margin: 0;
+//       padding: 0;
+//       padding-bottom: 56.6666666666%;
+//       #videoPlayer {
+//         margin: 0;
+//         padding: 0;
+//       }
+//     }
+//   }
+//   #player-container{
+//     margin-top: 215px;
+//   }
+//   .selec-video-info {
+//     padding: 0;
+//     margin: 0;
+//     margin-top: 30px;
+//     .selected-name {
+//       padding: 0;
+//       margin: 0;
+//       font-size: 25px;
+//       font-weight: 600;
+//       margin-bottom: 14px;
+//       font-size: 24px;
+//       font-weight: 600;
+//       margin-top: -8px;
+//     }
+//   }
+//
+//   #main-view{padding-top: 120px;}
+// }
