@@ -2,6 +2,9 @@
 @import "./variables";
 
 #video-chooser {
+  border-left: 1px solid $greyColor;
+  padding-left: 4.1665%;
+  min-height: 700px;
     .video-image {
         padding: 0;
         border-radius: 5px;
@@ -9,10 +12,14 @@
         width: 160px;
         height : 90px;
     } /* .video-image */
+    .single-video{
+      margin-bottom: 30px;
+    } /* .single-video */
     .video-info {
         vertical-align: top;
+        padding-left: 20px;
         .video-name {
-            display: block;
+            display: inline-block;
             font-size: 16px;
             font-weight: 600;
             margin-bottom: 0;
@@ -22,7 +29,6 @@
             color: #333333;
             font-size: 14px;
             font-weight: 400;
-            margin-top: 10%;
             line-height: 23px;
             .morelink {
                 color: $redColor;

@@ -6,11 +6,7 @@
     border-bottom: 1px #dddddd solid;
     // height: 170px;
     z-index: 1111;
-    height: 150px;
-
-    @include breakpoint(lg) {
-        height: 170px;;
-    }
+    height: 180px;
 
     #top_arrow {
       display: none;
@@ -24,23 +20,15 @@
     .categories {
         display: inline-block;
         width: 100%;
-        @include breakpoint(lg) {
-            width: $container-width-lg;
-            margin-left: 220px;
-        }
         .active{
           border-bottom: 2px solid $redColor;
         }
         .category {
             display: inline-block;
-            max-height: 160px;
+            max-height: 180px;
             padding-top: 30px;
             padding-bottom: 30px;
-            @include breakpoint(lg) {
-                width: 285px;
-                // height: 170px;
-                max-height: 220px !important;
-            }
+            width: 180px;
             .bicon {
                 display: block !important;
             } /* .bicon */
@@ -53,38 +41,17 @@
                 display: block;
                 color: black;
                 fill: $redColor;
-                width: 60%;
-                height: auto;
                 margin: 3% auto auto;
                 padding-bottom: 10px;
-
-                @include breakpoint(lg) {
-                    // margin-top: 46px;
-                    width: auto;
-                    height: auto;
-                    padding-bottom: 0 !important;
-                }
             } /* .category_img */
 
             .category_text {
                 color: black;
                 font-family: 'Open Sans', sans-serif;
                 font-weight: 600;
-                font-size: 12px;
+                font-size: 14px;
                 padding-bottom: 50px;
                 text-transform: uppercase;
-
-                @include breakpoint(lg) {
-                    padding-top: 21px;
-                    font-size: 16px !important;
-                    padding-bottom: 50px;
-                    max-width: 200px;
-                    width: 80%;
-                    margin-left: 10%;
-                    margin-right: 10%;
-                    padding-left: 0;
-                    padding-right: 0;
-                }
             } /* .category_text */
         } /* .category */
 
