@@ -41,3 +41,10 @@
         } /* .video-desc */
     } /* .video-info */
 } /* #video-chooser */
+
+@media screen and (max-width: 1279px){
+  #video-chooser{
+    border: none;
+    padding-left: 15px;
+  }
+} /* small media query */

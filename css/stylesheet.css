@@ -212,6 +212,13 @@
   -webkit-padding-start: 40px;
 }
 
+@media screen and (max-width: 1279px) {
+  #player-container .videoPlayer {
+    margin-right: 0;
+  }
+}
+
+/* small media query */
 #video-chooser {
   border-left: 1px solid #cccccc;
   padding-left: 4.1665%;
@@ -267,6 +274,14 @@
 }
 
 /* #video-chooser */
+@media screen and (max-width: 1279px) {
+  #video-chooser {
+    border: none;
+    padding-left: 15px;
+  }
+}
+
+/* small media query */
 /* start of bootstrap overwriting */
 .row {
   margin-left: 0 !important;
