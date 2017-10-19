@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Solar Edge</title>
 
     <!-- Bootstrap -->
@@ -21,7 +21,7 @@
     <script src="https://www.youtube.com/iframe_api"></script>
     <script type="text/javascript" src="lib/angular-youtube-video.js"></script>
   </head>
-  <body ng-app="solarEdge">
+  <body ng-app="solarEdge" class="">
     <!-- Loader -->
     <div class="lds-css ng-scope" id="loader">
       <div class="lds-eclipse">
@@ -29,56 +29,58 @@
       </div>
     </div>
     <header class="row" id="header">
-        <img src="images/logo.png" alt="solar_edge_logo" class="header_logo col-lg-offset-1 col-lg-2 col-md-2 col-md-offset-1 hidden-xs hidden-sm">
-        <span class="header_text hidden-xs hidden-sm">Monitoring Platform Feature Showcase</span>
-        <div id="menu-cont" class="row">
-          <ul class="slider tab-bar bar-style-1 categories col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-            <li class="category col-lg-2 col-md-2 col-sm-2 col-xs-2 " id="improve"><a href="#!improve">
-              <img src="images/icon1red.png" alt="icon1" class="category_img ricon img-responsive">
-              <img src="images/icon1black.png" alt="icon1" class="category_img bicon img-responsive">
-              <span class="category_text col-sm-12 hidden-xs hidden-sm">Improve your lead generation</span>
-            </a></li>
-            <li class="category col-lg-2 col-md-2 col-sm-2 col-xs-2" id="increase"><a href="#!increase">
-              <img src="images/icon2red.png" alt="icon1" class="category_img ricon img-responsive">
-              <img src="images/icon2black.png" alt="icon1" class="category_img bicon img-responsive">
-              <span class="category_text col-sm-12 hidden-xs hidden-sm">Increase value for your customers</span>
-            </a></li>
-            <li class="category col-lg-2 col-md-2 col-sm-2 col-xs-2" id="speed"><a href="#!speed">
-              <img src="images/icon3red.png" alt="icon1" class="category_img ricon img-responsive">
-              <img src="images/icon3black.png" alt="icon1" class="category_img bicon img-responsive">
-              <span class="category_text col-sm-12 hidden-xs hidden-sm">Speed up your installation</span>
-            </a></li>
-            <li class="category col-lg-2 col-md-2 col-sm-2 col-xs-2" id="save"><a href="#!save">
-              <img src="images/icon4red.png" alt="icon1" class="category_img ricon img-responsive">
-              <img src="images/icon4black.png" alt="icon1" class="category_img bicon img-responsive">
-              <span class="category_text col-sm-12 hidden-xs hidden-sm">Save commissioning time and truck rolls</span>
-            </a></li>
-            <li class="category col-lg-2 col-md-2 col-sm-2 col-xs-2" id="manage"><a href="#!manage">
-              <img src="images/icon5red.png" alt="icon1" class="category_img ricon img-responsive">
-              <img src="images/icon5black.png" alt="icon1" class="category_img bicon img-responsive">
-              <span class="category_text col-sm-12 hidden-xs hidden-sm">Effectively manage your fleet</span>
-            </a></li>
-          </ul>
-          <div class="nullSelector" id="top_arrow">
-            <div class="arrow_box col-lg-4 col-md-8 right hidden-xs hidden-sm">
-              <img src="./images/tap.gif" />
+      <div class="top_header">
+        <img src="images/logo.png" alt="solar_edge_logo" class="header_logo">
+        <span class="header_text"> Monitoring Platform Feature Showcase </span>
+        </div>
+    </header>
+        <div id="menu-cont">
+          <div class="solar-container">
+            <ul class="slider tab-bar bar-style-1 categories row">
+              <li class="category" id="improve"><a href="#!improve">
+                <img src="images/icon1red.png" alt="icon1" class="category_img ricon">
+                <img src="images/icon1black.png" alt="icon1" class="category_img bicon">
+                <span class="category_text col-sm-12 hidden-xs">Improve your lead generation</span>
+              </a></li>
+              <li class="category" id="increase"><a href="#!increase">
+                <img src="images/icon2red.png" alt="icon1" class="category_img ricon img-responsive">
+                <img src="images/icon2black.png" alt="icon1" class="category_img bicon img-responsive">
+                <span class="category_text col-sm-12 hidden-xs">Increase value for your customers</span>
+              </a></li>
+              <li class="category" id="speed"><a href="#!speed">
+                <img src="images/icon3red.png" alt="icon1" class="category_img ricon img-responsive">
+                <img src="images/icon3black.png" alt="icon1" class="category_img bicon img-responsive">
+                <span class="category_text col-sm-12 hidden-xs">Speed up your installation</span>
+              </a></li>
+              <li class="category" id="save"><a href="#!save">
+                <img src="images/icon4red.png" alt="icon1" class="category_img ricon img-responsive">
+                <img src="images/icon4black.png" alt="icon1" class="category_img bicon img-responsive">
+                <span class="category_text col-sm-12 hidden-xs">Save commissioning time and truck rolls</span>
+              </a></li>
+              <li class="category" id="manage"><a href="#!manage">
+                <img src="images/icon5red.png" alt="icon1" class="category_img ricon img-responsive">
+                <img src="images/icon5black.png" alt="icon1" class="category_img bicon img-responsive">
+                <span class="category_text col-sm-12 hidden-xs">Effectively manage your fleet</span>
+              </a></li>
+            </ul>
+            <div class="nullSelector" id="top_arrow">
+              <div class="arrow_box col-lg-4 col-md-8 right hidden-xs hidden-sm">
+                <img src="./images/tap.gif" />
+              </div>
             </div>
           </div>
         </div>
-    </header>
-    <div class="container-fluid" id="mainCont" style="display:none;">
-<div id="main-view" ng-view></div>
-</div>
-<footer class="row hidden-md hidden-lg">
-  <div id="footer-cont" class="col-xs-10 col-sm-10 col-sm-offset-1 col-xs-offset-1">
-    <div id="footer-logo" class="col-sm-2 col-xs-2">
-      <img src="images/footer-logo.png" alt="solar_edge_logo" class="footer-logo">
-    </div>
-    <div id="footer-copyright" class="col-sm-9 col-sm-offset-1 col-xs-9 col-xs-offset-1">
-      &copy; All rights reserved to SolarEdge 2017
-    </div>
-  </div>
-</footer>
+        <div id="main-view" class="solar-container" ng-view></div>
+        <footer class="row hidden-md hidden-lg">
+          <div id="footer-cont" class="col-xs-10 col-sm-10 col-sm-offset-1 col-xs-offset-1">
+            <div id="footer-logo" class="col-sm-2 col-xs-2">
+              <img src="images/footer-logo.png" alt="solar_edge_logo" class="footer-logo">
+            </div>
+            <div id="footer-copyright" class="col-sm-9 col-sm-offset-1 col-xs-9 col-xs-offset-1">
+              &copy; All rights reserved to SolarEdge 2017
+            </div>
+          </div>
+        </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="lib/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -96,26 +98,26 @@
         <!-- Template  -->
         <script type="text/ng-template" id="player.html">
 
-          <div class="mobile_headline hidden-md hidden-lg">
+          <div class="mobile_headline hidden-sm hidden-md hidden-lg">
             <h1>{{catName}}</h1>
           </div>
-          <div id="player-container" class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12" ng-cloak>
-            <div class="videoPlayer col-lg-8 col-md-8 col-sm-12 col-xs-12" ng-init="init(videos[0])">
-              <div class="player-container col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                  <youtube-video id="videoPlayer" video-id="selectedVideo.videoID" player-vars="playerVars" player="mainPlayer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></youtube-video>
+          <div id="player-container" class="row" ng-cloak>
+            <div class="videoPlayer col-xs-12 col-sm-7" ng-init="init(videos[0])">
+              <div class="player-container col-sm-8 col-xs-12">
+                  <youtube-video id="videoPlayer" video-id="selectedVideo.videoID" player-vars="playerVars" player="mainPlayer" class=""></youtube-video>
               </div>
-              <div class="selec-video-info col-md-12 col-lg-12 col-sm-12 col-xs-12">
+              <div class="selec-video-info col-xs-12">
                 <span class="selected-name">{{selectedVideo.name}}</span>
                 <span class="selected-desc" ng-bind-html="selectedVideo.desc"></span>
               </div>
             </div>
-            <div id="video-chooser" class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
+            <div id="video-chooser" class="col-sm-5 col-md-4 col-xs-12 col-md-push-1">
               <div class="single-video {{video.clas}}" ng-repeat="video in videos" >
                 <input ng-model="$parent.selectedVideo" type="radio" name="video" class="videoImg" ng-value="{{video}}" ng-attr-id="{{video.videoID}}" ng-data-isfirst="{{$first}}">
               <label for="{{video.videoID}}" class="row" ng-click="hideNull()">
                 <div class="label-cont row">
-                <img ng-src="https://i.ytimg.com/vi/{{video.videoID}}/hqdefault.jpg" title="{{video.name}}" class="col-lg-6 col-md-6 col-sm-6 col-xs-6 video-image" />
-                <div class="video-info col-lg-6 col-md-6 col-xs-6 col-sm-6">
+                <img ng-src="https://i.ytimg.com/vi/{{video.videoID}}/hqdefault.jpg" title="{{video.name}}" class="video-image col-xs-5" />
+                <div class="video-info col-xs-7 col-sm-6">
                   <p class="video-name">{{video.name}}<span class="video-desc">
                 {{video.shortDesc}}  </span></p>
                   </div>

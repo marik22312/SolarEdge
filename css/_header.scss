@@ -3,50 +3,27 @@
 
 #header {
     width: 100%;
-    border-bottom: 1px #dddddd solid;
-    max-height: 100px;
-    position: fixed;
+    // max-height: 100px;
+    // position: fixed;
     z-index: 1000;
-    height: 70px;
+    // height: 20%;
     background-color: white;
-    border-bottom: 1px solid $greyColor;
 
-    @include breakpoint(lg) {
-        height: 100px;
-        padding: 0;
-    }
-
+.top_header{
+  width: 100%;
+  border-bottom: 1px solid $greyColor;
+}
     .header_logo {
-        padding: 15px;
-        width: auto;
-        padding-right: 40px;
-        height: 60px;
-
-        @include breakpoint(lg) {
-            margin-right: 75px;
-            width: 200px;
-            height: 40px;
-            margin-left: 220px;
-            padding: 0;
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
+        padding: 5px 30px 30px 30px;
+        margin-top: 25px;
+        border-right: 1px #cccccc solid;
     } /* .header_logo */
 
     .header_text {
-        font-size: 2em;
+        font-size: 3vw;
         color: black;
         font-weight: 600;
         padding-left: 20px;
-        display: inline-block;
-        height: 55px;
-        border-left: 1px $greyColor solid;
-        @include breakpoint(lg) {
-            height: 68px;
-            font-size: 27px;
-            margin-top: 32px;
-            padding-bottom: 55px;
-            margin-left: 20px;
-        }
+        // height: 55px;
     } /* .header_text */
 } /* #header */
