@@ -237,8 +237,6 @@
 #player-container .videoPlayer {
   margin: 0;
   padding: 0;
-  padding-left: 46px;
-  width: 880px;
   /* .player-container */
   /* #player-container */
 }
@@ -297,6 +295,8 @@
   padding: 0;
   border-radius: 5px;
   border-bottom: 3px solid rgba(255, 255, 255, 0);
+  width: 160px;
+  height: 90px;
 }
 
 #video-chooser .video-info {
