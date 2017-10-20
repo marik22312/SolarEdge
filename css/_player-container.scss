@@ -50,3 +50,9 @@
       }
     }
   } /* small media query */
+
+  @media screen and (max-width: 980px) {
+    .selec-video-info{
+      text-align: center;
+    }
+  } /* small media query */

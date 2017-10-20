@@ -48,3 +48,18 @@
     padding-left: 15px;
   }
 } /* small media query */
+@media screen and (max-width: 979px){
+  #video-chooser .video-info {
+      vertical-align: top;
+      padding: 0;
+      padding-left: 15px;
+    }
+}
+@media screen and (min-width: 980px){
+  #video-chooser .video-info {
+    vertical-align: top;
+    padding-left: 20px;
+    padding-right: 0;
+    width: 55%;
+    }
+}

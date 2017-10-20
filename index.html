@@ -29,8 +29,8 @@
       </div>
     </div>
     <header class="row" id="header">
-      <div class="top_header">
-        <img src="images/logo.png" alt="solar_edge_logo" class="header_logo">
+      <div class="top_header solar-container row">
+        <img src="images/logo.png" alt="solar_edge_logo" class="header_logo col-xs-4 col-sm-2">
         <span class="header_text"> Monitoring Platform Feature Showcase </span>
         </div>
     </header>
@@ -71,13 +71,13 @@
           </div>
         </div>
         <div id="main-view" class="solar-container" ng-view></div>
-        <footer class="row hidden-md hidden-lg">
-          <div id="footer-cont" class="col-xs-10 col-sm-10 col-sm-offset-1 col-xs-offset-1">
-            <div id="footer-logo" class="col-sm-2 col-xs-2">
+        <footer class="row">
+          <div class="solar-container">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
               <img src="images/footer-logo.png" alt="solar_edge_logo" class="footer-logo">
-            </div>
-            <div id="footer-copyright" class="col-sm-9 col-sm-offset-1 col-xs-9 col-xs-offset-1">
-              &copy; All rights reserved to SolarEdge 2017
+              <p id="footer-text" class="">
+                &copy; All rights reserved to SolarEdge 2017
+              </p>
             </div>
           </div>
         </footer>
@@ -117,7 +117,7 @@
               <label for="{{video.videoID}}" class="row" ng-click="hideNull()">
                 <div class="label-cont row">
                 <img ng-src="https://i.ytimg.com/vi/{{video.videoID}}/hqdefault.jpg" title="{{video.name}}" class="video-image col-xs-5" />
-                <div class="video-info col-xs-7 col-sm-6">
+                <div class="video-info col-xs-6 col-sm-6">
                   <p class="video-name">{{video.name}}<span class="video-desc">
                 {{video.shortDesc}}  </span></p>
                   </div>
