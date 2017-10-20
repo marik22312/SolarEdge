@@ -21,13 +21,7 @@
     <script src="https://www.youtube.com/iframe_api"></script>
     <script type="text/javascript" src="lib/angular-youtube-video.js"></script>
   </head>
-  <body ng-app="solarEdge" class="">
-    <!-- Loader -->
-    <div class="lds-css ng-scope" id="loader">
-      <div class="lds-eclipse">
-        <div></div>
-      </div>
-    </div>
+  <body ng-app="solarEdge">
     <header class="row" id="header">
       <div class="top_header solar-container row">
         <img src="images/logo.png" alt="solar_edge_logo" class="header_logo col-xs-4 col-sm-2">
@@ -70,7 +64,15 @@
             </div>
           </div>
         </div>
-        <div id="main-view" class="solar-container" ng-view></div>
+        <div id="main-view" class="solar-container" ng-view ng-cloak>
+          <!-- Loader -->
+          <div class="lds-css ng-scope" id="loader">
+            <div class="lds-eclipse">
+              <div></div>
+            </div>
+          </div>
+          <!-- End of loader -->
+        </div>
         <footer class="row">
           <div class="solar-container">
             <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
