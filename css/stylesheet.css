@@ -8,18 +8,16 @@
 }
 
 #header .top_header {
-  width: 100%;
-  border-bottom: 1px solid #cccccc;
+  padding-top: 20px;
 }
 
 #header .header_logo {
-  padding: 5px 30px 30px 30px;
-  margin-top: 25px;
+  padding: 10px;
   border-right: 1px #cccccc solid;
 }
 
 #header .header_text {
-  font-size: 3vw;
+  font-size: 2.5vw;
   color: black;
   font-weight: 600;
   padding-left: 20px;
@@ -29,6 +27,7 @@
 #menu-cont {
   background-color: #f7f7f7;
   border-bottom: 1px #dddddd solid;
+  border-top: 1px #dddddd solid;
   z-index: 1111;
   height: 180px;
   /* #top_arrow */
@@ -42,8 +41,8 @@
 
 #menu-cont #top_arrow .arrow_box {
   position: absolute;
-  top: 20%;
-  left: 87%;
+  top: 16%;
+  left: 90%;
 }
 
 #menu-cont .categories {
@@ -59,10 +58,8 @@
 
 #menu-cont .categories .category {
   display: inline-block;
-  max-height: 180px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  width: 180px;
+  height: 180px;
+  width: 19%;
   /* .bicon */
   /* .ricon */
   /* .category_img */
@@ -81,7 +78,7 @@
   display: block;
   color: black;
   fill: #cc0033;
-  margin: 3% auto auto;
+  margin: 10% auto;
   padding-bottom: 10px;
 }
 
@@ -118,6 +115,14 @@
 }
 
 /* #menu-cont */
+@media screen and (max-width: 979px) {
+  .category {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+/* small media query */
 .lds-css {
   width: 100vw;
   height: 100vh;
@@ -219,6 +224,13 @@
 }
 
 /* small media query */
+@media screen and (max-width: 980px) {
+  .selec-video-info {
+    text-align: center;
+  }
+}
+
+/* small media query */
 #video-chooser {
   border-left: 1px solid #cccccc;
   padding-left: 4.1665%;
@@ -282,6 +294,52 @@
 }
 
 /* small media query */
+@media screen and (max-width: 979px) {
+  #video-chooser .video-info {
+    vertical-align: top;
+    padding: 0;
+    padding-left: 15px;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  #video-chooser .video-info {
+    vertical-align: top;
+    padding-left: 20px;
+    padding-right: 0;
+    width: 55%;
+  }
+}
+
+footer {
+  background-color: #333333;
+  height: 50px;
+  /* .solar-container */
+}
+
+footer .solar-container {
+  /* div */
+}
+
+footer .solar-container div {
+  padding: 10px 0;
+  /* img */
+  /* #footer-text */
+}
+
+footer .solar-container div img {
+  float: left;
+}
+
+footer .solar-container div #footer-text {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 600;
+  float: right;
+  padding-top: 1%;
+}
+
+/* footer */
 /* start of bootstrap overwriting */
 .row {
   margin-left: 0 !important;
@@ -343,7 +401,7 @@ ul.tab-bar:before {
   display: inline-block;
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   left: 0;
   height: 3px;
   z-index: 1;
@@ -456,28 +514,6 @@ input[type="radio"]:checked + label .label-cont .video-name {
   float: left;
 }
 
-footer {
-  background-color: #333333;
-  height: 80px;
-  max-height: 80px;
-}
-
-footer #footer-cont {
-  vertical-align: middle;
-}
-
-footer #footer-cont #footer- {
-  display: inline-block;
-  padding: 25px;
-}
-
-footer #footer-cont #footer-copyright {
-  display: inline-block;
-  color: white;
-  font-size: 24px;
-  padding: 20px;
-}
-
 .morecontent span {
   display: none;
 }
@@ -499,13 +535,6 @@ footer #footer-cont #footer-copyright {
   }
   .video-desc {
     font-size: 20px;
-  }
-  #footer-copyright {
-    font-size: 17px;
-    padding-right: 0;
-  }
-  #footer-logo {
-    padding-left: 0;
   }
 }
 
@@ -543,38 +572,39 @@ footer #footer-cont #footer-copyright {
     margin-top: 0;
     margin-bottom: 0;
   }
+  .selec-video-info {
+    /* .selected-desc */
+  }
   .selec-video-info .selected-name {
     font-size: 30px;
   }
   .selec-video-info .selected-desc {
     font-size: 18px;
   }
-  footer #footer-cont #footer-copyright {
-    font-size: 12px;
-    padding: 29px;
-  }
+  /* .selec-video-info */
 }
 
+/* @media 480px */
 @media screen and (min-width: 980px) {
   .solar-container {
-    width: 980px;
-    margin: auto;
+    width: 980px !important;
+    margin: auto !important;
   }
 }
 
 /* small media query */
 @media screen and (min-width: 1280px) {
   .solar-container {
-    width: 1280px;
-    margin: auto;
+    width: 1280px !important;
+    margin: auto !important;
   }
 }
 
 /* medium media query */
 @media screen and (min-width: 1520px) {
   .solar-container {
-    width: 1520px;
-    margin: auto;
+    width: 1520px !important;
+    margin: auto !important;
   }
 }
 

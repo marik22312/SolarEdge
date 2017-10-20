@@ -1,0 +1,22 @@
+footer {
+  background-color: #333333;
+  height: 50px;
+
+  .solar-container {
+    div{
+      padding: 10px 0;
+
+      img {
+        float: left;
+      }/* img */
+
+      #footer-text {
+        display: inline-block;
+        color: #ffffff;
+        font-weight: 600;
+        float: right;
+        padding-top: 1%;
+      } /* #footer-text */
+    } /* div */
+  } /* .solar-container */
+} /* footer */

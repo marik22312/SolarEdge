@@ -41,17 +41,17 @@ $(document).ready(function() {
   }
   $(".slider").RegisterTabBar("slider1").find("li:first-child").ready();
 
-  loader = setTimeout(showPage, 1000);
-  function showPage() {
-    $('.single-video').on('click', function() {
-      $('.single-video').removeClass('active');
-      $(this).addClass('active');
-      console.log('Added Class Active');
-    });
-    document.getElementById("loader").style.display = "none";
-    document.getElementById("mainCont").style.display = "block";
-    console.log('DEBUG: showPage() Initiated!');
-};
+//   loader = setTimeout(showPage, 1000);
+//   function showPage() {
+//     $('.single-video').on('click', function() {
+//       $('.single-video').removeClass('active');
+//       $(this).addClass('active');
+//       console.log('Added Class Active');
+//     });
+//     document.getElementById("loader").style.display = "none";
+//     document.getElementById("mainCont").style.display = "block";
+//     console.log('DEBUG: showPage() Initiated!');
+// };
 
 }); //end of document.ready
 $('.category').click(function() {

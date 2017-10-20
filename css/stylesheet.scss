@@ -6,6 +6,7 @@
 @import "./loading";
 @import "./player-container";
 @import "./video-chooser";
+@import "./footer";
 
 @import url( 'https://fonts.googleapis.com/css?family=Open+Sans');
 /* start of bootstrap overwriting */
@@ -71,7 +72,7 @@ ul.tab-bar:before {
   display: inline-block;
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   left: 0;
   height: 3px;
   z-index: 1;
@@ -204,28 +205,6 @@ input[type="radio"] {
 }
 
 
-//footer
-footer {
-  background-color: #333333;
-  height: 80px;
-  max-height: 80px;
-
-  #footer-cont {
-    vertical-align: middle;
-
-    #footer- {
-      display: inline-block;
-      padding: 25px;
-    }
-
-    #footer-copyright {
-      display: inline-block;
-      color: white;
-      font-size: 24px;
-      padding: 20px;
-    }
-  }
-}
 .morecontent span {
     display: none;
 }
@@ -249,16 +228,8 @@ footer {
   .video-desc {
     font-size: 20px;
   }
-
-  #footer-copyright {
-    font-size: 17px;
-    padding-right: 0;
-  }
-
-  #footer-logo {
-    padding-left: 0;
-  }
 }
+
 //Embed Player Resbonsive
 
 .player-container {
@@ -301,36 +272,28 @@ footer {
     }
     .selected-desc{
       font-size: 18px;
-    }
-  }
-  footer{
-    #footer-cont{
-      #footer-copyright  {
-        font-size: 12px;
-        padding: 29px;
-      }
-    }
-  }
-}
+    } /* .selected-desc */
+  } /* .selec-video-info */
+} /* @media 480px */
 
 
 @media screen and (min-width: 980px) {
   .solar-container{
-    width: 980px;
-    margin: auto;
+    width: 980px !important;
+    margin: auto !important;
   }
 } /* small media query */
 
 @media screen and (min-width: 1280px) {
   .solar-container{
-    width: 1280px;
-    margin: auto;
+    width: 1280px !important;
+    margin: auto !important;
   }
 } /* medium media query */
 
 @media screen and (min-width: 1520px) {
   .solar-container{
-    width: 1520px;
-    margin: auto;
+    width: 1520px !important;
+    margin: auto !important;
   }
 } /* latge media query */
