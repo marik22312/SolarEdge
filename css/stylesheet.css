@@ -2,6 +2,7 @@
 #header {
   width: 100%;
   z-index: 1000;
+  height: 100px;
   background-color: white;
   /* .header_logo */
   /* .header_text */
@@ -12,18 +13,35 @@
 }
 
 #header .header_logo {
-  padding: 10px;
-  border-right: 1px #cccccc solid;
+  height: 40px;
+  width: 196px;
 }
 
 #header .header_text {
-  font-size: 2.5vw;
+  font-size: 27px;
   color: black;
   font-weight: 600;
   padding-left: 20px;
+  padding-bottom: 44px;
+  border-left: 1px solid #cccccc;
 }
 
 /* #header */
+@media screen and (max-width: 980px) {
+  #header {
+    /* .header_text */
+  }
+  #header .header_text {
+    color: black;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    border-left: 1px solid #cccccc;
+  }
+  /* #header */
+}
+
+/* small query */
 #menu-cont {
   background-color: #f7f7f7;
   border-bottom: 1px #dddddd solid;
