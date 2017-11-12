@@ -51,7 +51,18 @@
   } /* small media query */
 
   @media screen and (max-width: 980px) {
+    #main-view{
+      padding-top: 10px !important;
+    }
     .selec-video-info{
+      text-align: left;
+      padding-bottom: 50px;
+      border-bottom: 1px solid #cccccc;
+    }
+    .selected-name{
       text-align: center;
+    }
+    #video-chooser{
+      padding-top: 50px;
     }
   } /* small media query */
