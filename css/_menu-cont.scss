@@ -79,3 +79,27 @@
     padding-bottom: 30px;
   }
 } /* small media query */
+@media screen and (min-width: 980px){
+  .category_img{
+  padding-bottom: 0 !important;
+  margin-bottom: 16px !important;
+}
+}
+@media screen and (min-width: 980px) and (max-width: 1279px){
+  .category_text{
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 979px) {
+  #menu-cont{
+    height: 130px;
+  }
+  .category{
+    height: 130px !important;
+  }
+}
+@media screen and (max-width: 640px){
+    .category_img{
+      height: 48px;
+    }
+  }

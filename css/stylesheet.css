@@ -3,6 +3,7 @@
   width: 100%;
   z-index: 1000;
   background-color: white;
+  height: 100px !important;
   /* .header_logo */
   /* .header_text */
 }
@@ -12,18 +13,42 @@
 }
 
 #header .header_logo {
-  padding: 10px;
   border-right: 1px #cccccc solid;
 }
 
 #header .header_text {
-  font-size: 2.5vw;
   color: black;
   font-weight: 600;
   padding-left: 20px;
 }
 
 /* #header */
+@media screen and (min-width: 980px) {
+  .top_header .header_logo {
+    height: 40px;
+    width: 196px;
+  }
+  .top_header .header_text {
+    font-size: 27px;
+  }
+}
+
+@media screen and (max-width: 979px) {
+  .top_header .header_logo {
+    height: 32px;
+    width: 157px;
+  }
+  .top_header .header_text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .header_text {
+    font-size: 18px;
+  }
+}
+
 #menu-cont {
   background-color: #f7f7f7;
   border-bottom: 1px #dddddd solid;
@@ -123,6 +148,34 @@
 }
 
 /* small media query */
+@media screen and (min-width: 980px) {
+  .category_img {
+    padding-bottom: 0 !important;
+    margin-bottom: 16px !important;
+  }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1279px) {
+  .category_text {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 979px) {
+  #menu-cont {
+    height: 130px;
+  }
+  .category {
+    height: 130px !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .category_img {
+    height: 48px;
+  }
+}
+
 .lds-css {
   width: 100vw;
   height: 100vh;
@@ -225,8 +278,19 @@
 
 /* small media query */
 @media screen and (max-width: 980px) {
+  #main-view {
+    padding-top: 10px !important;
+  }
   .selec-video-info {
+    text-align: left;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #cccccc;
+  }
+  .selected-name {
     text-align: center;
+  }
+  #video-chooser {
+    padding-top: 50px;
   }
 }
 
@@ -246,6 +310,7 @@
   border-bottom: 3px solid rgba(255, 255, 255, 0);
   width: 160px;
   height: 90px;
+  border: 1px solid #cccccc;
 }
 
 #video-chooser .single-video {
@@ -271,7 +336,8 @@
   color: #333333;
   font-size: 14px;
   font-weight: 400;
-  line-height: 23px;
+  line-height: 18px;
+  padding-top: 10px;
   /* .morelink */
 }
 
@@ -314,6 +380,7 @@
 footer {
   background-color: #333333;
   height: 50px;
+  margin-top: 80px;
   /* .solar-container */
 }
 
@@ -437,6 +504,14 @@ li.category.active svg.category_img {
   border-bottom: 5px #cc0033 solid;
   padding-bottom: 50px;
   padding-top: 50px;
+}
+
+@media screen and (max-width: 640px) {
+  .mobile_headline {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 27px;
+  }
 }
 
 #main-view {
