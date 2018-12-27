@@ -1,10 +1,7 @@
 @import "./variables";
-
 #player-container {
     .videoPlayer {
-        margin: 0;
-        padding: 0;
-        margin-right: -4.1665%;
+      margin-right: -4.1665%;
         .player-container {
             margin: 0;
             padding: 0;
@@ -54,10 +51,11 @@
     #main-view{
       padding-top: 10px !important;
     }
-    .selec-video-info{
+    #player-container .videoPlayer .selec-video-info {
       text-align: left;
       padding-bottom: 50px;
       border-bottom: 1px solid #cccccc;
+      padding: 0 30px;
     }
     .selected-name{
       text-align: center;
@@ -66,3 +64,10 @@
       padding-top: 50px;
     }
   } /* small media query */
+
+  @media screen and (max-width: 768px) {
+    .main-container {
+      padding: 0;
+
+    }
+  }

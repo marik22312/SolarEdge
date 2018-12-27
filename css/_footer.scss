@@ -1,23 +1,36 @@
 footer {
+marik/stuff
   background-color: $footerColor;
-  height: 50px;
   margin-top: 80px;
 
-  .solar-container {
-    div{
-      padding: 10px 0;
-
+     div{
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
       img {
-        float: left;
-      }/* img */
-
+        height: 50px;
+      }
       #footer-text {
-        display: inline-block;
+        max-width: 50%;
         color: #ffffff;
         font-weight: 600;
-        float: right;
-        padding-top: 1%;
-      } /* #footer-text */
-    } /* div */
-  } /* .solar-container */
-} /* footer */
+        height: 50px;
+        line-height: 50px;
+        margin: 0;
+      } 
+    } 
+} 
+
+@media screen and (max-width: 786px) {
+  footer{
+    margin-top: 0;
+    height: unset;
+    .solar-container div {
+      justify-content: center;
+      flex-wrap: wrap;
+      #footer-text {
+        max-width: unset;
+      }
+    }
+  }
+}
