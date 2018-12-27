@@ -50,13 +50,16 @@
   }
 } /* small media query */
 @media screen and (max-width: 979px){
-  #video-chooser .video-info {
-      vertical-align: top;
-      padding: 0;
-      padding-left: 15px;
+  #video-chooser {
+    min-height: unset;
+    .video-info {
+        vertical-align: top;
+        padding: 0;
+        padding-left: 15px;
+        }
     }
 }
-@media screen and (min-width: 980px){
+@media screen and (min-width: 979px){
   #video-chooser .video-info {
     vertical-align: top;
     padding-left: 20px;
