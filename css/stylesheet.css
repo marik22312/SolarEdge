@@ -5,7 +5,8 @@
   #header .top_header {
     padding-top: 20px; }
   #header .header_logo {
-    border-right: 1px #cccccc solid; }
+    border-right: 1px #cccccc solid;
+    max-width: 100%; }
   #header .header_text {
     color: black;
     font-weight: 600;
@@ -259,12 +260,13 @@ footer {
   footer {
     margin-top: 0;
     height: unset; }
-    footer .solar-container div {
+    footer div.col {
       justify-content: center;
       flex-wrap: wrap; }
-      footer .solar-container div #footer-text {
+      footer div.col #footer-text {
         max-width: unset;
-        line-height: unset; } }
+        line-height: unset;
+        height: unset; } }
 
 /* start of bootstrap overwriting */
 label {

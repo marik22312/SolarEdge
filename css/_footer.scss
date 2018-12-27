@@ -24,12 +24,13 @@ footer {
   footer{
     margin-top: 0;
     height: unset;
-    .solar-container div {
+    div.col {
       justify-content: center;
       flex-wrap: wrap;
       #footer-text {
         max-width: unset;
         line-height: unset;
+        height: unset;
       }
     }
   }
