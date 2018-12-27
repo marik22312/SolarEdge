@@ -39,13 +39,6 @@
 } /* #player-container */
 }
 }
-@media screen and (max-width: 1279px) {
-  #player-container {
-      .videoPlayer {
-          margin-right: 0;
-      }
-    }
-  } /* small media query */
 
   @media screen and (max-width: 979px) {
     #main-view{
@@ -60,7 +53,7 @@
     .selected-name{
       text-align: center;
     }
-    #video-chooser{
+    #video-chooser,.videoPlayer{
       padding-top: 50px;
     }
   } /* small media query */
