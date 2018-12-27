@@ -93,6 +93,11 @@
     height: 130px !important; } }
 
 @media screen and (max-width: 640px) {
+  #menu-cont {
+    height: 70px !important; }
+    #menu-cont .category {
+      height: 70px !important;
+      padding: 0; }
   .category_img {
     height: 48px; } }
 
@@ -129,23 +134,18 @@
 
 /* .lds-css */
 #player-container .videoPlayer {
-  margin-right: -4.1665%;
-  /* .player-container */
-  /* #player-container */ }
+  margin-right: -4.1665%; }
   #player-container .videoPlayer .player-container {
     margin: 0;
     padding: 0;
-    padding-bottom: 56.6666666666%;
-    /* iframe#videoPlayer */ }
+    padding-bottom: 56.6666666666%; }
     #player-container .videoPlayer .player-container iframe#videoPlayer {
       margin: 0;
       padding: 0; }
   #player-container .videoPlayer .selec-video-info {
     padding: 0;
     margin: 0;
-    margin-top: 30px;
-    /* .selected-name */
-    /* .videoPlayer */ }
+    margin-top: 30px; }
     #player-container .videoPlayer .selec-video-info .selected-name {
       padding: 0;
       margin: 0;
@@ -155,16 +155,14 @@
       font-size: 24px;
       font-weight: 600;
       margin-top: -8px; }
-    #player-container .videoPlayer .selec-video-info .selected-desc {
-      /* .selec-video-info */ }
-      #player-container .videoPlayer .selec-video-info .selected-desc ul {
-        display: block;
-        list-style-type: disc;
-        -webkit-margin-before: 1em;
-        -webkit-margin-after: 1em;
-        -webkit-margin-start: 0px;
-        -webkit-margin-end: 0px;
-        -webkit-padding-start: 40px; }
+    #player-container .videoPlayer .selec-video-info .selected-desc ul {
+      display: block;
+      list-style-type: disc;
+      -webkit-margin-before: 1em;
+      -webkit-margin-after: 1em;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px;
+      -webkit-padding-start: 40px; }
 
 @media screen and (max-width: 979px) {
   #main-view {
@@ -174,12 +172,10 @@
     padding-bottom: 50px;
     border-bottom: 1px solid #cccccc;
     padding: 0 30px; }
-  .selected-name {
-    text-align: center; }
-  #video-chooser, .videoPlayer {
+  #video-chooser,
+  .videoPlayer {
     padding-top: 50px; } }
 
-/* small media query */
 @media screen and (max-width: 768px) {
   .main-container {
     padding: 0; } }
@@ -228,7 +224,7 @@
 @media screen and (max-width: 979px) {
   #video-chooser {
     min-height: unset;
-    padding-left: 70px;
+    padding-left: 30px;
     border: none; }
     #video-chooser .video-info {
       vertical-align: top;
@@ -267,7 +263,8 @@ footer {
       justify-content: center;
       flex-wrap: wrap; }
       footer .solar-container div #footer-text {
-        max-width: unset; } }
+        max-width: unset;
+        line-height: unset; } }
 
 /* start of bootstrap overwriting */
 label {

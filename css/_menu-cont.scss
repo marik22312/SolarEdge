@@ -99,6 +99,13 @@
   }
 }
 @media screen and (max-width: 640px){
+    #menu-cont {
+        height: 70px !important;
+        .category {
+            height: 70px !important;
+            padding: 0;
+        }
+    }
     .category_img{
       height: 48px;
     }

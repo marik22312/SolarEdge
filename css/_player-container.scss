@@ -1,66 +1,72 @@
 @import "./variables";
+
 #player-container {
-    .videoPlayer {
-      margin-right: -4.1665%;
-        .player-container {
-            margin: 0;
-            padding: 0;
-            padding-bottom: 56.6666666666%;
-            iframe#videoPlayer {
-                margin: 0;
-                padding: 0;
-            } /* iframe#videoPlayer */
-        } /* .player-container */
-        .selec-video-info {
-            padding: 0;
-            margin: 0;
-            margin-top: 30px;
-            .selected-name {
-                padding: 0;
-                margin: 0;
-                font-size: 25px;
-                font-weight: 600;
-                margin-bottom: 14px;
-                font-size: 24px;
-                font-weight: 600;
-                margin-top: -8px;
-            } /* .selected-name */
-            .selected-desc {
-              ul {
-                display: block;
-                list-style-type: disc;
-                -webkit-margin-before: 1em;
-                -webkit-margin-after: 1em;
-                -webkit-margin-start: 0px;
-                -webkit-margin-end: 0px;
-                -webkit-padding-start: 40px;
-        } /* .selec-video-info */
-    } /* .videoPlayer */
-} /* #player-container */
-}
-}
+  .videoPlayer {
+    margin-right: -4.1665%;
 
-  @media screen and (max-width: 979px) {
-    #main-view{
-      padding-top: 10px !important;
-    }
-    #player-container .videoPlayer .selec-video-info {
-      text-align: left;
-      padding-bottom: 50px;
-      border-bottom: 1px solid #cccccc;
-      padding: 0 30px;
-    }
-    .selected-name{
-      text-align: center;
-    }
-    #video-chooser,.videoPlayer{
-      padding-top: 50px;
-    }
-  } /* small media query */
-
-  @media screen and (max-width: 768px) {
-    .main-container {
+    .player-container {
+      margin: 0;
       padding: 0;
+      padding-bottom: 56.6666666666%;
 
+      iframe#videoPlayer {
+        margin: 0;
+        padding: 0;
+      }
+
+    }
+
+    .selec-video-info {
+      padding: 0;
+      margin: 0;
+      margin-top: 30px;
+
+      .selected-name {
+        padding: 0;
+        margin: 0;
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 14px;
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: -8px;
+      }
+
+      .selected-desc {
+        ul {
+          display: block;
+          list-style-type: disc;
+          -webkit-margin-before: 1em;
+          -webkit-margin-after: 1em;
+          -webkit-margin-start: 0px;
+          -webkit-margin-end: 0px;
+          -webkit-padding-start: 40px;
+        }
+      }
     }
   }
+}
+
+@media screen and (max-width: 979px) {
+  #main-view {
+    padding-top: 10px !important;
+  }
+
+  #player-container .videoPlayer .selec-video-info {
+    text-align: left;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #cccccc;
+    padding: 0 30px;
+  }
+
+  #video-chooser,
+  .videoPlayer {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    padding: 0;
+  }
+}
