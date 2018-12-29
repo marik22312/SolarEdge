@@ -4,7 +4,6 @@
     background-color: #f7f7f7;
     border-bottom: 1px #dddddd solid;
     border-top: 1px #dddddd solid;
-    // height: 170px;
     z-index: 1111;
     height: 180px;
 
@@ -18,7 +17,7 @@
     } /* #top_arrow */
 
     .categories {
-        display: inline-block;
+        display: flex;
         width: 100%;
         .active{
           border-bottom: 2px solid $redColor;
@@ -26,14 +25,15 @@
         .category {
             display: inline-block;
             height: 180px;
-            width: 19%;
+            width: 20%;
+            cursor: pointer;
             .bicon {
                 display: block !important;
-            } /* .bicon */
+            }
 
             .ricon {
                 display: none !important;
-            } /* .ricon */
+            } 
 
             .category_img {
                 display: block;
@@ -41,7 +41,7 @@
                 fill: $redColor;
                 margin: 10% auto;
                 padding-bottom: 10px;
-            } /* .category_img */
+            } 
 
             .category_text {
                 color: black;
@@ -50,35 +50,35 @@
                 font-size: 14px;
                 padding-bottom: 50px;
                 text-transform: uppercase;
-            } /* .category_text */
-        } /* .category */
+            } 
+        }
 
         .active {
             .category_text {
                 color: $redColor;
-            } /* .category_text */
+            } 
 
             .category_img {
                 fill: $redColor;
-            } /* .category_img */
+            } 
 
             .bicon {
                 display: none !important;
-            } /* .bicon */
+            } 
 
             .ricon {
                 display: block !important;
-            } /* .ricon */
-        } /* .active */
-    } /* .categories */
-} /* #menu-cont */
+            }
+        } 
+    }
+}
 
 @media screen and (max-width: 979px) {
   .category{
     padding-top: 30px;
     padding-bottom: 30px;
   }
-} /* small media query */
+} 
 @media screen and (min-width: 980px){
   .category_img{
   padding-bottom: 0 !important;
@@ -99,6 +99,13 @@
   }
 }
 @media screen and (max-width: 640px){
+    #menu-cont {
+        height: 70px !important;
+        .category {
+            height: 70px !important;
+            padding: 0;
+        }
+    }
     .category_img{
       height: 48px;
     }

@@ -4,17 +4,21 @@
   border-left: 1px solid $greyColor;
   padding-left: 4.1665%;
   min-height: 700px;
+      label {
+          margin-left: 0;
+      }
+
+      .label-cont {
+          margin-left: 0;
+      }
     .video-image {
         padding: 0;
         border-radius: 5px;
-        border-bottom: 3px solid rgba(255, 255, 255, 0);
-        width: 160px;
         height : 90px;
-        border: 1px solid #cccccc;
-    } /* .video-image */
+    } 
     .single-video{
       margin-bottom: 30px;
-    } /* .single-video */
+    }
     .video-info {
         vertical-align: top;
         padding-left: 20px;
@@ -43,20 +47,20 @@
     } /* .video-info */
 } /* #video-chooser */
 
-@media screen and (max-width: 1279px){
-  #video-chooser{
-    border: none;
-    padding-left: 15px;
-  }
-} /* small media query */
 @media screen and (max-width: 979px){
-  #video-chooser .video-info {
-      vertical-align: top;
-      padding: 0;
-      padding-left: 15px;
-    }
+  #video-chooser{
+    min-height: unset;
+    padding-left: 30px;
+    border: none;
+      .video-info {
+         vertical-align: top;
+         padding: 0;
+         padding-left: 15px;
+       }
+       
+  }
 }
-@media screen and (min-width: 980px){
+@media screen and (min-width: 979px){
   #video-chooser .video-info {
     vertical-align: top;
     padding-left: 20px;
