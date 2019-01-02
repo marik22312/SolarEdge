@@ -274,10 +274,14 @@ input[type="radio"] {
 } /* @media 480px */
 
 
-@media screen and (min-width: 979px) {
-  .solar-container{
-    width: 980px !important;
+@media screen and (max-width: 992px) and (min-width: 576px) {
+  .container{
+    max-width: unset !important;
     margin: auto !important;
+  }
+  #player-container, #videoPlayer, .videoPlayer {
+    padding-right: unset !important;
+    padding-left: unset !important;
   }
 } /* small media query */
 
