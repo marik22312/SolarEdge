@@ -7,7 +7,7 @@
   #header .header_logo {
     border-right: 1px #cccccc solid;
     max-width: 100%;
-    padding-right: 5px; }
+    padding-right: 20px; }
   #header .header_text {
     color: black;
     font-weight: 600;
@@ -24,12 +24,18 @@
     padding-left: unset;
     height: 40px; } }
 
+@media screen and (max-width: 540px) {
+  #header .top_header {
+    justify-content: center; } }
+
 #menu-cont {
   background-color: #f7f7f7;
   border-bottom: 1px #dddddd solid;
   border-top: 1px #dddddd solid;
   z-index: 1111;
   height: 180px;
+  padding-right: 0;
+  padding-left: 0;
   /* #top_arrow */ }
   #menu-cont #top_arrow {
     display: none;
@@ -74,11 +80,6 @@
     #menu-cont .categories .active .ricon {
       display: block !important; }
 
-@media screen and (max-width: 979px) {
-  .category {
-    padding-top: 30px;
-    padding-bottom: 30px; } }
-
 @media screen and (min-width: 980px) {
   .category_img {
     padding-bottom: 0 !important;
@@ -88,7 +89,7 @@
   .category_text {
     font-size: 13px; } }
 
-@media screen and (max-width: 979px) {
+@media screen and (max-width: 991px) {
   #menu-cont {
     height: 130px; }
   .category {
@@ -166,9 +167,12 @@
       -webkit-margin-end: 0px;
       -webkit-padding-start: 40px; }
 
-@media screen and (max-width: 979px) {
+@media screen and (max-width: 992px) {
   #main-view {
     padding-top: 10px !important; }
+  #player-container {
+    padding-right: 15px !important;
+    padding-left: 15px !important; }
   #player-container .videoPlayer .selec-video-info {
     text-align: left;
     padding-bottom: 50px;
@@ -240,6 +244,11 @@
     padding-right: 0;
     width: 55%; } }
 
+@media screen and (max-width: 768px) {
+  #video-chooser .video-info {
+    padding-left: 15px;
+    padding-right: 15px; } }
+
 footer {
   background-color: #001446;
   margin-top: 80px; }
@@ -292,10 +301,6 @@ body {
 
 li.category a {
   text-decoration: none; }
-
-.container-fluid {
-  padding-right: 0;
-  padding-left: 0; }
 
 ul {
   margin-bottom: 0px; }
@@ -436,7 +441,6 @@ input[type="radio"] {
 @media screen and (max-width: 1280px) {
   header {
     padding: 0; }
-  #player-container,
   #videoPlayer,
   .player-container,
   .videoPlayer {
@@ -461,7 +465,7 @@ input[type="radio"] {
   .container {
     max-width: unset !important;
     margin: auto !important; }
-  #player-container, #videoPlayer, .videoPlayer {
+  .videoPlayer {
     padding-right: unset !important;
     padding-left: unset !important; } }
 
