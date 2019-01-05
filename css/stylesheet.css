@@ -29,7 +29,7 @@
   border-bottom: 1px #dddddd solid;
   border-top: 1px #dddddd solid;
   z-index: 1111;
-  height: 180px;
+  height: 170px;
   /* #top_arrow */ }
   #menu-cont #top_arrow {
     display: none;
@@ -45,7 +45,7 @@
       border-bottom: 2px solid #ff3232; }
     #menu-cont .categories .category {
       display: inline-block;
-      height: 180px;
+      height: 165px;
       width: 20%;
       cursor: pointer; }
       #menu-cont .categories .category .bicon {
@@ -76,8 +76,8 @@
 
 @media screen and (max-width: 979px) {
   .category {
-    padding-top: 30px;
-    padding-bottom: 30px; } }
+    padding-top: 20px;
+    padding-bottom: 20px; } }
 
 @media screen and (min-width: 980px) {
   .category_img {
@@ -90,9 +90,9 @@
 
 @media screen and (max-width: 979px) {
   #menu-cont {
-    height: 130px; }
+    height: 140px; }
   .category {
-    height: 130px !important; } }
+    height: 140px !important; } }
 
 @media screen and (max-width: 640px) {
   #menu-cont {
