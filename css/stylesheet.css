@@ -29,7 +29,7 @@
   border-bottom: 1px #dddddd solid;
   border-top: 1px #dddddd solid;
   z-index: 1111;
-  height: 170px;
+  height: 150px;
   /* #top_arrow */ }
   #menu-cont #top_arrow {
     display: none;
@@ -45,7 +45,7 @@
       border-bottom: 2px solid #ff3232; }
     #menu-cont .categories .category {
       display: inline-block;
-      height: 165px;
+      height: 150px;
       width: 20%;
       cursor: pointer; }
       #menu-cont .categories .category .bicon {
@@ -56,7 +56,7 @@
         display: block;
         color: black;
         fill: #ff3232;
-        margin: 10% auto;
+        margin: 10px auto;
         padding-bottom: 10px; }
       #menu-cont .categories .category .category_text {
         color: black;
@@ -76,8 +76,8 @@
 
 @media screen and (max-width: 979px) {
   .category {
-    padding-top: 20px;
-    padding-bottom: 20px; } }
+    padding-top: 30px;
+    padding-bottom: 30px; } }
 
 @media screen and (min-width: 980px) {
   .category_img {
@@ -90,9 +90,9 @@
 
 @media screen and (max-width: 979px) {
   #menu-cont {
-    height: 140px; }
+    height: 130px; }
   .category {
-    height: 140px !important; } }
+    height: 130px !important; } }
 
 @media screen and (max-width: 640px) {
   #menu-cont {
@@ -311,7 +311,7 @@ ul.tab-bar:before {
   display: inline-block;
   content: '';
   position: absolute;
-  bottom: 5px;
+  bottom: 0px;
   left: 0;
   height: 3px;
   z-index: 1;
