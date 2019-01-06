@@ -25,18 +25,22 @@
       border-right: unset;
       padding-right: 0; }
     #header .header_text {
-      font-size: 1.1rem;
       text-align: center;
       padding-left: unset;
       line-height: 35px;
       margin-bottom: 0;
-      margin-top: 5px; } }
+      margin-left: 20px;
+      font-size: 1.2rem; } }
 
 @media screen and (max-width: 540px) {
   #header .top_header {
     justify-content: center !important; }
   #header .header_logo {
-    margin-left: 0; } }
+    margin-left: 0; }
+  #header .header_text {
+    font-size: 1.1rem;
+    margin-left: 0;
+    line-height: unset; } }
 
 #menu-cont {
   background-color: #f7f7f7;
@@ -289,6 +293,13 @@ footer {
       footer div.col #footer-text {
         max-width: unset;
         height: unset; } }
+
+@media screen and (max-width: 540px) {
+  footer .footer-logo {
+    margin-bottom: 1rem; }
+  footer div.col #footer-text {
+    text-align: center;
+    line-height: unset; } }
 
 /* start of bootstrap overwriting */
 label {

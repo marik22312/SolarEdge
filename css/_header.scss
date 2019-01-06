@@ -32,12 +32,12 @@
       padding-right: 0;
     }
     .header_text {
-      font-size: 1.1rem;
       text-align: center;
       padding-left: unset;
       line-height: 35px;
       margin-bottom: 0;
-      margin-top: 5px;
+      margin-left: 20px;
+      font-size: 1.2rem;
     }
   }
 }
@@ -47,5 +47,10 @@
   }
   #header .header_logo {
     margin-left: 0;
+  }
+  #header .header_text {
+    font-size: 1.1rem;
+    margin-left: 0;
+    line-height: unset;
   }
 }

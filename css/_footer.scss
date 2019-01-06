@@ -38,3 +38,15 @@ footer {
     }
   }
 }
+
+@media screen and (max-width: 540px) {
+  footer {
+    .footer-logo {
+      margin-bottom: 1rem;
+    }
+    div.col #footer-text {
+      text-align: center;
+      line-height: unset;
+    }
+  }
+}
