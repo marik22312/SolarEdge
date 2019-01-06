@@ -6,6 +6,9 @@
     border-top: 1px #dddddd solid;
     z-index: 1111;
     height: 150px;
+    padding-right: 0;
+    padding-left: 0;
+
 
     #top_arrow {
       display: none;
@@ -73,12 +76,12 @@
     }
 }
 
-@media screen and (max-width: 979px) {
-  .category{
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-} 
+// @media screen and (max-width: 979px) {
+//   .category{
+//     padding-top: 30px;
+//     padding-bottom: 30px;
+//   }
+// } 
 @media screen and (min-width: 980px){
   .category_img{
   padding-bottom: 0 !important;
@@ -90,7 +93,7 @@
     font-size: 13px;
   }
 }
-@media screen and (max-width: 979px) {
+@media screen and (max-width: 991px) {
   #menu-cont{
     height: 130px;
   }

@@ -9,7 +9,7 @@
   .header_logo {
     border-right: 1px #cccccc solid;
     max-width: 100%;
-    padding-right: 5px;
+    padding-right: 20px;
   }
   .header_text {
     color: black;
@@ -30,6 +30,12 @@
       text-align: center;
       padding-left: unset;
       height: 40px;
+      line-height: 35px;
     }
+  }
+}
+@media screen and (max-width: 540px) {
+  #header .top_header {
+    justify-content: center;
   }
 }

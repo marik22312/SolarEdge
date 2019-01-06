@@ -24,8 +24,8 @@
   <body ng-app="solarEdge">
     <header class="container" id="header">
         <div class="top_header row d-flex justify-content-left">
-          <a class="col-5 col-sm-4 col-md-2 p-0" href="https://www.solaredge.com/"><img src="images/logo.png" alt="solar_edge_logo" class="header_logo"></a>
-          <h2 class="header_text col-7 col-sm-8 col-md-10"> Monitoring Platform Feature Showcase </h2>
+          <a class="p-0" href="https://www.solaredge.com/"><img src="images/logo.png" alt="solar_edge_logo" class="header_logo"></a>
+          <h2 class="header_text"> Monitoring Platform Feature Showcase </h2>
         </div>
     </header>
         <div id="menu-cont" class="container-fluid">
@@ -97,7 +97,7 @@
           </div>
 <div class="container main-container">
 <div id="player-container" class="row" ng-cloak>
-  <div class="videoPlayer col col-sm-7" ng-init="init(videos[0])">
+  <div class="videoPlayer col col-sm-12 col-md-6" ng-init="init(videos[0])">
     <div class="player-container col">
       <youtube-video id="videoPlayer" video-id="selectedVideo.videoID" player-vars="playerVars" player="mainPlayer"
         class=""></youtube-video>
@@ -107,15 +107,15 @@
       <span class="selected-desc" ng-bind-html="selectedVideo.desc"></span>
     </div>
   </div>
-  <div id="video-chooser" class="col-sm-5 col-md-4 col-12 offset-md-1">
+  <div id="video-chooser" class="col-sm-12 col-md-5 col-12 offset-md-1">
     <div class="single-video {{video.clas}}" ng-repeat="video in videos">
       <input ng-model="$parent.selectedVideo" type="radio" name="video" class="videoImg" ng-value="{{video}}"
         ng-attr-id="{{video.videoID}}" ng-data-isfirst="{{$first}}">
       <label for="{{video.videoID}}" ng-click="hideNull()">
         <div class="label-cont row">
           <!-- <div class="video-image" style="background: url(https://i.ytimg.com/vi/{{video.videoID}}/default.jpg)"></div> -->
-          <img ng-src="https://i.ytimg.com/vi/{{video.videoID}}/hqdefault.jpg" title="{{video.name}}" class="video-image col-5" />
-          <div class="video-info col-6 col-sm-6">
+          <img ng-src="https://i.ytimg.com/vi/{{video.videoID}}/hqdefault.jpg" title="{{video.name}}" class="video-image col-3 col-md-5" />
+          <div class="video-info col-9 col-md-7">
             <p class="video-name">{{video.name}}<span class="video-desc">
                 {{video.shortDesc}} </span></p>
           </div>

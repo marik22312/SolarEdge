@@ -47,9 +47,14 @@
   }
 }
 
-@media screen and (max-width: 979px) {
+@media screen and (max-width: 992px) {
   #main-view {
     padding-top: 10px !important;
+  }
+
+  #player-container {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
   }
 
   #player-container .videoPlayer .selec-video-info {

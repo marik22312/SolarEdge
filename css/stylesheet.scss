@@ -42,11 +42,6 @@ li.category {
   }
 }
 
-.container-fluid {
-  padding-right: 0;
-  padding-left: 0;
-}
-
 ul{
   margin-bottom: 0px;
 }
@@ -246,7 +241,6 @@ input[type="radio"] {
 //Mobile View Query
 @media screen and (max-width: 1280px) {
   header{padding: 0}
-  #player-container,
   #videoPlayer,
   .player-container,
   .videoPlayer {
@@ -279,7 +273,7 @@ input[type="radio"] {
     max-width: unset !important;
     margin: auto !important;
   }
-  #player-container, #videoPlayer, .videoPlayer {
+  .videoPlayer {
     padding-right: unset !important;
     padding-left: unset !important;
   }
