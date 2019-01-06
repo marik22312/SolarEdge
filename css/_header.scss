@@ -10,6 +10,7 @@
     border-right: 1px #cccccc solid;
     max-width: 100%;
     padding-right: 20px;
+    margin-left: 20px;
   }
   .header_text {
     color: black;
@@ -22,20 +23,29 @@
 
 @media screen and (max-width: 786px) {
   #header{
+    padding-bottom: 0;
+    .top_header {
+      padding: 20px 0;
+    }
     .header_logo {
       border-right: unset;
+      padding-right: 0;
     }
     .header_text {
       font-size: 1.1rem;
       text-align: center;
       padding-left: unset;
-      height: 40px;
       line-height: 35px;
+      margin-bottom: 0;
+      margin-top: 5px;
     }
   }
 }
 @media screen and (max-width: 540px) {
   #header .top_header {
-    justify-content: center;
+    justify-content: center !important;
+  }
+  #header .header_logo {
+    margin-left: 0;
   }
 }
