@@ -1,3 +1,4 @@
+import './css/stylesheet.scss';
 
 var loader;
 $(document).ready(function() {

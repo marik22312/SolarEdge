@@ -5,20 +5,26 @@
   "main": "null",
   "private": true,
   "scripts": {
-    "start": "node_modules/.bin/nodemon server.js",
-    "watch": "node_modules/.bin/node-sass-chokidar ./css -o ./css --watch",
+    "start": "node_modules/.bin/webpack -p",
+    "watch": "node_modules/.bin/webpack-dev-server",
+    "watchs": "node_modules/.bin/node-sass-chokidar ./css -o ./css --watch",
     "build": "node_modules/.bin/node-sass-chokidar ./css -o ./css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "directories": {
     "lib": "lib"
   },
-  "dependencies": {
-    "express": "^4.16.4"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "css-loader": "^2.1.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "node-sass-chokidar": "^1.3.4",
-    "nodemon": "^1.18.9"
+    "sass-loader": "^7.1.0",
+    "scss-loader": "^0.0.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0",
+    "webpack-dev-server": "^3.1.14"
   },
   "repository": {
     "type": "git",
