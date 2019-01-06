@@ -5,10 +5,9 @@
   "main": "null",
   "private": true,
   "scripts": {
-    "start": "node_modules/.bin/webpack -p",
+    "build": "node_modules/.bin/webpack -p",
     "watch": "node_modules/.bin/webpack-dev-server",
     "watchs": "node_modules/.bin/node-sass-chokidar ./css -o ./css --watch",
-    "build": "node_modules/.bin/node-sass-chokidar ./css -o ./css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "directories": {

@@ -4,3 +4,4 @@ lib/bootstrap.zip
 node_modules/
 screenshots/
 
+bundle.js

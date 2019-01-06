@@ -2,6 +2,10 @@ import './css/stylesheet.scss';
 
 var loader;
 $(document).ready(function() {
+  var showChar = 115;  // How many characters are shown by default
+  var ellipsestext = "...";
+  var moretext = "Show more";
+  var lesstext = "Show less";
   $.fn.RegisterTabBar = function(id) {
     var $ele = $(this);
     if ($ele.prop("tagName") && $ele.prop("tagName").toLowerCase() == "ul" && id != undefined) {
@@ -61,7 +65,3 @@ $('.category').click(function() {
 });
 
 /* READMORE */
-var showChar = 115;  // How many characters are shown by default
-var ellipsestext = "...";
-var moretext = "Show more";
-var lesstext = "Show less";
