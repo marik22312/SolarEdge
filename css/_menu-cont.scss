@@ -5,9 +5,10 @@
     border-bottom: 1px #dddddd solid;
     border-top: 1px #dddddd solid;
     z-index: 1111;
-    height: 180px;  
+    height: 150px;
     padding-right: 0;
     padding-left: 0;
+
 
     #top_arrow {
       display: none;
@@ -26,7 +27,7 @@
         }
         .category {
             display: inline-block;
-            height: 180px;
+            height: 150px;
             width: 20%;
             cursor: pointer;
             .bicon {
@@ -41,7 +42,7 @@
                 display: block;
                 color: black;
                 fill: $redColor;
-                margin: 10% auto;
+                margin: 10px auto;
                 padding-bottom: 10px;
             } 
 

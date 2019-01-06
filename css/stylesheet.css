@@ -33,7 +33,7 @@
   border-bottom: 1px #dddddd solid;
   border-top: 1px #dddddd solid;
   z-index: 1111;
-  height: 180px;
+  height: 150px;
   padding-right: 0;
   padding-left: 0;
   /* #top_arrow */ }
@@ -51,7 +51,7 @@
       border-bottom: 2px solid #ff3232; }
     #menu-cont .categories .category {
       display: inline-block;
-      height: 180px;
+      height: 150px;
       width: 20%;
       cursor: pointer; }
       #menu-cont .categories .category .bicon {
@@ -62,7 +62,7 @@
         display: block;
         color: black;
         fill: #ff3232;
-        margin: 10% auto;
+        margin: 10px auto;
         padding-bottom: 10px; }
       #menu-cont .categories .category .category_text {
         color: black;
@@ -316,7 +316,7 @@ ul.tab-bar:before {
   display: inline-block;
   content: '';
   position: absolute;
-  bottom: 5px;
+  bottom: 0px;
   left: 0;
   height: 3px;
   z-index: 1;
