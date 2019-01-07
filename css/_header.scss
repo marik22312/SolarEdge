@@ -26,6 +26,7 @@
     padding-bottom: 0;
     .top_header {
       padding: 20px 0;
+      justify-content: center !important;
     }
     .header_logo {
       border-right: unset;
@@ -33,7 +34,7 @@
     }
     .header_text {
       text-align: center;
-      padding-left: unset;
+      // padding-left: unset;
       line-height: 35px;
       margin-bottom: 0;
       margin-left: 20px;
@@ -46,7 +47,7 @@
     justify-content: center !important;
   }
   #header .header_logo {
-    margin-left: 0;
+    // margin-left: 0;
   }
   #header .header_text {
     font-size: 1.1rem;

@@ -60,7 +60,6 @@
   #player-container .videoPlayer .selec-video-info {
     text-align: left;
     padding-bottom: 50px;
-    border-bottom: 1px solid #cccccc;
     padding: 0 30px;
   }
 
@@ -73,5 +72,9 @@
 @media screen and (max-width: 768px) {
   .main-container {
     padding: 0;
+  }
+
+  #player-container .videoPlayer .selec-video-info {
+    border-bottom: 1px solid #cccccc;
   }
 }
