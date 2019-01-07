@@ -27,7 +27,7 @@ $(document).ready(function() {
             return;
           }
 
-          $("style#" + ID).text("ul[data-style-id='" + ID + "']:before { " + "left: " +( $li.position().left + 10) + "px; " + "right: " + ($ele.width() - $li.position().left - $li.outerWidth()+ 55) + "px; " + "-webkit-transition: left " + (IsToLeft
+          $("style#" + ID).text("ul[data-style-id='" + ID + "']:before { " + "left: " +( $li.position().left) + "px; " + "right: " + ($ele.width() - $li.position().left - $li.outerWidth()+ 30) + "px; " + "-webkit-transition: left " + (IsToLeft
             ? ".45s"
             : ".8s") + ", right " + (IsToLeft
             ? ".9s"
@@ -36,7 +36,7 @@ $(document).ready(function() {
             : ".8s") + ", right " + (IsToLeft
             ? ".9s"
             : ".3s") + "; " +
-          // "margin-left: 13.333%" /* slider position fix */+
+          //"margin-left: 13.333%" /* slider position fix */+
           "} ");
         }
         SetStyle($ele, $li, ClickedIndex < CurrentIndex);
