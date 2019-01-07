@@ -96,6 +96,12 @@ li.category.active svg.category_img {
   border-bottom: 5px $redColor solid;
   padding-bottom: 50px;
   padding-top: 50px;
+
+  h1 {
+    font-size: 2.4rem;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 @media screen and (max-width: 640px){
     .mobile_headline{
