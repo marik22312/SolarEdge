@@ -75,11 +75,15 @@
   }
 
   #player-container .videoPlayer .selec-video-info {
-    border-bottom: 1px solid #cccccc;
+    // border-bottom: 1px solid #cccccc;
   }
 }
 @media screen and (max-width: 767px) {
   .main-container {
     padding: 0;
+  }
+
+  #player-container .videoPlayer .selec-video-info {
+    border-bottom: 1px solid #cccccc;
   }
 }

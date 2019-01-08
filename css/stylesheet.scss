@@ -15,8 +15,9 @@ label {margin-bottom: 0;}
 
 body {
   overflow-x: hidden;
-  max-height: 100vh;
+  min-height: 100vh;
   max-width: 100vw;
+  position: relative;
 
   * {
     font-family: 'Open Sans', sans-serif;
@@ -113,6 +114,7 @@ li.category.active svg.category_img {
 
 #main-view {
   padding-top: 40px;
+  position: relative;
 }
 /* content css */
 .videoPlayer {
@@ -284,17 +286,3 @@ input[type="radio"] {
     padding-left: unset !important;
   }
 } /* small media query */
-
-@media screen and (min-width: 1280px) {
-  .solar-container{
-    width: 1280px !important;
-    margin: auto !important;
-  }
-} /* medium media query */
-
-@media screen and (min-width: 1520px) {
-  .solar-container{
-    width: 1520px !important;
-    margin: auto !important;
-  }
-} /* latge media query */
