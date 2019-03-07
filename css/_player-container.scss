@@ -35,12 +35,14 @@
       .selected-desc {
         ul {
           display: block;
-          list-style-type: disc;
+          // list-style-type: disc;
+          list-style-image: url('https://www.solaredge.com/themes/solaredge_2018/img/ulist.png');
           -webkit-margin-before: 1em;
           -webkit-margin-after: 1em;
           -webkit-margin-start: 0px;
           -webkit-margin-end: 0px;
           -webkit-padding-start: 40px;
+
         }
       }
     }

@@ -1,9 +1,7 @@
 @import "./variables";
 
 #menu-cont {
-    background-color: #f7f7f7;
-    border-bottom: 1px #dddddd solid;
-    border-top: 1px #dddddd solid;
+    background-color: #f1f1f1;
     z-index: 1111;
     height: 150px;
     padding-right: 0;
@@ -22,41 +20,44 @@
     .categories {
         display: flex;
         width: 100%;
-        .active{
-          border-bottom: 2px solid $redColor;
-        }
         .category {
-            display: inline-block;
-            height: 150px;
-            width: 20%;
-            cursor: pointer;
-            .bicon {
-                display: block !important;
-            }
+          display: inline-block;
+          height: 150px;
+          width: 20%;
+          cursor: pointer;
 
-            .ricon {
-                display: none !important;
-            } 
-
-            .category_img {
-                display: block;
-                color: black;
-                fill: $redColor;
-                margin: 10px auto;
-                padding-bottom: 10px;
-            } 
-
+          &:hover {
             .category_text {
-                color: black;
-                font-family: 'Open Sans', sans-serif;
-                font-weight: 600;
-                font-size: 13px;
-                padding-bottom: 50px;
-                text-transform: uppercase;
-            } 
+              color: #ff3232 !important;
+            }
+          }
+          .bicon {
+            display: block !important;
+          }
+          
+          .ricon {
+            display: none !important;
+          } 
+          
+          .category_img {
+            display: block;
+            color: black;
+            fill: $redColor;
+            margin: 10px auto;
+            padding-bottom: 10px;
+          } 
+          
+          .category_text {
+            color: black;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            padding-bottom: 50px;
+          } 
         }
-
+        
         .active {
+          border-bottom: 4px solid $redColor;
             .category_text {
                 color: $redColor;
             } 

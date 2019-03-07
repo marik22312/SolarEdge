@@ -13,11 +13,16 @@
       }
     .video-image {
         padding: 0;
-        border-radius: 5px;
         height : 90px;
     } 
     .single-video{
       margin-bottom: 30px;
+
+      &:hover {
+          .video-name {
+              color: #ff3232;
+          }
+      }
     }
     .video-info {
         vertical-align: top;
