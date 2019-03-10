@@ -31,13 +31,6 @@
               color: #ff3232 !important;
             }
           }
-          .bicon {
-            display: block !important;
-          }
-          
-          .ricon {
-            display: none !important;
-          } 
           
           .category_img {
             display: block;
@@ -65,14 +58,6 @@
             .category_img {
                 fill: $redColor;
             } 
-
-            .bicon {
-                display: none !important;
-            } 
-
-            .ricon {
-                display: block !important;
-            }
         } 
     }
 }

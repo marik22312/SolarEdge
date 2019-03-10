@@ -3,3 +3,5 @@ lib/bootstrap.zip
 
 node_modules/
 screenshots/
+
+.DS_STORE
