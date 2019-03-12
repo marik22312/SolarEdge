@@ -48,6 +48,7 @@ $scope.$on('youtube.player.ended', showTooltipsPlay);
         name: "Consumption Monitoring", // Video Title
         shortDesc: "Optimizing solar usage to increase self-consumption ",
         desc: "Optimizing solar usage to increase self-consumption <ul><li>Easily track system production, site consumption, and self-consumption </li><li>Better understand customer consumption patterns to increase their self-consumption</li></ul>", // Video Description
+        clas: "active",
       },
       {
         videoID: "rVVjlCKamhA",// Youtube Video ID

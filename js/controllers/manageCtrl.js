@@ -48,6 +48,7 @@ $scope.$on('youtube.player.ended', showTooltipsPlay);
           name: "Automatic Alerts ", // Video Title
           shortDesc: "Staying aware of site performance issues to maximize system uptime ",
           desc: "Improve site performance and maximize energy output using the alerts mechanism <ul><li>Notify the right people instantly via email about key performance issues, letting them respond rapidly to events </li><li>See predefined alerts and add custom alerts with the powerful Alert Rules Generator</li><li>Use the Alert Log and Alert Reports to regularly analyze performance over time or across sites</li></ul>", // Video Description
+          clas: "active",
         },
         {
           videoID: "XRjUtY13yIE",// Youtube Video ID
