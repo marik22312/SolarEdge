@@ -3,7 +3,6 @@
 #menu-cont {
     background-color: #f1f1f1;
     z-index: 1111;
-    height: 150px;
     padding-right: 0;
     padding-left: 0;
 
@@ -22,7 +21,6 @@
         width: 100%;
         .category {
           display: inline-block;
-          height: 150px;
           width: 20%;
           cursor: pointer;
 
@@ -44,9 +42,9 @@
           .category_text {
             color: black;
             font-family: 'Open Sans', sans-serif;
-            font-weight: 600;
+            font-weight: 400;
             font-size: 18px;
-            padding-bottom: 50px;
+            padding-bottom: 15px;
           } 
         }
         
@@ -72,7 +70,7 @@
 @media screen and (min-width: 980px){
   .category_img{
   padding-bottom: 0 !important;
-  margin-bottom: 16px !important;
+  margin-bottom: 15px !important;
 }
 }
 @media screen and (min-width: 980px) and (max-width: 1279px){
