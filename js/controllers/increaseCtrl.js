@@ -41,7 +41,7 @@ $scope.$on('youtube.player.ended', showTooltipsPlay);
           scrollTop: 0
       }, 800);
   };
-    $scope.catName="Increase value for your customers";
+    $scope.catName="Increase Value for Your Customers";
     $scope.videos = [
       {
         videoID: "83wPJm2XMHU",// Youtube Video ID

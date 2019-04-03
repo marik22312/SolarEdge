@@ -41,7 +41,7 @@ $scope.$on('youtube.player.ended', showTooltipsPlay);
           scrollTop: 0
       }, 800);
   };
-  $scope.catName="Speed up your installation";
+  $scope.catName="Speed Up Your Installation";
     $scope.videos = [
       {
         videoID: "surbejL_Mgg",// Youtube Video ID

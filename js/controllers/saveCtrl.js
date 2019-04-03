@@ -41,7 +41,7 @@ $scope.$on('youtube.player.ended', showTooltipsPlay);
           scrollTop: 0
       }, 800);
   };
-  $scope.catName="Save commissioning time and truck rolls";
+  $scope.catName="Save Commissioning Time and Truck Rolls";
     $scope.videos = [
       {
         videoID: "RdAob9RxamQ",// Youtube Video ID

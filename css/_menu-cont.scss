@@ -85,6 +85,18 @@
     height: 90px !important;
   }
 }
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  #menu-cont {
+    .categories {
+      .category {
+        .category_text {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 640px){
     #menu-cont {
         height: 70px !important;

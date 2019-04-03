@@ -41,7 +41,7 @@ $scope.$on('youtube.player.ended', showTooltipsPlay);
           scrollTop: 0
       }, 800);
   };
-   $scope.catName="effectively manage your fleet";
+   $scope.catName="Effectively Manage Your Fleet";
     $scope.videos = [
         {
           videoID: "sRelFFW79Uo",// Youtube Video ID

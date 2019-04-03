@@ -45,7 +45,7 @@ app.controller("improveCtrl", function ($scope, $rootScope, $location) {
 
     };
 
-    $scope.catName="Improve your lead generation";
+    $scope.catName="Improve Your Lead Generation";
     $scope.videos = [
       {
         videoID: "TWms_cJrp40", //Youtube Video ID
