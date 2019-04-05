@@ -6,6 +6,9 @@
   min-height: 700px;
       label {
           margin-left: 0;
+          * {
+            pointer-events: none;
+          }
       }
 
       .label-cont {
