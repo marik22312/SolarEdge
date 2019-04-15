@@ -23,25 +23,6 @@ body {
     font-family: 'Roboto', sans-serif;
   }
 }
-#menu-cont{
-  ul {
-    li {
-      list-style-type: none;
-      display: inline-block;
-      border-width: 0;
-      // height: 170px;
-      background-color: transparent;
-      color: $redColor;
-      text-align: center;
-      cursor: pointer;
-    }
-  }
-}
-li.category {
-  a {
-    text-decoration: none;
-  }
-}
 
 ul{
   margin-bottom: 0px;
@@ -51,32 +32,14 @@ ul.tab-bar > li {
   position: relative;
 }
 
-ul.tab-bar.bar-style-1:before {
-  background-color: $redColor;
-}
-
 ul.tab-bar:before {
-  display: inline-block;
   content: '';
   position: absolute;
   bottom: 0px;
-  left: 0;
   height: 4px;
-  z-index: 1;
-  color: $redColor;
+  color: $redColor;  
+  background-color: $redColor;
 }
-
-ul.tab-bar > li {
-  list-style-type: none;
-  border-width: 0;
-}
-
-ul.tab-bar.bar-style-1 > li.active {
-  color: $redColor !important;
-  font-weight: 575;
-  border-bottom: #cc0033 3px solid;
-}
-
 
 
 li.category.active span.category_text {

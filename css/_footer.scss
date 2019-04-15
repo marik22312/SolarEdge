@@ -3,22 +3,17 @@ footer {
   margin-top: 80px;
   padding-top: 10px;
   padding-bottom: 10px;
-     div{
-      display: flex;
-      width: 100%;
-      justify-content: space-around;
-      img {
-        width: auto;
-        height: 36px;
-      }
-      #footer-text {
-        max-width: 50%;
-        color: #ffffff;
-        font-weight: 600;
-        margin: 0;
-        margin-left: 5%;
-        font-size: 0.7rem
-      } 
+    img {
+      width: auto;
+      height: 36px;
+    }
+    #footer-text {
+      max-width: 50%;
+      color: #ffffff;
+      font-weight: 600;
+      margin: 0;
+      margin-left: 5%;
+      font-size: 0.7rem
     } 
 } 
 

@@ -5,8 +5,7 @@
   padding-left: 4.1665%;
   min-height: 700px;
       label {
-          margin-left: 0;
-          display: block;
+        pointer-events: none;
           * {
             pointer-events: none;
           }
@@ -16,7 +15,6 @@
           margin-left: 0;
       }
     .video-image {
-        padding: 0;
         width: 100%;
         height: auto;
         object-fit: cover;
@@ -24,7 +22,7 @@
     } 
     .single-video{
         position: relative;
-      margin-bottom: 30px;
+        margin-bottom: 30px;
 
       &:hover {
           .video-name {
@@ -49,10 +47,8 @@
       }
     }
     .video-info {
-        vertical-align: top;
         padding-left: 20px;
         .video-name {
-            display: inline-block;
             font-size: 16px;
             font-weight: 500;
             margin-bottom: 0;
@@ -64,14 +60,6 @@
             font-weight: 400;
             line-height: 18px;
             padding-top: 10px;
-            .morelink {
-                color: $redColor;
-                font-weight: 400;
-                text-decoration: none;
-                &:hover {
-                    text-decoration: underline;
-                }
-            } /* .morelink */
         } /* .video-desc */
     } /* .video-info */
 } /* #video-chooser */

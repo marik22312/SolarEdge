@@ -1,11 +1,6 @@
-@import "./variables";
-
 #header {
-  background-color: white;
   padding-bottom: 20px;
-  .top_header {
-    padding-top: 20px;
-  }
+  padding-top: 20px;
   .header_logo {
     border-right: 1px #cccccc solid;
     max-width: 100%;
@@ -44,11 +39,9 @@
   }
 }
 @media screen and (max-width: 540px) {
-  #header .top_header {
+  #header .top-header {
     justify-content: center !important;
-  }
-  #header .header_logo {
-    // margin-left: 0;
+    flex-wrap: wrap;
   }
   #header .header_text {
     font-size: 1.2rem;

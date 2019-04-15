@@ -2,10 +2,6 @@
 
 #menu-cont {
     background-color: #f1f1f1;
-    z-index: 1111;
-    padding-right: 0;
-    padding-left: 0;
-
 
     #top_arrow {
       display: none;
@@ -18,30 +14,28 @@
 
     .categories {
         display: flex;
-        width: 100%;
         .category {
-          display: inline-block;
-          width: 20%;
+          width: 20%;   
           cursor: pointer;
-
           &:hover {
             .category_text {
               color: #ff3232 !important;
             }
           }
+
+          a {
+            text-decoration: none;
+          }
           
           .category_img {
             display: block;
-            color: black;
-            fill: $redColor;
             margin: 10px auto;
-            padding-bottom: 10px;
             height: 64px;
           } 
           
           .category_text {
             color: black;
-            font-weight: 500;
+            text-align: center;
             font-size: 18px;
             padding-bottom: 15px;
           } 
@@ -52,20 +46,10 @@
             .category_text {
                 color: $redColor;
             } 
-
-            .category_img {
-                fill: $redColor;
-            } 
         } 
     }
 }
 
-// @media screen and (max-width: 979px) {
-//   .category{
-//     padding-top: 30px;
-//     padding-bottom: 30px;
-//   }
-// } 
 @media screen and (min-width: 980px){
   .category_img{
   padding-bottom: 0 !important;

@@ -24,12 +24,14 @@
   </head>
   <body ng-app="solarEdge">
     <header class="container" id="header">
-        <div class="top_header row d-flex justify-content-left align-items-center">
-          <a class="p-0" href="https://www.solaredge.com/"><img src="images/logo.png" alt="solar_edge_logo" class="header_logo"></a>
-          <h2 class="header_text"> Monitoring Platform Feature Showcase </h2>
+        <div class="row align-items-center">
+          <div class="col d-flex top-header">
+              <a class="p-0" href="https://www.solaredge.com/"><img src="images/logo.png" alt="solar_edge_logo" class="header_logo"></a>
+              <h2 class="header_text"> Monitoring Platform Feature Showcase </h2>
+          </div>
         </div>
     </header>
-        <div id="menu-cont" class="container-fluid">
+        <div id="menu-cont">
           <div class="container">
           <div class="row">
             <ul class="slider tab-bar bar-style-1 categories col">
@@ -57,7 +59,7 @@
           </div>
           </div>
         </div>
-        <div id="main-view" class="solar-container" ng-view ng-cloak>
+        <div id="main-view" ng-view ng-cloak>
           <!-- Loader -->
           <div class="lds-css ng-scope" id="loader">
             <div class="lds-eclipse">
@@ -66,7 +68,7 @@
           </div>
           <!-- End of loader -->
         </div>
-        <footer class="container-fluid">
+        <footer>
           <div class="container">
           <div class="row">
             <div class="col justify-content-start d-flex align-items-center">
@@ -91,7 +93,7 @@
           <div class="mobile_headline d-block d-lg-none">
             <h1>{{catName}}</h1>
           </div>
-<div class="container main-container">
+<div class="container">
 <div id="player-container" class="row" ng-cloak>
   <div class="videoPlayer col col-sm-12 col-md-6" ng-init="init(videos[0])">
     <div class="player-container col">

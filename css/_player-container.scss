@@ -5,15 +5,7 @@
     margin-right: -4.1665%;
 
     .player-container {
-      margin: 0;
-      padding: 0;
       padding-bottom: 56.6666666666%;
-
-      iframe#videoPlayer {
-        margin: 0;
-        padding: 0;
-      }
-
     }
 
     .selec-video-info {
@@ -23,7 +15,6 @@
 
       .selected-name {
         padding: 0;
-        margin: 0;
         margin-bottom: 14px;
         font-size: 24px;
         font-weight: 400;
@@ -33,14 +24,12 @@
       .selected-desc {
         ul {
           display: block;
-          // list-style-type: disc;
           list-style-image: url('https://www.solaredge.com/themes/solaredge_2018/img/ulist.png');
           -webkit-margin-before: 1em;
           -webkit-margin-after: 1em;
           -webkit-margin-start: 0px;
           -webkit-margin-end: 0px;
           -webkit-padding-start: 40px;
-
         }
       }
     }
@@ -69,15 +58,6 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .main-container {
-    // padding: 0;
-  }
-
-  #player-container .videoPlayer .selec-video-info {
-    // border-bottom: 1px solid #cccccc;
-  }
-}
 @media screen and (max-width: 767px) {
   .main-container {
     padding: 0;
